@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools">
+
+    <style name="Theme.Urtisi" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="colorOnPrimary">@android:color/white</item>
+    </style>
+
+    <style name="Theme.Urtisi.Light" parent="Theme.MaterialComponents.Light.NoActionBar">
+        <item name="colorPrimary">@color/colorPrimaryLight</item>
+        <item name="colorOnPrimary">@color/colorOnPrimaryLight</item>
+    </style>
+
+    <style name="Theme.Urtisi.Dark" parent="Theme.MaterialComponents.NoActionBar">
+        <item name="colorPrimary">@color/colorPrimaryDark</item>
+        <item name="colorOnPrimary">@color/colorOnPrimaryDark</item>
+    </style>
+
+</resources>

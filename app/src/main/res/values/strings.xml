@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">Уртиси</string>
+    <string name="help">Справка</string>
+    <string name="arrow">Стрелка</string>
+    <string name="logo">Логитип</string>
+    <string name="settings">Настройки</string>
+    <string name="select_theme">Выбор темы</string>
+    <string name="menu">Меню</string>
+    <string name="employees">Сотрудники</string>
+    <string name="call">Расписание звонков</string>
+    <string name="link">Ссылки</string>
+    <string name="statement">Личная ведомость</string>
+</resources>
