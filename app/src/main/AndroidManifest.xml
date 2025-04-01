@@ -32,6 +32,12 @@
         <activity android:name=".Menu.EmployeesActivity"
             android:exported="false"/>
 
+        <activity android:name=".Menu.InstituteActivity"
+            android:exported="false"/>
+
+        <activity android:name=".Menu.EducationActivity"
+            android:exported="false"/>
+
         <activity
             android:name=".MainActivity"
             android:exported="true"

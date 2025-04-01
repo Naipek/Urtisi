@@ -7,6 +7,7 @@ import androidx.appcompat.app.AppCompatActivity
 import androidx.cardview.widget.CardView
 import com.example.urtisi.Menu.CallActivity
 import com.example.urtisi.Menu.EmployeesActivity
+import com.example.urtisi.Menu.InstituteActivity
 
 class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -36,6 +37,22 @@ class MainActivity : AppCompatActivity() {
         // Установить обработчик нажатия
         cardEmployees.setOnClickListener {
             val intent = Intent(this, EmployeesActivity::class.java)
+            startActivity(intent)
+        }
+
+        // Найти карточку Об институте
+        val cardInstiute = findViewById<CardView>(R.id.CardInstitute)
+        // Установить обработчик нажатия
+        cardInstiute.setOnClickListener {
+            val intent = Intent(this, InstituteActivity::class.java)
+            startActivity(intent)
+        }
+
+        // Найти карточку Образование
+        val cardEducation = findViewById<CardView>(R.id.CardEducation)
+        // Установить обработчик нажатия
+        cardEducation.setOnClickListener {
+            val intent = Intent(this, InstituteActivity::class.java)
             startActivity(intent)
         }
     }

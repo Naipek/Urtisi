@@ -10,4 +10,10 @@
     <string name="call">Расписание звонков</string>
     <string name="link">Ссылки</string>
     <string name="statement">Личная ведомость</string>
+    <string name="building">Об институте</string>
+    <string name="references">Справки</string>
+    <string name="Questions">Частые вопросы</string>
+    <string name="education">Образование</string>
+    <string name="facts">Факты</string>
+    <string name="basic">Основное</string>
 </resources>
