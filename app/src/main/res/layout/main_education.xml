@@ -49,27 +49,524 @@
         <ScrollView
             android:layout_width="match_parent"
             android:layout_height="0dp"
-            android:descendantFocusability="blocksDescendants"
             app:layout_constraintTop_toBottomOf="@id/headerLayout"
             app:layout_constraintBottom_toTopOf="@id/footerLayout">
 
-            <LinearLayout
+        <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:orientation="vertical"
-                android:padding="16dp">
+                android:padding="16dp"
+                android:paddingBottom="80dp">
 
-                <!-- Текстовое поле для справки -->
+                <!-- Заголовок "СПО" -->
                 <TextView
-                    android:id="@+id/callText"
+                    android:id="@+id/spoTitle"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text=""
+                    android:text="СПО (Очная форма)"
                     android:textColor="@android:color/black"
-                    android:textSize="16sp"
-                    android:lineSpacingExtra="4dp"
+                    android:textSize="17sp"
+                    android:textStyle="bold"
                     android:gravity="center"
-                    tools:ignore="HardcodedText,VisualLintLongText" />
+                    android:paddingBottom="12dp"
+                    tools:ignore="HardcodedText" />
+
+                <!-- Карточка 11.02.15 -->
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/Cardspo1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="12dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:padding="16dp">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="11.02.15"
+                            android:textSize="16sp"
+                            android:textStyle="bold"
+                            android:textColor="@android:color/black"
+                            tools:ignore="HardcodedText" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Инфокоммуникационные сети и системы связи"
+                            android:textSize="14sp"
+                            android:textColor="@android:color/black"
+                            android:paddingTop="4dp"
+                            tools:ignore="HardcodedText" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:paddingTop="4dp"
+                            android:text="Срок обучения: \n
+На базе 9 классов - 3 года 10 мес.\n
+На базе 11 классов - 2 года 10 мес."
+                            android:textColor="@android:color/darker_gray"
+                            android:textSize="14sp"
+                            tools:ignore="HardcodedText,TextContrastCheck" />
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+
+            <!-- Карточка 09.02.07 -->
+            <androidx.cardview.widget.CardView
+                android:id="@+id/Cardspo2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="50dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="16dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="09.02.07"
+                        android:textSize="16sp"
+                        android:textStyle="bold"
+                        android:textColor="@android:color/black"
+                        tools:ignore="HardcodedText" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Информационные системы и программирование"
+                        android:textSize="14sp"
+                        android:textColor="@android:color/black"
+                        android:paddingTop="4dp"
+                        tools:ignore="HardcodedText" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingTop="4dp"
+                        android:text="Срок обучения: \n
+На базе 9 классов - 3 года 10 мес.\n
+На базе 11 классов - 2 года 10 мес."
+                        android:textColor="@android:color/darker_gray"
+                        android:textSize="14sp"
+                        tools:ignore="HardcodedText,TextContrastCheck" />
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <!-- Заголовок "бакалавр" -->
+            <TextView
+                android:id="@+id/voTitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="ВО - бакалавриат (Очная, заочная форма)"
+                android:textColor="@android:color/black"
+                android:textSize="17sp"
+                android:textStyle="bold"
+                android:gravity="center"
+                android:paddingBottom="12dp"
+                tools:ignore="HardcodedText" />
+
+            <!-- Карточка 11.03.02 -->
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="12dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="16dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="01. Электроника, радиотехника и системы связи"
+                        android:textSize="14sp"
+                        android:textColor="@android:color/black"
+                        android:paddingTop="4dp"
+                        tools:ignore="HardcodedText" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Инфокоммуникационные технологии и системы связи"
+                        android:textSize="14sp"
+                        android:textColor="@android:color/black"
+                        android:paddingTop="4dp"
+                        tools:ignore="HardcodedText" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="11.03.02"
+                        android:textSize="16sp"
+                        android:textStyle="bold"
+                        android:textColor="@android:color/black"
+                        tools:ignore="HardcodedText" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Транспортные сети и системы связи"
+                        android:textSize="14sp"
+                        android:textColor="@android:color/black"
+                        android:paddingTop="4dp"
+                        tools:ignore="HardcodedText" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingTop="4dp"
+                        android:text="Срок обучения:\n
+Очная форма - 4 года\n
+Заочная форма - 4 года 9 мес."
+                        android:textColor="@android:color/darker_gray"
+                        android:textSize="14sp"
+                        tools:ignore="HardcodedText,TextContrastCheck" />
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <!-- Карточка 11.03.02 -->
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="12dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="16dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="01. Электроника, радиотехника и системы связи"
+                        android:textSize="14sp"
+                        android:textColor="@android:color/black"
+                        android:paddingTop="4dp"
+                        tools:ignore="HardcodedText" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Инфокоммуникационные технологии и системы связи"
+                        android:textSize="14sp"
+                        android:textColor="@android:color/black"
+                        android:paddingTop="4dp"
+                        tools:ignore="HardcodedText" />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="11.03.02"
+                        android:textSize="16sp"
+                        android:textStyle="bold"
+                        android:textColor="@android:color/black"
+                        tools:ignore="HardcodedText" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Инфокоммуникационные технологии в услугах связи"
+                        android:textSize="14sp"
+                        android:textColor="@android:color/black"
+                        android:paddingTop="4dp"
+                        tools:ignore="HardcodedText" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingTop="4dp"
+                        android:text="Срок обучения:\n
+Очная форма - 4 года"
+                        android:textColor="@android:color/darker_gray"
+                        android:textSize="14sp"
+                        tools:ignore="HardcodedText,TextContrastCheck" />
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <!-- Карточка 09.03.01 -->
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="50dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="16dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="02. Информатика и вычислительная техника"
+                        android:textSize="14sp"
+                        android:textColor="@android:color/black"
+                        android:paddingTop="4dp"
+                        tools:ignore="HardcodedText" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Информатика и вычислительная техника"
+                        android:textSize="14sp"
+                        android:textColor="@android:color/black"
+                        android:paddingTop="4dp"
+                        tools:ignore="HardcodedText" />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="09.03.01"
+                        android:textSize="16sp"
+                        android:textStyle="bold"
+                        android:textColor="@android:color/black"
+                        tools:ignore="HardcodedText" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Программирование в информационных системах"
+                        android:textSize="14sp"
+                        android:textColor="@android:color/black"
+                        android:paddingTop="4dp"
+                        tools:ignore="HardcodedText" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingTop="4dp"
+                        android:text="Срок обучения:\n
+Очная форма - 4 года\n
+Заочная форма - 4 года 9 мес."
+                        android:textColor="@android:color/darker_gray"
+                        android:textSize="14sp"
+                        tools:ignore="HardcodedText,TextContrastCheck" />
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <!-- Заголовок "мага" -->
+            <TextView
+                android:id="@+id/magTitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="ВО - магистратура (Очная, заочная форма)"
+                android:textColor="@android:color/black"
+                android:textSize="17sp"
+                android:textStyle="bold"
+                android:gravity="center"
+                android:paddingBottom="12dp"
+                tools:ignore="HardcodedText" />
+
+            <!-- Карточка 11.04.02 -->
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="12dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="16dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="01. Электроника, радиотехника и системы связи"
+                        android:textSize="14sp"
+                        android:textColor="@android:color/black"
+                        android:paddingTop="4dp"
+                        tools:ignore="HardcodedText" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="11.04.02"
+                        android:textSize="16sp"
+                        android:textStyle="bold"
+                        android:textColor="@android:color/black"
+                        tools:ignore="HardcodedText" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Сети, системы и устройства телекоммуникаций"
+                        android:textSize="14sp"
+                        android:textColor="@android:color/black"
+                        android:paddingTop="4dp"
+                        tools:ignore="HardcodedText" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingTop="4dp"
+                        android:text="Срок обучения:\n
+Очная форма - 2 года\n
+Заочная форма - 2 года 5 мес."
+                        android:textColor="@android:color/darker_gray"
+                        android:textSize="14sp"
+                        tools:ignore="HardcodedText,TextContrastCheck" />
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <!-- Карточка 11.04.02 -->
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="50dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="16dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="02. Информатика и вычислительная техника"
+                        android:textSize="14sp"
+                        android:textColor="@android:color/black"
+                        android:paddingTop="4dp"
+                        tools:ignore="HardcodedText" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="09.04.01"
+                        android:textSize="16sp"
+                        android:textStyle="bold"
+                        android:textColor="@android:color/black"
+                        tools:ignore="HardcodedText" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Инженерия программного обеспечения и информационных систем"
+                        android:textSize="14sp"
+                        android:textColor="@android:color/black"
+                        android:paddingTop="4dp"
+                        tools:ignore="HardcodedText" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingTop="4dp"
+                        android:text="Срок обучения:\n
+Очная форма - 2 года\n
+Заочная форма - 2 года 5 мес."
+                        android:textColor="@android:color/darker_gray"
+                        android:textSize="14sp"
+                        tools:ignore="HardcodedText,TextContrastCheck" />
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <!-- Заголовок "аспирантура" -->
+            <TextView
+                android:id="@+id/aspTitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="ВО - аспирантура (Очная форма)"
+                android:textColor="@android:color/black"
+                android:textSize="17sp"
+                android:textStyle="bold"
+                android:gravity="center"
+                android:paddingBottom="12dp"
+                tools:ignore="HardcodedText" />
+
+            <!-- Карточка 2.3.8 -->
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="12dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="16dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="2.3.8"
+                        android:textSize="16sp"
+                        android:textStyle="bold"
+                        android:textColor="@android:color/black"
+                        tools:ignore="HardcodedText" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Информатика и информационные процессы"
+                        android:textSize="14sp"
+                        android:textColor="@android:color/black"
+                        android:paddingTop="4dp"
+                        tools:ignore="HardcodedText" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingTop="4dp"
+                        android:text="Срок обучения:\n
+Очная форма - 3 года"
+                        android:textColor="@android:color/darker_gray"
+                        android:textSize="14sp"
+                        tools:ignore="HardcodedText,TextContrastCheck" />
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <!-- Карточка 2.2.15 -->
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="12dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="16dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="2.3.8"
+                        android:textSize="16sp"
+                        android:textStyle="bold"
+                        android:textColor="@android:color/black"
+                        tools:ignore="HardcodedText" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Системы, сети и устройства телекоммуникаций"
+                        android:textSize="14sp"
+                        android:textColor="@android:color/black"
+                        android:paddingTop="4dp"
+                        tools:ignore="HardcodedText" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingTop="4dp"
+                        android:text="Срок обучения:\n
+Очная форма - 4 года"
+                        android:textColor="@android:color/darker_gray"
+                        android:textSize="14sp"
+                        tools:ignore="HardcodedText,TextContrastCheck" />
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
             </LinearLayout>
         </ScrollView>
 

@@ -38,6 +38,12 @@
         <activity android:name=".Menu.EducationActivity"
             android:exported="false"/>
 
+        <activity android:name=".Menu.Education.EducationSpo1Activity"
+            android:exported="false"/>
+
+        <activity android:name=".Menu.Education.EducationSpo2Activity"
+            android:exported="false"/>
+
         <activity
             android:name=".MainActivity"
             android:exported="true"

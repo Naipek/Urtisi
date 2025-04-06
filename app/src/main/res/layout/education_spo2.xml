@@ -33,16 +33,21 @@
 
             <TextView
                 android:id="@+id/headerTitle"
-                android:layout_width="wrap_content"
+                android:layout_width="0dp"
                 android:layout_height="wrap_content"
-                android:text="@string/building"
+                android:text="Информационные системы и программирование"
                 android:textColor="@android:color/black"
                 android:textSize="20sp"
-                app:layout_constraintBottom_toBottomOf="parent"
+                android:maxLines="2"
+                android:ellipsize="end"
+                android:textAlignment="center"
+                app:layout_constraintStart_toEndOf="@id/logoImageView"
                 app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_bias="0.5"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="parent" />
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent"
+                android:layout_marginStart="8dp"
+                android:layout_marginEnd="8dp"
+                tools:ignore="HardcodedText" />
         </androidx.constraintlayout.widget.ConstraintLayout>
 
         <!-- Прокручиваемая область -->
@@ -64,18 +69,18 @@
                     android:id="@+id/helpText1"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="Полное наименование образовательной организации"
+                    android:text="Нормативный срок обучения по специальности:"
                     android:textColor="@android:color/black"
                     android:textSize="16sp"
                     android:textStyle="bold"
                     android:lineSpacingExtra="4dp"
                     tools:ignore="HardcodedText" />
-
                 <TextView
                     android:id="@+id/helpText2"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="Уральский технический институт связи и информатики (филиал) федерального государственного бюджетного образовательного учреждения высшего образования «Сибирский государственный университет телекоммуникаций и информатики» в г. Екатеринбурге\n"
+                    android:text="-на базе основного общего образования (9 классов) – 3 года 10 месяцев.
+\n-на базе среднего общего образования (11 классов) – 2 года 10 месяцев.\n"
                     android:textColor="@android:color/black"
                     android:textSize="16sp"
                     android:lineSpacingExtra="4dp"
@@ -85,7 +90,7 @@
                     android:id="@+id/helpText3"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="Сокращенное наименование образовательной организации"
+                    android:text="Квалификация выпускника – программист\n"
                     android:textColor="@android:color/black"
                     android:textSize="16sp"
                     android:textStyle="bold"
@@ -96,17 +101,19 @@
                     android:id="@+id/helpText4"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="УрТИСИ СибГУТИ\n"
+                    android:text=" Перед большинством предприятий и организаций рано или поздно встает вопрос автоматизации, и многие управленцы стремятся использовать достижения современных информационных технологий, поэтому программист является своего рода консультантом, выполняющим посредническую функцию между тем, чего желает получить руководитель, и тем, что предлагает на данный момент мир высоких технологий. В тех разработках, где нужен, прежде всего, поиск творческих решений, российские профессионалы считаются наиболее сильными во всем мире.\n
+Диапазон знаний выпускника специальности широк: архитектура и технические характеристики персональных компьютеров; возможности языков и сред программирования; технология проектирования и организация структур баз данных; особенности эксплуатации локальных вычислительных сетей различных типов; методы работы в глобальной вычислительной сети и способы программной защиты информации.\n
+Выпускник знает основные положения действующей нормативной документации, владеет основами организации деятельности предприятия. Он готов к профессиональной деятельности по разработке, модификации, адаптации, настройке и сопровождению программного обеспечения в качестве программиста  в организациях (на предприятиях) различной отраслевой направленности независимо от их организационно-правовых форм.\n"
                     android:textColor="@android:color/black"
                     android:textSize="16sp"
                     android:lineSpacingExtra="4dp"
-                    tools:ignore="HardcodedText" />
+                    tools:ignore="HardcodedText,VisualLintLongText" />
 
                 <TextView
                     android:id="@+id/helpText5"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="Дата создания"
+                    android:text="Выпускник готов к выполнению основных видов деятельности:"
                     android:textColor="@android:color/black"
                     android:textSize="16sp"
                     android:textStyle="bold"
@@ -117,7 +124,10 @@
                     android:id="@+id/helpText6"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="02.07.1998 г.\n"
+                    android:text="- разработка модулей программного обеспечения для компьютерных систем;
+\n- осуществление интеграции программных модулей;
+\n- сопровождение и обслуживание программного обеспечения компьютерных систем;
+\n- разработка, администрирование и защита баз данных.\n"
                     android:textColor="@android:color/black"
                     android:textSize="16sp"
                     android:lineSpacingExtra="4dp"
@@ -127,7 +137,7 @@
                     android:id="@+id/helpText7"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="Сведения об учредителях и вышестоящих организациях"
+                    android:text="Выпускник может работать:"
                     android:textColor="@android:color/black"
                     android:textSize="16sp"
                     android:textStyle="bold"
@@ -138,32 +148,22 @@
                     android:id="@+id/helpText8"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="Учредитель: Российская Федерация.
-Функции и полномочия Учредителя в соответствии с распоряжением Правительства Российской Федерации от 09.12.2020 №3266-р осуществляются Министерством цифрового развития, связи и массовых коммуникаций Российской Федерации. Официальное сокращенное название — Минцифры России.
-Глава ведомства — Министр цифрового развития, связи и массовых коммуникаций Российской Федерации Шадаев Максут Игоревич.
-Юридический адрес: 123112, г. Москва, Пресненская наб., д.10, стр.2 Справочная: +7 495 771-80-00, 8 800 222-15-01 (звонок по номерам в коде «800» по России бесплатный)
-\nСправки по документам: +7 495 771-81-00
-\nЭлектронный адрес: office@digital.gov.ru
-\nАдрес сайта: https://digital.gov.ru/ru/
-
-\n
-\nВышестоящая организация: федеральное государственное бюджетное образовательное учреждение высшего образования «Сибирский государственный университет телекоммуникаций и информатики» (СибГУТИ):
-Адрес: 630102 Сибирский федеральный округ, Новосибирская область, г. Новосибирск, ул. Кирова, д. 86
-Ректор СибГУТИ: Зазуля Юрий Владимирович.
-\nТелефон: +7 383 269-82-02
-\nАдрес сайта: https://www.sibsutis.ru
-\nЭлектронный адрес: rectorat@sibsutis.ru\n"
+                    android:text="- в компаниях или на предприятиях любого профиля;
+\n- в банковских и финансовых организациях;
+\n- в административных и муниципальных организациях;
+\n- в фирмах, реализующих услуги информационного и компьютерного рынка;
+\n- на заводах и предприятиях малого и среднего бизнеса.
+\nВыпускники работают программистами и разработчиками различных приложений, программного обеспечения, а также тестировщиками. Свою деятельность они осуществляют, работая в IT-компаниях. Для выпускников доступны вакансии системного администратора в любых организациях, а также они могут заниматься администрированием баз данных.\n"
                     android:textColor="@android:color/black"
                     android:textSize="16sp"
                     android:lineSpacingExtra="4dp"
-                    android:autoLink="web|email"
-                    tools:ignore="HardcodedText,VisualLintLongText" />
+                    tools:ignore="HardcodedText" />
 
                 <TextView
                     android:id="@+id/helpText9"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="Информация о месте нахождения организации"
+                    android:text="Возможности продолжения образования выпускника:"
                     android:textColor="@android:color/black"
                     android:textSize="16sp"
                     android:textStyle="bold"
@@ -174,60 +174,12 @@
                     android:id="@+id/helpText10"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="620109. Свердловская область, г. Екатеринбург, ул. Репина, д. 15.\n"
+                    android:text="Выпускник, освоивший основную образовательную программу среднего профессионального образования по специальности «Информационные системы и программирование», подготовлен к освоению основной профессиональной образовательной программы высшего профессионального образования и может продолжить обучение в институте связи для получения высшего образования (бакалавриат) по направления 09.03.01 «Информатика и вычислительная техника»."
                     android:textColor="@android:color/black"
                     android:textSize="16sp"
                     android:lineSpacingExtra="4dp"
                     tools:ignore="HardcodedText" />
 
-                <TextView
-                    android:id="@+id/helpText11"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:text="Информация о режиме и графике работы образовательной организации"
-                    android:textColor="@android:color/black"
-                    android:textSize="16sp"
-                    android:textStyle="bold"
-                    android:lineSpacingExtra="4dp"
-                    tools:ignore="HardcodedText" />
-
-                <TextView
-                    android:id="@+id/helpText12"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:text="Для работников института, кроме профессорско-преподавательского состава (пятидневная рабочая неделя): Понедельник - пятница: с 8.00 до 17.00, перерыв с 13.00 до 14.00 Суббота, воскресенье - выходные дни;
-для профессорско-преподавательского состава: шестидневная рабочая неделя с проведением занятий по расписанию и одним выходным днем в воскресенье.
-\nНачало учебных занятий - 8:30
-\nОкончание учебных занятий - 20:50\n"
-                    android:textColor="@android:color/black"
-                    android:textSize="16sp"
-                    android:lineSpacingExtra="4dp"
-                    tools:ignore="HardcodedText,VisualLintLongText" />
-
-                <TextView
-                    android:id="@+id/helpText13"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:text="Контактная информация"
-                    android:textColor="@android:color/black"
-                    android:textSize="16sp"
-                    android:textStyle="bold"
-                    android:lineSpacingExtra="4dp"
-                    tools:ignore="HardcodedText" />
-
-                <TextView
-                    android:id="@+id/helpText14"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:text="Приёмная директора: +7(343)317-31-84; +7(343)305-30-66, доб. 92-02; факс: +7(343)305-30-66, доб.0
-\nАдрес электронной почты: adm@uisi.ru, urtisi@sibguti.ru
-\nПриемная комиссия: (343) 305-30-66, доб. 92-19; +7(919) 370-06-89
-\nАдрес электронной почты: priem@urtisi.ru\n"
-                    android:textColor="@android:color/black"
-                    android:textSize="16sp"
-                    android:lineSpacingExtra="4dp"
-                    android:autoLink="email"
-                    tools:ignore="HardcodedText" />
 
 
             </LinearLayout>

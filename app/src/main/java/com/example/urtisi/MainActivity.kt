@@ -6,6 +6,7 @@ import android.widget.ImageView
 import androidx.appcompat.app.AppCompatActivity
 import androidx.cardview.widget.CardView
 import com.example.urtisi.Menu.CallActivity
+import com.example.urtisi.Menu.EducationActivity
 import com.example.urtisi.Menu.EmployeesActivity
 import com.example.urtisi.Menu.InstituteActivity
 
@@ -52,7 +53,7 @@ class MainActivity : AppCompatActivity() {
         val cardEducation = findViewById<CardView>(R.id.CardEducation)
         // Установить обработчик нажатия
         cardEducation.setOnClickListener {
-            val intent = Intent(this, InstituteActivity::class.java)
+            val intent = Intent(this, EducationActivity::class.java)
             startActivity(intent)
         }
     }

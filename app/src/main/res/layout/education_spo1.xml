@@ -33,16 +33,21 @@
 
             <TextView
                 android:id="@+id/headerTitle"
-                android:layout_width="wrap_content"
+                android:layout_width="0dp"
                 android:layout_height="wrap_content"
-                android:text="@string/building"
+                android:text="Инфокоммуникационные сети и системы связи"
                 android:textColor="@android:color/black"
                 android:textSize="20sp"
-                app:layout_constraintBottom_toBottomOf="parent"
+                android:maxLines="2"
+                android:ellipsize="end"
+                android:textAlignment="center"
+                app:layout_constraintStart_toEndOf="@id/logoImageView"
                 app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_bias="0.5"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="parent" />
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent"
+                android:layout_marginStart="8dp"
+                android:layout_marginEnd="8dp"
+                tools:ignore="HardcodedText" />
         </androidx.constraintlayout.widget.ConstraintLayout>
 
         <!-- Прокручиваемая область -->
@@ -64,18 +69,18 @@
                     android:id="@+id/helpText1"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="Полное наименование образовательной организации"
+                    android:text="Нормативный срок обучения по специальности:"
                     android:textColor="@android:color/black"
                     android:textSize="16sp"
                     android:textStyle="bold"
                     android:lineSpacingExtra="4dp"
                     tools:ignore="HardcodedText" />
-
                 <TextView
                     android:id="@+id/helpText2"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="Уральский технический институт связи и информатики (филиал) федерального государственного бюджетного образовательного учреждения высшего образования «Сибирский государственный университет телекоммуникаций и информатики» в г. Екатеринбурге\n"
+                    android:text="-на базе основного общего образования (9 классов) – 4 года 10 месяцев.
+\n-на базе среднего общего образования (11 классов) – 3 года 10 месяцев.\n"
                     android:textColor="@android:color/black"
                     android:textSize="16sp"
                     android:lineSpacingExtra="4dp"
@@ -85,7 +90,7 @@
                     android:id="@+id/helpText3"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="Сокращенное наименование образовательной организации"
+                    android:text="Квалификация выпускника – техник\n"
                     android:textColor="@android:color/black"
                     android:textSize="16sp"
                     android:textStyle="bold"
@@ -96,17 +101,20 @@
                     android:id="@+id/helpText4"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="УрТИСИ СибГУТИ\n"
+                    android:text=" Человечество движется по пути создания глобального информационного общества. Его основой становится всемирная информационная инфраструктура, составляющей которой являются мощные транспортные сети связи и распределенные сети доступа, предоставляющие информацию пользователям.\n
+Объём информации, передаваемой через информационно-телекоммуникационную инфраструктуру мира, удваивается каждые 2-3 года. Вся информация, которая создаётся в электронном виде, не может «добраться» до пункта назначения и обратно без обеспечения этого процесса специалистами Инфокоммуникационные сети и системы связи.\n
+Связь местная, между регионами нашей страны и международная связь осуществляются с комплексов, состоящих из линий связи и оборудования. Используются аналоговые и цифровые системы передачи, волоконно-оптические линии связи. По ним передаются все виды информации – аудио, видео, мультимедиа (т.е. телефонная связь, передача данных, телевидение, радиовещание, сигналы межсетевого взаимодействия Интернет и т.д.). Когда вы, например, работаете используя сети Интернет, вы даже не знаете, где находится тот информационный ресурс, к которому вы обращаетесь – в России, Европе или Америке, поскольку все соединяющие вас каналы являются «прозрачными» для всех видов информации.\n
+Методы построения компьютерных сетей и междугородных и международных сетей связи аналогичны, при изучении таких предметов как «Волоконно-оптические линии и системы передачи», «Цифровые системы передачи», «Транспортные сети», будущие выпускники этой специальности на достаточно высоком уровне узнают и принципы работы компьютерных сетей, цифровых коммутационных устройств, маршрутизаторов и другого оборудования сетевых технологий.\n"
                     android:textColor="@android:color/black"
                     android:textSize="16sp"
                     android:lineSpacingExtra="4dp"
-                    tools:ignore="HardcodedText" />
+                    tools:ignore="HardcodedText,VisualLintLongText" />
 
                 <TextView
                     android:id="@+id/helpText5"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="Дата создания"
+                    android:text="Выпускники специальности могут выполнять следующую работу:"
                     android:textColor="@android:color/black"
                     android:textSize="16sp"
                     android:textStyle="bold"
@@ -117,7 +125,10 @@
                     android:id="@+id/helpText6"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="02.07.1998 г.\n"
+                    android:text="- Техническое обслуживание, настроечные и ремонтные работы на аналоговых и цифровых системах передачи;
+\n- Техническое обслуживание, настроечные и ремонтные работы на волоконно-оптических системах передачи;
+\n- Техническое обслуживание и настроечные работы транспортных сетей любого назначения;
+\n- Техническое обслуживание и настроечные работы линейных сооружений связи – как медных, так и оптических;\n"
                     android:textColor="@android:color/black"
                     android:textSize="16sp"
                     android:lineSpacingExtra="4dp"
@@ -127,7 +138,7 @@
                     android:id="@+id/helpText7"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="Сведения об учредителях и вышестоящих организациях"
+                    android:text="Выпускники специальности могут работать:"
                     android:textColor="@android:color/black"
                     android:textSize="16sp"
                     android:textStyle="bold"
@@ -138,32 +149,19 @@
                     android:id="@+id/helpText8"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="Учредитель: Российская Федерация.
-Функции и полномочия Учредителя в соответствии с распоряжением Правительства Российской Федерации от 09.12.2020 №3266-р осуществляются Министерством цифрового развития, связи и массовых коммуникаций Российской Федерации. Официальное сокращенное название — Минцифры России.
-Глава ведомства — Министр цифрового развития, связи и массовых коммуникаций Российской Федерации Шадаев Максут Игоревич.
-Юридический адрес: 123112, г. Москва, Пресненская наб., д.10, стр.2 Справочная: +7 495 771-80-00, 8 800 222-15-01 (звонок по номерам в коде «800» по России бесплатный)
-\nСправки по документам: +7 495 771-81-00
-\nЭлектронный адрес: office@digital.gov.ru
-\nАдрес сайта: https://digital.gov.ru/ru/
-
-\n
-\nВышестоящая организация: федеральное государственное бюджетное образовательное учреждение высшего образования «Сибирский государственный университет телекоммуникаций и информатики» (СибГУТИ):
-Адрес: 630102 Сибирский федеральный округ, Новосибирская область, г. Новосибирск, ул. Кирова, д. 86
-Ректор СибГУТИ: Зазуля Юрий Владимирович.
-\nТелефон: +7 383 269-82-02
-\nАдрес сайта: https://www.sibsutis.ru
-\nЭлектронный адрес: rectorat@sibsutis.ru\n"
+                    android:text="- На любых узлах связи, принадлежащих как государственным структурам (Минсвязи, Минобороны и т.д.), так и коммерческим организациям (Операторам связи, Интернет-провайдерам и т.д.);
+\n- На обслуживании транспортных сетей;
+\n- В центрах спутниковой связи и т.д.\n"
                     android:textColor="@android:color/black"
                     android:textSize="16sp"
                     android:lineSpacingExtra="4dp"
-                    android:autoLink="web|email"
-                    tools:ignore="HardcodedText,VisualLintLongText" />
+                    tools:ignore="HardcodedText" />
 
                 <TextView
                     android:id="@+id/helpText9"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="Информация о месте нахождения организации"
+                    android:text="Возможности продолжения образования выпускника:"
                     android:textColor="@android:color/black"
                     android:textSize="16sp"
                     android:textStyle="bold"
@@ -174,60 +172,12 @@
                     android:id="@+id/helpText10"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="620109. Свердловская область, г. Екатеринбург, ул. Репина, д. 15.\n"
+                    android:text="- Выпускник, освоивший основную профессиональную образовательную программу среднего профессионального образования по специальности Инфокоммуникационные сети и системы связи, подготовлен к освоению основной профессиональной образовательной программы высшего профессионального образования и может продолжить обучение в институте связи для получения высшего образования (бакалавриат) по любому профилю направления 11.03.02 'Инфокоммуникационные технологии и системы связи.'"
                     android:textColor="@android:color/black"
                     android:textSize="16sp"
                     android:lineSpacingExtra="4dp"
                     tools:ignore="HardcodedText" />
 
-                <TextView
-                    android:id="@+id/helpText11"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:text="Информация о режиме и графике работы образовательной организации"
-                    android:textColor="@android:color/black"
-                    android:textSize="16sp"
-                    android:textStyle="bold"
-                    android:lineSpacingExtra="4dp"
-                    tools:ignore="HardcodedText" />
-
-                <TextView
-                    android:id="@+id/helpText12"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:text="Для работников института, кроме профессорско-преподавательского состава (пятидневная рабочая неделя): Понедельник - пятница: с 8.00 до 17.00, перерыв с 13.00 до 14.00 Суббота, воскресенье - выходные дни;
-для профессорско-преподавательского состава: шестидневная рабочая неделя с проведением занятий по расписанию и одним выходным днем в воскресенье.
-\nНачало учебных занятий - 8:30
-\nОкончание учебных занятий - 20:50\n"
-                    android:textColor="@android:color/black"
-                    android:textSize="16sp"
-                    android:lineSpacingExtra="4dp"
-                    tools:ignore="HardcodedText,VisualLintLongText" />
-
-                <TextView
-                    android:id="@+id/helpText13"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:text="Контактная информация"
-                    android:textColor="@android:color/black"
-                    android:textSize="16sp"
-                    android:textStyle="bold"
-                    android:lineSpacingExtra="4dp"
-                    tools:ignore="HardcodedText" />
-
-                <TextView
-                    android:id="@+id/helpText14"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:text="Приёмная директора: +7(343)317-31-84; +7(343)305-30-66, доб. 92-02; факс: +7(343)305-30-66, доб.0
-\nАдрес электронной почты: adm@uisi.ru, urtisi@sibguti.ru
-\nПриемная комиссия: (343) 305-30-66, доб. 92-19; +7(919) 370-06-89
-\nАдрес электронной почты: priem@urtisi.ru\n"
-                    android:textColor="@android:color/black"
-                    android:textSize="16sp"
-                    android:lineSpacingExtra="4dp"
-                    android:autoLink="email"
-                    tools:ignore="HardcodedText" />
 
 
             </LinearLayout>
