@@ -44,6 +44,9 @@
         <activity android:name=".Menu.Education.EducationSpo2Activity"
             android:exported="false"/>
 
+        <activity android:name=".Menu.Education.EducationBac1Activity"
+            android:exported="false"/>
+
         <activity
             android:name=".MainActivity"
             android:exported="true"

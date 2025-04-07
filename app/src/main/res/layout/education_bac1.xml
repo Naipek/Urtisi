@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.drawerlayout.widget.DrawerLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SettingsActivity">
+
+    <!-- Основной контейнер -->
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <!-- Верхняя шапка -->
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/headerLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#FFFFFF"
+            android:padding="16dp"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <ImageView
+                android:id="@+id/logoImageView"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:src="@drawable/logo"
+                android:contentDescription="@string/logo"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent" />
+
+            <TextView
+                android:id="@+id/headerTitle"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="Транспортные сети системы связи"
+                android:textColor="@android:color/black"
+                android:textSize="20sp"
+                android:maxLines="2"
+                android:ellipsize="end"
+                android:textAlignment="center"
+                app:layout_constraintStart_toEndOf="@id/logoImageView"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent"
+                android:layout_marginStart="8dp"
+                android:layout_marginEnd="8dp"
+                tools:ignore="HardcodedText" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <!-- Прокручиваемая область -->
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:descendantFocusability="blocksDescendants"
+            app:layout_constraintTop_toBottomOf="@id/headerLayout"
+            app:layout_constraintBottom_toTopOf="@id/footerLayout">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="16dp">
+
+                <!-- Текстовые поля -->
+                <TextView
+                    android:id="@+id/helpText1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="В названии профиля фактически описана основная задача, на которую ориентированы выпускники, а именно работа с оборудованием, программным обеспечением, составляющими компонентами сетей связи, обеспечивающих передачу сообщений от его источника к получателю.
+\n
+\n Студенты данного профиля по окончании обучения должны знать основные принципы построения первичной сети электросвязи, современные и перспективные направления развития транспортных телекоммуникационных сетей и систем, а также сетей и систем абонентского доступа, принципы построения телекоммуникационных систем различных типов, и способы распределения информации в сетях связи, принципы построения и функционирования мультисервисных сетей, сетей NGN, построения сетей, оборудование на основе транспортных технологий SDH, Ethernet, DWDM, IP MPLS, конструкции и характеристики проводных линий электросвязи на основе медножильных и волоконно-оптических кабелей, их конструктивные, механические, теоретические характеристики и особенности, принципы работы радиорелейных линий и систем передачи, основные технологии оптических сетей, организацию оптических цифровых сетей на основе проводных линий связи, а также сетей широкополосного радиодоступа и сетей сотовой связи поколения 5G, LTE. Уметь производить пуско-наладочные работы при вводе сегментов транспортных сетей в эксплуатацию, производить строительно-монтажные и аварийно-восстановительные работы на сетях связи. Владеть навыками технической эксплуатации многоканальных телекоммуникационных систем, систем абонентского широкополосного доступа, навыками расчетов параметров транспортных сетей на основе проводных и радиорелейных линий связи, а также сетей радиодоступа и широкополосной радиосвязи.
+\n
+\n Выпускники по окончании обучения могут работать на инженерных должностях, например, таких, как: инженер связи по эксплуатации оборудования связи, инженер проектировщик сооружений связи, инженер-проектировщик в области связи (телекоммуникаций), инженер технической поддержки, специалист связи на должностях в подразделениях связи государственных и коммерческих организаций.
+\n
+\n Основные виды деятельности: эксплуатация оборудования телекоммуникационных сетей и систем на предприятиях, проектирование телекоммуникационных сетей, строительство сооружений связи проводных сетей и сетей сотовой связи, монтаж, настройка современного телекоммуникационного оборудования различных фирм производителей.
+\n
+\n Все выпускники востребованы на рынке труда ведущими операторами связи: ПАО 'Ростелеком', ПАО 'МТС', ООО 'ТТК', ПАО 'Вымпелком' (Билайн), ООО 'Мобифон-2000' (Мотив), ПАО «Мегафон». Кроме этого выпускники работают в многочисленных телекоммуникационных компаниях - интернет провайдерах, а также в составе государственных структур - ФСБ, ФСО, Министерство обороны, МЧС, в организациях, где есть подразделения связи, обеспечивающих функционирование корпоративных и технологических сетей: ПАО «Сбербанк», ПАО «Газпром», ПАО «НК «Роснефть», ООО 'Газпром Связь', ПАО «РЖД» и т.д.
+\n
+\n Все выпускники могут продолжить обучение в институте связи для получения последующих ступеней высшего образования (магистратура) по направлению 11.04.02 «Инфокоммуникационные технологии и системы связи», и в аспирантуре по направлению 11.06.01 «Электроника, радиотехника и системы связи."
+                    android:textColor="@android:color/black"
+                    android:textSize="16sp"
+                    android:lineSpacingExtra="4dp"
+                    tools:ignore="HardcodedText,VisualLintLongText" />
+
+
+
+            </LinearLayout>
+        </ScrollView>
+
+        <!-- Нижняя панель -->
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/footerLayout"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:background="#FFFFFF"
+            app:layout_constraintBottom_toBottomOf="parent">
+
+            <ImageView
+                android:id="@+id/icon1"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:src="@drawable/ic_home"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toStartOf="@+id/icon2"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintHorizontal_chainStyle="spread"
+                app:layout_constraintHorizontal_weight="1"
+                tools:ignore="ContentDescription" />
+
+            <ImageView
+                android:id="@+id/icon2"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:src="@drawable/ic_calendar"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toStartOf="@id/icon3"
+                app:layout_constraintStart_toEndOf="@+id/icon1"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintHorizontal_weight="1"
+                tools:ignore="ContentDescription" />
+
+            <ImageView
+                android:id="@+id/icon3"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:src="@drawable/ic_map"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toStartOf="@id/icon4"
+                app:layout_constraintStart_toEndOf="@+id/icon2"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintHorizontal_weight="1"
+                tools:ignore="ContentDescription" />
+
+            <ImageView
+                android:id="@+id/icon4"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:src="@drawable/ic_settings"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/icon3"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintHorizontal_weight="1"
+                tools:ignore="ContentDescription" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.drawerlayout.widget.DrawerLayout>

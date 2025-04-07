@@ -1,0 +1,244 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.drawerlayout.widget.DrawerLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SettingsActivity">
+
+    <!-- Основной контейнер -->
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <!-- Верхняя шапка -->
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/headerLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#FFFFFF"
+            android:padding="16dp"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <ImageView
+                android:id="@+id/logoImageView"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:src="@drawable/logo"
+                android:contentDescription="@string/logo"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent" />
+
+            <TextView
+                android:id="@+id/headerTitle"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="Инфокоммуникационные сети и системы связи"
+                android:textColor="@android:color/black"
+                android:textSize="20sp"
+                android:maxLines="2"
+                android:ellipsize="end"
+                android:textAlignment="center"
+                app:layout_constraintStart_toEndOf="@id/logoImageView"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent"
+                android:layout_marginStart="8dp"
+                android:layout_marginEnd="8dp"
+                tools:ignore="HardcodedText" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <!-- Прокручиваемая область -->
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:descendantFocusability="blocksDescendants"
+            app:layout_constraintTop_toBottomOf="@id/headerLayout"
+            app:layout_constraintBottom_toTopOf="@id/footerLayout">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="16dp">
+
+                <!-- Текстовые поля -->
+                <TextView
+                    android:id="@+id/helpText1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Нормативный срок обучения по специальности:"
+                    android:textColor="@android:color/black"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    android:lineSpacingExtra="4dp"
+                    tools:ignore="HardcodedText" />
+                <TextView
+                    android:id="@+id/helpText2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="-на базе основного общего образования (9 классов) – 4 года 10 месяцев.
+\n-на базе среднего общего образования (11 классов) – 3 года 10 месяцев.\n"
+                    android:textColor="@android:color/black"
+                    android:textSize="16sp"
+                    android:lineSpacingExtra="4dp"
+                    tools:ignore="HardcodedText,VisualLintLongText" />
+
+                <TextView
+                    android:id="@+id/helpText3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Квалификация выпускника – техник\n"
+                    android:textColor="@android:color/black"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    android:lineSpacingExtra="4dp"
+                    tools:ignore="HardcodedText" />
+
+                <TextView
+                    android:id="@+id/helpText4"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text=" Человечество движется по пути создания глобального информационного общества. Его основой становится всемирная информационная инфраструктура, составляющей которой являются мощные транспортные сети связи и распределенные сети доступа, предоставляющие информацию пользователям.\n
+Объём информации, передаваемой через информационно-телекоммуникационную инфраструктуру мира, удваивается каждые 2-3 года. Вся информация, которая создаётся в электронном виде, не может «добраться» до пункта назначения и обратно без обеспечения этого процесса специалистами Инфокоммуникационные сети и системы связи.\n
+Связь местная, между регионами нашей страны и международная связь осуществляются с комплексов, состоящих из линий связи и оборудования. Используются аналоговые и цифровые системы передачи, волоконно-оптические линии связи. По ним передаются все виды информации – аудио, видео, мультимедиа (т.е. телефонная связь, передача данных, телевидение, радиовещание, сигналы межсетевого взаимодействия Интернет и т.д.). Когда вы, например, работаете используя сети Интернет, вы даже не знаете, где находится тот информационный ресурс, к которому вы обращаетесь – в России, Европе или Америке, поскольку все соединяющие вас каналы являются «прозрачными» для всех видов информации.\n
+Методы построения компьютерных сетей и междугородных и международных сетей связи аналогичны, при изучении таких предметов как «Волоконно-оптические линии и системы передачи», «Цифровые системы передачи», «Транспортные сети», будущие выпускники этой специальности на достаточно высоком уровне узнают и принципы работы компьютерных сетей, цифровых коммутационных устройств, маршрутизаторов и другого оборудования сетевых технологий.\n"
+                    android:textColor="@android:color/black"
+                    android:textSize="16sp"
+                    android:lineSpacingExtra="4dp"
+                    tools:ignore="HardcodedText,VisualLintLongText" />
+
+                <TextView
+                    android:id="@+id/helpText5"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Выпускники специальности могут выполнять следующую работу:"
+                    android:textColor="@android:color/black"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    android:lineSpacingExtra="4dp"
+                    tools:ignore="HardcodedText" />
+
+                <TextView
+                    android:id="@+id/helpText6"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="- Техническое обслуживание, настроечные и ремонтные работы на аналоговых и цифровых системах передачи;
+\n- Техническое обслуживание, настроечные и ремонтные работы на волоконно-оптических системах передачи;
+\n- Техническое обслуживание и настроечные работы транспортных сетей любого назначения;
+\n- Техническое обслуживание и настроечные работы линейных сооружений связи – как медных, так и оптических;\n"
+                    android:textColor="@android:color/black"
+                    android:textSize="16sp"
+                    android:lineSpacingExtra="4dp"
+                    tools:ignore="HardcodedText" />
+
+                <TextView
+                    android:id="@+id/helpText7"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Выпускники специальности могут работать:"
+                    android:textColor="@android:color/black"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    android:lineSpacingExtra="4dp"
+                    tools:ignore="HardcodedText" />
+
+                <TextView
+                    android:id="@+id/helpText8"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="- На любых узлах связи, принадлежащих как государственным структурам (Минсвязи, Минобороны и т.д.), так и коммерческим организациям (Операторам связи, Интернет-провайдерам и т.д.);
+\n- На обслуживании транспортных сетей;
+\n- В центрах спутниковой связи и т.д.\n"
+                    android:textColor="@android:color/black"
+                    android:textSize="16sp"
+                    android:lineSpacingExtra="4dp"
+                    tools:ignore="HardcodedText,VisualLintLongText" />
+
+                <TextView
+                    android:id="@+id/helpText9"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Возможности продолжения образования выпускника:"
+                    android:textColor="@android:color/black"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    android:lineSpacingExtra="4dp"
+                    tools:ignore="HardcodedText" />
+
+                <TextView
+                    android:id="@+id/helpText10"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="- Выпускник, освоивший основную профессиональную образовательную программу среднего профессионального образования по специальности Инфокоммуникационные сети и системы связи, подготовлен к освоению основной профессиональной образовательной программы высшего профессионального образования и может продолжить обучение в институте связи для получения высшего образования (бакалавриат) по любому профилю направления 11.03.02 'Инфокоммуникационные технологии и системы связи.'"
+                    android:textColor="@android:color/black"
+                    android:textSize="16sp"
+                    android:lineSpacingExtra="4dp"
+                    tools:ignore="HardcodedText,VisualLintLongText" />
+
+
+
+            </LinearLayout>
+        </ScrollView>
+
+        <!-- Нижняя панель -->
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/footerLayout"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:background="#FFFFFF"
+            app:layout_constraintBottom_toBottomOf="parent">
+
+            <ImageView
+                android:id="@+id/icon1"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:src="@drawable/ic_home"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toStartOf="@+id/icon2"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintHorizontal_chainStyle="spread"
+                app:layout_constraintHorizontal_weight="1"
+                tools:ignore="ContentDescription" />
+
+            <ImageView
+                android:id="@+id/icon2"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:src="@drawable/ic_calendar"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toStartOf="@id/icon3"
+                app:layout_constraintStart_toEndOf="@+id/icon1"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintHorizontal_weight="1"
+                tools:ignore="ContentDescription" />
+
+            <ImageView
+                android:id="@+id/icon3"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:src="@drawable/ic_map"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toStartOf="@id/icon4"
+                app:layout_constraintStart_toEndOf="@+id/icon2"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintHorizontal_weight="1"
+                tools:ignore="ContentDescription" />
+
+            <ImageView
+                android:id="@+id/icon4"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:src="@drawable/ic_settings"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/icon3"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintHorizontal_weight="1"
+                tools:ignore="ContentDescription" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.drawerlayout.widget.DrawerLayout>

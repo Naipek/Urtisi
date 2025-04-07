@@ -175,6 +175,7 @@
 
             <!-- Карточка 11.03.02 -->
             <androidx.cardview.widget.CardView
+                android:id="@+id/Cardbac1"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="12dp">
@@ -236,6 +237,7 @@
 
             <!-- Карточка 11.03.02 -->
             <androidx.cardview.widget.CardView
+                android:id="@+id/Cardbac2"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="12dp">
