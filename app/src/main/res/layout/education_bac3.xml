@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.drawerlayout.widget.DrawerLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SettingsActivity">
+
+    <!-- Основной контейнер -->
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <!-- Верхняя шапка -->
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/headerLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#FFFFFF"
+            android:padding="16dp"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <ImageView
+                android:id="@+id/logoImageView"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:src="@drawable/logo"
+                android:contentDescription="@string/logo"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent" />
+
+            <TextView
+                android:id="@+id/headerTitle"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="Программирование в информационных системах"
+                android:textColor="@android:color/black"
+                android:textSize="20sp"
+                android:maxLines="2"
+                android:ellipsize="end"
+                android:textAlignment="center"
+                app:layout_constraintStart_toEndOf="@id/logoImageView"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent"
+                android:layout_marginStart="8dp"
+                android:layout_marginEnd="8dp"
+                tools:ignore="HardcodedText" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <!-- Прокручиваемая область -->
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:descendantFocusability="blocksDescendants"
+            app:layout_constraintTop_toBottomOf="@id/headerLayout"
+            app:layout_constraintBottom_toTopOf="@id/footerLayout">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="16dp">
+
+                <!-- Текстовые поля -->
+                <TextView
+                    android:id="@+id/helpText1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Информационные технологии (ИТ) – одна из наиболее быстро развивающихся отраслей. Информационные технологии приводят к цифровой трансформации любой отрасли реального сектора экономики Российской Федерации да и всего мира. В наше время уже невозможно представить не одно производство без применения информационных технологий. А значит знания и умения в профиле «Программирование в информационных системах» являются универсальными и востребованными в любой области. Производство, проектирование, добыча ресурсов, логистика, управление ресурсами, маркетинг, продажи, социальные проекты, управление людьми – все эти и многие другие области изменяются под воздействием ИТ и требуют активного вовлечения ИТ-специалистов.
+\n Инновации в других отраслях рождаются на стыке с ИТ, поэтому возникает большое количество кросс-отраслевых задач для прорыва. Тем не менее разработка и производство «железа», программного обеспечения (ПО) и систем безопасности остаются приоритетными задачами внутри ИТ-сектора. Высокоперспективное направление – проектирование виртуальных пространств и интерфейсов для взаимодействия с ними.
+\n Выпускники по направлению подготовки 'Информатика и вычислительная техника' будут профессионально заниматься внедрением ИТ технологий во все сферы деятельности государства, проектировать и администрировать сети передачи данных, управлять автоматизированными системами обработки информации, работать с большими данными и анализировать их, разрабатывать математические модели оптимизации процессов производства, создавать нейронные сети для искусственного интеллекта.
+\n Профессии:
+\n
+\n -Программист
+\n
+\n -IT-специалист
+\n
+\n -Web-администратор
+\n
+\n -Web-дизайнер
+\n
+\n -Web-программист
+\n
+\n -Администратор базы данных
+\n
+\n -Сетевой администратор
+\n
+\n -Разработчик баз данных
+\n
+\n -Системный аналитик
+\n
+\n -Системный программист
+\n
+\n -Электроник
+\n
+\n Профессии очень востребованные в наше время, и не потеряют актуальности и в ближайшем будущем, особенно при всеобщей информатизации и цифровой трансформации, переводу производства на робототехнику, развитию систем связи пятого поколения (5G) и “Интернета вещей” (IoT).\n"
+                    android:textColor="@android:color/black"
+                    android:textSize="16sp"
+                    android:lineSpacingExtra="4dp"
+                    tools:ignore="HardcodedText,VisualLintLongText" />
+
+
+            </LinearLayout>
+        </ScrollView>
+
+        <!-- Нижняя панель -->
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/footerLayout"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:background="#FFFFFF"
+            app:layout_constraintBottom_toBottomOf="parent">
+
+            <ImageView
+                android:id="@+id/icon1"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:src="@drawable/ic_home"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toStartOf="@+id/icon2"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintHorizontal_chainStyle="spread"
+                app:layout_constraintHorizontal_weight="1"
+                tools:ignore="ContentDescription" />
+
+            <ImageView
+                android:id="@+id/icon2"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:src="@drawable/ic_calendar"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toStartOf="@id/icon3"
+                app:layout_constraintStart_toEndOf="@+id/icon1"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintHorizontal_weight="1"
+                tools:ignore="ContentDescription" />
+
+            <ImageView
+                android:id="@+id/icon3"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:src="@drawable/ic_map"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toStartOf="@id/icon4"
+                app:layout_constraintStart_toEndOf="@+id/icon2"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintHorizontal_weight="1"
+                tools:ignore="ContentDescription" />
+
+            <ImageView
+                android:id="@+id/icon4"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:src="@drawable/ic_settings"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/icon3"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintHorizontal_weight="1"
+                tools:ignore="ContentDescription" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.drawerlayout.widget.DrawerLayout>

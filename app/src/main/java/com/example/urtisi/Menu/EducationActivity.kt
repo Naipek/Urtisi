@@ -7,6 +7,8 @@ import androidx.appcompat.app.AppCompatActivity
 import androidx.cardview.widget.CardView
 import com.example.urtisi.MainActivity
 import com.example.urtisi.Menu.Education.EducationBac1Activity
+import com.example.urtisi.Menu.Education.EducationBac2Activity
+import com.example.urtisi.Menu.Education.EducationBac3Activity
 import com.example.urtisi.Menu.Education.EducationSpo1Activity
 import com.example.urtisi.Menu.Education.EducationSpo2Activity
 import com.example.urtisi.R
@@ -50,6 +52,22 @@ class EducationActivity : AppCompatActivity() {
         // Установить обработчик нажатия
         cardbac1.setOnClickListener {
             val intent = Intent(this, EducationBac1Activity::class.java)
+            startActivity(intent)
+        }
+
+        // Найти карточку БАК2
+        val cardbac2 = findViewById<CardView>(R.id.Cardbac2)
+        // Установить обработчик нажатия
+        cardbac2.setOnClickListener {
+            val intent = Intent(this, EducationBac2Activity::class.java)
+            startActivity(intent)
+        }
+
+        // Найти карточку БАК3
+        val cardbac3 = findViewById<CardView>(R.id.Cardbac3)
+        // Установить обработчик нажатия
+        cardbac3.setOnClickListener {
+            val intent = Intent(this, EducationBac3Activity::class.java)
             startActivity(intent)
         }
 

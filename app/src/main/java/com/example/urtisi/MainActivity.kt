@@ -5,6 +5,7 @@ import android.os.Bundle
 import android.widget.ImageView
 import androidx.appcompat.app.AppCompatActivity
 import androidx.cardview.widget.CardView
+import com.example.urtisi.Menu.BasicActivity
 import com.example.urtisi.Menu.CallActivity
 import com.example.urtisi.Menu.EducationActivity
 import com.example.urtisi.Menu.EmployeesActivity
@@ -54,6 +55,14 @@ class MainActivity : AppCompatActivity() {
         // Установить обработчик нажатия
         cardEducation.setOnClickListener {
             val intent = Intent(this, EducationActivity::class.java)
+            startActivity(intent)
+        }
+
+        // Найти карточку Основное
+        val cardBasic = findViewById<CardView>(R.id.CardBasic)
+        // Установить обработчик нажатия
+        cardBasic.setOnClickListener {
+            val intent = Intent(this, BasicActivity::class.java)
             startActivity(intent)
         }
     }

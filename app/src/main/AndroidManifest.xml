@@ -47,6 +47,15 @@
         <activity android:name=".Menu.Education.EducationBac1Activity"
             android:exported="false"/>
 
+        <activity android:name=".Menu.Education.EducationBac2Activity"
+            android:exported="false"/>
+
+        <activity android:name=".Menu.Education.EducationBac3Activity"
+            android:exported="false"/>
+
+        <activity android:name=".Menu.BasicActivity"
+            android:exported="false"/>
+
         <activity
             android:name=".MainActivity"
             android:exported="true"
