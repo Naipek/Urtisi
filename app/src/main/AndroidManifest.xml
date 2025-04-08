@@ -56,6 +56,9 @@
         <activity android:name=".Menu.BasicActivity"
             android:exported="false"/>
 
+        <activity android:name=".Menu.CafedraActivity"
+            android:exported="false"/>
+
         <activity
             android:name=".MainActivity"
             android:exported="true"

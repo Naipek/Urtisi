@@ -107,7 +107,7 @@
                     android:id="@+id/helpText5"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="Зачем нужно приложение?\n"
+                    android:text="Удачного использования! :)\n"
                     android:textColor="@android:color/black"
                     android:textSize="16sp"
                     android:textStyle="bold"
