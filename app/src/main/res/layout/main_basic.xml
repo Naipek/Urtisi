@@ -64,9 +64,8 @@
                     android:id="@+id/callText1"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="Студенческий билет\n"
+                    android:text="С началом обучения в институте у тебя появиться несколько новых вещей, постарайся таскать их с собой! \n"
                     android:textColor="@android:color/black"
-                    android:textStyle="bold"
                     android:textSize="16sp"
                     android:lineSpacingExtra="4dp"
                     tools:ignore="HardcodedText,VisualLintLongText" />
@@ -75,7 +74,66 @@
                     android:id="@+id/callText2"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="Один из важнейших вещей студента - студик"
+                    android:text="Студенческий билет\n"
+                    android:textColor="@android:color/black"
+                    android:textStyle="bold"
+                    android:textSize="16sp"
+                    android:lineSpacingExtra="4dp"
+                    tools:ignore="HardcodedText,VisualLintLongText" />
+
+                <TextView
+                    android:id="@+id/callText3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Один из важнейших вещей студента - студик. Он показывает твой статус студента, а также предоставляет скидки на пригородный проезд.
+\nСтудик тебе выдадут уже после торжественной линейки, если ты успел сдать фотографию на него.
+\nНе забывай ежегодно продлять его в деканате, чтобы получать скидки!
+\n*При потере или случайной почре обратись в деканат.\n"
+                    android:textColor="@android:color/black"
+                    android:textSize="16sp"
+                    android:lineSpacingExtra="4dp"
+                    tools:ignore="HardcodedText,VisualLintLongText" />
+
+                <TextView
+                    android:id="@+id/callText4"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Электронный пропуск\n"
+                    android:textColor="@android:color/black"
+                    android:textStyle="bold"
+                    android:textSize="16sp"
+                    android:lineSpacingExtra="4dp"
+                    tools:ignore="HardcodedText,VisualLintLongText" />
+
+                <TextView
+                    android:id="@+id/callText5"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Является пластиковой карточкой с чипом внутри, которая позволит тебе пройти через турникет в институт или общежитие. У студентов проживающих в общежитии отдельный пропус, действующий на турникеты в общежитии.
+\nВыдают пропус в течении месяца после начала учёбы.
+\n*При неисправной работе пропуска обратись в деканат.\n"
+                    android:textColor="@android:color/black"
+                    android:textSize="16sp"
+                    android:lineSpacingExtra="4dp"
+                    tools:ignore="HardcodedText,VisualLintLongText" />
+
+                <TextView
+                    android:id="@+id/callText6"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Стипендиальная карта\n"
+                    android:textColor="@android:color/black"
+                    android:textStyle="bold"
+                    android:textSize="16sp"
+                    android:lineSpacingExtra="4dp"
+                    tools:ignore="HardcodedText,VisualLintLongText" />
+
+                <TextView
+                    android:id="@+id/callText7"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Банковская на которую падают твои кровные гроши, если ты являешься студентом бюджетной формы обучения.
+\nО получении карты тебе сообщит деканат."
                     android:textColor="@android:color/black"
                     android:textSize="16sp"
                     android:lineSpacingExtra="4dp"
