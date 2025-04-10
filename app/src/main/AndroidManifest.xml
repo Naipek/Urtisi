@@ -59,6 +59,18 @@
         <activity android:name=".Menu.CafedraActivity"
             android:exported="false"/>
 
+        <activity android:name=".Menu.QuestionsActivity"
+            android:exported="false"/>
+
+        <activity android:name=".Menu.ReferencesActivity"
+            android:exported="false"/>
+
+        <activity android:name=".Menu.FactsActivity"
+            android:exported="false"/>
+
+        <activity android:name=".Menu.StatementActivity"
+            android:exported="false"/>
+
         <activity
             android:name=".MainActivity"
             android:exported="true"

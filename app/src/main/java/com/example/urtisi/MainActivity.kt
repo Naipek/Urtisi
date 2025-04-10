@@ -10,7 +10,11 @@ import com.example.urtisi.Menu.CafedraActivity
 import com.example.urtisi.Menu.CallActivity
 import com.example.urtisi.Menu.EducationActivity
 import com.example.urtisi.Menu.EmployeesActivity
+import com.example.urtisi.Menu.FactsActivity
 import com.example.urtisi.Menu.InstituteActivity
+import com.example.urtisi.Menu.QuestionsActivity
+import com.example.urtisi.Menu.ReferencesActivity
+import com.example.urtisi.Menu.StatementActivity
 
 class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -72,6 +76,38 @@ class MainActivity : AppCompatActivity() {
         // Установить обработчик нажатия
         cardCafedra.setOnClickListener {
             val intent = Intent(this, CafedraActivity::class.java)
+            startActivity(intent)
+        }
+
+        // Найти карточку Факты
+        val cardFacts = findViewById<CardView>(R.id.CardFacts)
+        // Установить обработчик нажатия
+        cardFacts.setOnClickListener {
+            val intent = Intent(this, FactsActivity::class.java)
+            startActivity(intent)
+        }
+
+        // Найти карточку Вопросы
+        val cardQuestions = findViewById<CardView>(R.id.CardQuestions)
+        // Установить обработчик нажатия
+        cardQuestions.setOnClickListener {
+            val intent = Intent(this, QuestionsActivity::class.java)
+            startActivity(intent)
+        }
+
+        // Найти карточку Справки
+        val cardReferences = findViewById<CardView>(R.id.CardReferences)
+        // Установить обработчик нажатия
+        cardReferences.setOnClickListener {
+            val intent = Intent(this, ReferencesActivity::class.java)
+            startActivity(intent)
+        }
+
+        // Найти карточку Ведомость
+        val cardStatement = findViewById<CardView>(R.id.CardStatement)
+        // Установить обработчик нажатия
+        cardStatement.setOnClickListener {
+            val intent = Intent(this, StatementActivity::class.java)
             startActivity(intent)
         }
     }
