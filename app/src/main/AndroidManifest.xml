@@ -71,6 +71,9 @@
         <activity android:name=".Menu.StatementActivity"
             android:exported="false"/>
 
+        <activity android:name=".Menu.Cafedrs.CafedraMeActivity"
+            android:exported="false"/>
+
         <activity
             android:name=".MainActivity"
             android:exported="true"

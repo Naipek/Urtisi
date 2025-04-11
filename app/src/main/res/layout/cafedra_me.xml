@@ -1,0 +1,260 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.drawerlayout.widget.DrawerLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SettingsActivity">
+
+    <!-- Основной контейнер -->
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <!-- Верхняя шапка -->
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/headerLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#FFFFFF"
+            android:padding="16dp"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <ImageView
+                android:id="@+id/logoImageView"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:src="@drawable/logo"
+                android:contentDescription="@string/logo"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent" />
+
+            <TextView
+                android:id="@+id/headerTitle"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="Многоканальная электросвязь"
+                android:textColor="@android:color/black"
+                android:textSize="20sp"
+                android:maxLines="2"
+                android:ellipsize="end"
+                android:textAlignment="center"
+                app:layout_constraintStart_toEndOf="@id/logoImageView"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent"
+                android:layout_marginStart="8dp"
+                android:layout_marginEnd="8dp"
+                tools:ignore="HardcodedText" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <!-- Прокручиваемая область -->
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:descendantFocusability="blocksDescendants"
+            app:layout_constraintTop_toBottomOf="@id/headerLayout"
+            app:layout_constraintBottom_toTopOf="@id/footerLayout">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="16dp">
+
+                <!-- Текстовые поля -->
+                <TextView
+                    android:id="@+id/helpText1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Кафедра существует с момента образования учебного заведения. Основное направление работы кафедры – подготовка специалистов по технической эксплуатации оптических и электрических телекоммуникационных систем, которые в настоящее время, являются платформой построения всех звеньев Единой сети электросвязи Российской федерации.\n"
+                    android:textColor="@android:color/black"
+                    android:textSize="16sp"
+                    android:lineSpacingExtra="4dp"
+                    tools:ignore="HardcodedText,VisualLintLongText" />
+
+                <TextView
+                    android:id="@+id/helpText2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Кафедра осуществляет подготовку по направлению «Инфокоммуникационные технологии и системы связи» (бакалавриат), профили «Транспортные сети и системы связи», «Технологии и системы оптической связи», «Инфокоммуникационные сети и системы» (11.03.02), магистратура направленности «Сети, системы и устройства телекоммуникаций»(11.04.02).
+При кафедре организована цикловая комиссия многоканальных телекоммуникационных систем, где производится подготовка специалистов среднего специального образования по специальности «Инфокоммуникационные сети и системы связи» (11.02.15).
+На кафедре работают опытные высококвалифицированные преподаватели. В составе профессорско-преподавательского состава кафедры – 3 кандидата наук. Преподавание ведётся с использованием мультимедийного оборудования, что позволяет значительно повысить глубину понимания и наглядность учебного материала.\n"
+                    android:textColor="@android:color/black"
+                    android:textSize="16sp"
+                    android:lineSpacingExtra="4dp"
+                    tools:ignore="HardcodedText" />
+
+                <TextView
+                    android:id="@+id/helpText3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Состав кафедры:\n"
+                    android:textColor="@android:color/black"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    android:lineSpacingExtra="4dp"
+                    tools:ignore="HardcodedText,VisualLintLongText" />
+
+                <TextView
+                    android:id="@+id/helpText4"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Гниломедов Ефим Иванович – и.о. зав. кафедрой, доцент;
+\nМинина Елена Александровна - к.т.н., доцент;
+\nКусайкин Дмитрий Вячеславович - к.т.н., доцент;
+\nШестаков Иван Игоревич - старший преподаватель;
+\nСалифов Ильнур Илдарович - к.т.н., доцент;
+\nКичигина Галина Викторовна – старший преподаватель;
+\nГительман Мария Васильевна – старший преподаватель;
+\nБурумбаев Даниль Ильмирович – заведующий лабораториями кафедры МЭС.
+\nПотапов Николай Сергеевич - преподаватель;
+\nПермяков Евгений Борисович, преподаватель цикловой комиссии многоканальных телекоммуникационных систем;
+\nЛунев Александр Владимирович, преподаватель цикловой комиссии многоканальных телекоммуникационных систем;
+\nБелых Павел Евгеньевич – заведующий лабораториями кафедры;\n"
+                    android:textColor="@android:color/black"
+                    android:textSize="16sp"
+                    android:lineSpacingExtra="4dp"
+                    tools:ignore="HardcodedText" />
+
+                <TextView
+                    android:id="@+id/helpText5"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Научная деятельность кафедры\n"
+                    android:textColor="@android:color/black"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    android:lineSpacingExtra="4dp"
+                    tools:ignore="HardcodedText" />
+
+                <TextView
+                    android:id="@+id/helpText6"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Основные направления научной деятельности кафедры и лабораторий:
+\n- настройка и техническая эксплуатация сетей PON на базе натурной модели сети GPON;
+\n- исследование процессов, протекающих в пассивных разветвленных сетях на базе на базе натурной модели сети PON;
+\n- исследования лазерных атмосферных линий связи;
+\n- исследование технологий и элементов транспортных сетей связи;
+\n- исследование систем DWDM;
+\n- исследование оптических усилителей;
+\n- исследование вопросов распространения сигналов в оптических волокнах;
+\n- защита информации в многоканальных системах передачи;
+\n- моделирование процессов узлов и блоков в телекоммуникационном оборудовании;
+\n- исследование систем «умных» вещей;
+\n-внедрение технологических ресурсов в учебный процесс;
+\nНа кафедре организована студенческая научная работа, охватывающая практически все современные цифровые телекоммуникационные технологии.
+Ежегодно проводятся студенческие научно-практические конференции.\n"
+                    android:textColor="@android:color/black"
+                    android:textSize="16sp"
+                    android:lineSpacingExtra="4dp"
+                    tools:ignore="HardcodedText,VisualLintLongText" />
+
+                <TextView
+                    android:id="@+id/helpText7"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Лабораторная база"
+                    android:textColor="@android:color/black"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    android:lineSpacingExtra="4dp"
+                    tools:ignore="HardcodedText" />
+
+                <TextView
+                    android:id="@+id/helpText8"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Для организации учебного процесса кафедра располагает мощной лабораторной базой, оснащенной современными лабораторными установками, компьютерными классами, системами передачи, измерительной техникой отечественных и зарубежных производителей. В лабораториях установлены системы, используемые операторами на реальных сетях связи. На кафедре организованы лаборатории «Сети доступа архитектуры FTTx», «Транспортные сети и системы связи», «Системы с волновым спектральным мультиплексированием», «Системы комплексной безопасности», «Метрология, стандартизация и сертификация в отрасли инфокоммуникаций», «Методы и средства измерений в телекомуникационных системах», «Аппаратура и сети доступа», «Направляющие системы электросвязи», «Сети связи и системы коммутации».
+\nИмеющееся лабораторное оборудование используется не только в учебном процессе, но и при проведении научных исследований магистрантами и аспирантами.\n"
+                    android:textColor="@android:color/black"
+                    android:textSize="16sp"
+                    android:lineSpacingExtra="4dp"
+                    tools:ignore="HardcodedText,VisualLintLongText" />
+
+                <TextView
+                    android:id="@+id/helpText9"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Востребованность выпускников"
+                    android:textColor="@android:color/black"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    android:lineSpacingExtra="4dp"
+                    tools:ignore="HardcodedText" />
+
+                <TextView
+                    android:id="@+id/helpText10"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Все выпускники на сегодняшний день востребованы на рынке труда ведущими операторами связи: ПАО «Ростелеком», ПАО «МТС», ООО «ТТК», ПАО «Вымпелком» (Билайн), ООО «Мобифон-2000» (Мотив). Кроме этого выпускники работают в многочисленных телекоммуникационных компаниях Интернет-провайдерах, в составе государственных структур - ФСБ, ФСО, Министерство обороны. Не обходятся без выпускников кафедры предприятия, обеспечивающие законченный цикл производства и имеющие свои сети технологической связи, такие как: ПАО «Газпром», НК «Роснефть», ПАО «Россети», ОАО «РЖД».\n"
+                    android:textColor="@android:color/black"
+                    android:textSize="16sp"
+                    android:lineSpacingExtra="4dp"
+                    tools:ignore="HardcodedText,VisualLintLongText" />
+
+            </LinearLayout>
+        </ScrollView>
+
+        <!-- Нижняя панель -->
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/footerLayout"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:background="#FFFFFF"
+            app:layout_constraintBottom_toBottomOf="parent">
+
+            <ImageView
+                android:id="@+id/icon1"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:src="@drawable/ic_home"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toStartOf="@+id/icon2"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintHorizontal_chainStyle="spread"
+                app:layout_constraintHorizontal_weight="1"
+                tools:ignore="ContentDescription" />
+
+            <ImageView
+                android:id="@+id/icon2"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:src="@drawable/ic_calendar"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toStartOf="@id/icon3"
+                app:layout_constraintStart_toEndOf="@+id/icon1"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintHorizontal_weight="1"
+                tools:ignore="ContentDescription" />
+
+            <ImageView
+                android:id="@+id/icon3"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:src="@drawable/ic_map"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toStartOf="@id/icon4"
+                app:layout_constraintStart_toEndOf="@+id/icon2"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintHorizontal_weight="1"
+                tools:ignore="ContentDescription" />
+
+            <ImageView
+                android:id="@+id/icon4"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:src="@drawable/ic_settings"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/icon3"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintHorizontal_weight="1"
+                tools:ignore="ContentDescription" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.drawerlayout.widget.DrawerLayout>

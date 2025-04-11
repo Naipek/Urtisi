@@ -41,7 +41,8 @@
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintHorizontal_bias="0.5"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="parent" />
+                app:layout_constraintTop_toTopOf="parent"
+                tools:ignore="HardcodedText" />
         </androidx.constraintlayout.widget.ConstraintLayout>
 
         <!-- Прокручиваемая область с DrawerLayout -->
@@ -60,9 +61,9 @@
                 android:orientation="vertical"
                 android:padding="16dp">
 
-                <!-- Карточка Личная ведомость -->
+                <!-- Карточка Многоканальная электросвязь -->
                 <androidx.cardview.widget.CardView
-                    android:id="@+id/CardStatement"
+                    android:id="@+id/CardMe"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_margin="16dp"
@@ -71,40 +72,218 @@
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintEnd_toEndOf="parent">
 
-                    <androidx.constraintlayout.widget.ConstraintLayout
+                    <LinearLayout
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:padding="16dp">
+                        android:orientation="vertical"
+                        android:padding="0dp">
 
-
-                        <!-- Иконка -->
+                        <!-- Изображение с фиксированным соотношением сторон 16:9 -->
                         <ImageView
-                            android:id="@+id/cardIconChecklist"
-                            android:layout_width="40dp"
-                            android:layout_height="40dp"
-                            android:contentDescription="Иконка карточки"
-                            android:src="@drawable/ic_checklist"
-                            app:layout_constraintBottom_toBottomOf="parent"
-                            app:layout_constraintStart_toStartOf="parent"
-                            app:layout_constraintTop_toTopOf="parent"
+                            android:id="@+id/cardMe"
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_weight="1"
+                            android:scaleType="centerCrop"
+                            android:adjustViewBounds="true"
+                            android:src="@drawable/ic_me"
+                            android:contentDescription="Описание изображения"
+                            android:minHeight="180dp"
+                            android:layout_marginBottom="16dp"
                             tools:ignore="HardcodedText" />
 
-                        <!-- Текст -->
+                        <!-- Текст под изображением -->
                         <TextView
-                            android:id="@+id/cardText4"
-                            android:layout_width="0dp"
+                            android:id="@+id/cardText1"
+                            android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:gravity="center"
-                            android:text="@string/statement"
+                            android:text="Многоканальная электросвязь"
                             android:textColor="@android:color/black"
                             android:textSize="16sp"
-                            app:layout_constraintBottom_toBottomOf="parent"
-                            app:layout_constraintEnd_toEndOf="parent"
-                            app:layout_constraintHorizontal_bias="0.5"
-                            app:layout_constraintStart_toEndOf="@id/cardIconChecklist"
-                            app:layout_constraintTop_toTopOf="parent"
+                            android:padding="16dp"
                             tools:ignore="HardcodedText" />
-                    </androidx.constraintlayout.widget.ConstraintLayout>
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+
+                <!-- Карточка Инфокоммуникационных технологий и мобильной связи -->
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/CardItims"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="16dp"
+                    app:cardCornerRadius="8dp"
+                    app:cardElevation="4dp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:padding="0dp">
+
+                        <!-- Изображение с фиксированным соотношением сторон 16:9 -->
+                        <ImageView
+                            android:id="@+id/cardItims"
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_weight="1"
+                            android:scaleType="centerCrop"
+                            android:adjustViewBounds="true"
+                            android:src="@drawable/ic_me"
+                            android:contentDescription="Описание изображения"
+                            android:minHeight="180dp"
+                            android:layout_marginBottom="16dp"
+                            tools:ignore="HardcodedText" />
+
+                        <!-- Текст под изображением -->
+                        <TextView
+                            android:id="@+id/cardText2"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:text="Инфокоммуникационных технологий и мобильной связи"
+                            android:textColor="@android:color/black"
+                            android:textSize="16sp"
+                            android:padding="16dp"
+                            tools:ignore="HardcodedText" />
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+
+                <!-- Карточка Высшей математики и физики -->
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/CardVmif"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="16dp"
+                    app:cardCornerRadius="8dp"
+                    app:cardElevation="4dp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:padding="0dp">
+
+                        <!-- Изображение с фиксированным соотношением сторон 16:9 -->
+                        <ImageView
+                            android:id="@+id/cardVmif"
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_weight="1"
+                            android:scaleType="centerCrop"
+                            android:adjustViewBounds="true"
+                            android:src="@drawable/ic_me"
+                            android:contentDescription="Описание изображения"
+                            android:minHeight="180dp"
+                            android:layout_marginBottom="16dp"
+                            tools:ignore="HardcodedText" />
+
+                        <!-- Текст под изображением -->
+                        <TextView
+                            android:id="@+id/cardText3"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:text="Высшей математики и физики"
+                            android:textColor="@android:color/black"
+                            android:textSize="16sp"
+                            android:padding="16dp"
+                            tools:ignore="HardcodedText" />
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+
+                <!-- Карточка Информационных систем и технологий -->
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/CardIst"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="16dp"
+                    app:cardCornerRadius="8dp"
+                    app:cardElevation="4dp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:padding="0dp">
+
+                        <!-- Изображение с фиксированным соотношением сторон 16:9 -->
+                        <ImageView
+                            android:id="@+id/cardIst"
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_weight="1"
+                            android:scaleType="centerCrop"
+                            android:adjustViewBounds="true"
+                            android:src="@drawable/ic_me"
+                            android:contentDescription="Описание изображения"
+                            android:minHeight="180dp"
+                            android:layout_marginBottom="16dp"
+                            tools:ignore="HardcodedText" />
+
+                        <!-- Текст под изображением -->
+                        <TextView
+                            android:id="@+id/cardText4"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:text="Высшей математики и физики"
+                            android:textColor="@android:color/black"
+                            android:textSize="16sp"
+                            android:padding="16dp"
+                            tools:ignore="HardcodedText" />
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+
+                <!-- Карточка Экономики связи -->
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/CardEs"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="16dp"
+                    app:cardCornerRadius="8dp"
+                    app:cardElevation="4dp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:padding="0dp">
+
+                        <!-- Изображение с фиксированным соотношением сторон 16:9 -->
+                        <ImageView
+                            android:id="@+id/cardEs"
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_weight="1"
+                            android:scaleType="centerCrop"
+                            android:adjustViewBounds="true"
+                            android:src="@drawable/ic_me"
+                            android:contentDescription="Описание изображения"
+                            android:minHeight="180dp"
+                            android:layout_marginBottom="16dp"
+                            tools:ignore="HardcodedText" />
+
+                        <!-- Текст под изображением -->
+                        <TextView
+                            android:id="@+id/cardText5"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:text="Экономики связи"
+                            android:textColor="@android:color/black"
+                            android:textSize="16sp"
+                            android:padding="16dp"
+                            tools:ignore="HardcodedText" />
+                    </LinearLayout>
                 </androidx.cardview.widget.CardView>
 
 
