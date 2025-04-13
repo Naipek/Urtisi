@@ -1,0 +1,217 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.drawerlayout.widget.DrawerLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SettingsActivity">
+
+    <!-- Основной контейнер -->
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <!-- Верхняя шапка -->
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/headerLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#FFFFFF"
+            android:padding="16dp"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <ImageView
+                android:id="@+id/logoImageView"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:src="@drawable/logo"
+                android:contentDescription="@string/logo"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent" />
+
+            <TextView
+                android:id="@+id/headerTitle"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="Высшая математика и физика"
+                android:textColor="@android:color/black"
+                android:textSize="20sp"
+                android:maxLines="2"
+                android:ellipsize="end"
+                android:textAlignment="center"
+                app:layout_constraintStart_toEndOf="@id/logoImageView"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent"
+                android:layout_marginStart="8dp"
+                android:layout_marginEnd="8dp"
+                tools:ignore="HardcodedText" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <!-- Прокручиваемая область -->
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:descendantFocusability="blocksDescendants"
+            app:layout_constraintTop_toBottomOf="@id/headerLayout"
+            app:layout_constraintBottom_toTopOf="@id/footerLayout">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="16dp">
+
+                <!-- Текстовые поля -->
+                <TextView
+                    android:id="@+id/helpText1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Состав кафедры:\n"
+                    android:textColor="@android:color/black"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    android:lineSpacingExtra="4dp"
+                    tools:ignore="HardcodedText,VisualLintLongText" />
+
+                <TextView
+                    android:id="@+id/helpText2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Куанышев Валерий Таукенович - Доцент, ведущий научный сотрудник, кандидат физико-математических наук
+\nКондратьев Владимир Павлович - Доцент, кандидат физико-математических наук
+\nПросвиряков Евгений Юрьевич - Профессор, доктор физико-математических наук
+\nКорякова Ирина Павловна - Доцент, кандидат химических наук
+\nИльиных Нина Иосифовна - Доцент, кандидат физико-математических наук
+\nБурумбаев Адиль Ильмирович - Старший преподаватель, младший научный сотрудник
+\nШаманаев Юрий Федорович	Доцент	Кандидат физико-математических наук
+\nПерминов Евгений Александрович - Профессор, доктор педагогических наук,
+кандидат физико-математических наук
+\nПилипенко Геннадий Иванович - Профессор, доктор физико-математических наук
+\nБарбин Николай Михайлович - Профессор,
+главный научный сотрудник - доктор технических наук
+\nКусайкин Дмитрий Вячеславович - Старший научный сотрудник, кандидат технических наук
+\nБурумбаев Даниль Ильмирович - Младший научный сотрудник
+\nЧиркова Анастасия Анатольевна - Преподаватель
+\nСкрябина Татьяна Леонидовна - Преподаватель
+\nБелятова Валерия Алексеевна - Преподаватель
+\nЛатыпова Анна Шамильевна - Преподаватель
+\nТорбенко Светлана Григорьевна - Преподаватель	\n"
+                    android:textColor="@android:color/black"
+                    android:textSize="16sp"
+                    android:lineSpacingExtra="4dp"
+                    tools:ignore="HardcodedText" />
+
+                <TextView
+                    android:id="@+id/helpText3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Основные направления научно-исследовательской деятельности:\n"
+                    android:textColor="@android:color/black"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    android:lineSpacingExtra="4dp"
+                    tools:ignore="HardcodedText,VisualLintLongText" />
+
+                <TextView
+                    android:id="@+id/helpText4"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="1. Разработка и внедрение в учебный процесс новых образовательных технологий (ППС кафедры).
+\n2. Разработка материалов для наполнения Е-НОЭС по направлениям 11.03.02, 09.03.01, 11.03.02, 09.02.07, 11.02.15 (ППС Кафедры)
+\n3. Подготовка научных и учебно-методических статей для публикации в российских и зарубежных изданиях (ППС кафедры).
+\n4. Участие в работе российских и международных научно-исследовательских и учебно-методических конференций, семинаров, форумов, школ (ППС кафедры).
+\n5. Выполнение работ в рамках Госзадания № 071-03-2024-008 от 19.01.2024 «Стабильность углеродных наночастиц» (научные сотрудники НИЛ).\n"
+                    android:textColor="@android:color/black"
+                    android:textSize="16sp"
+                    android:lineSpacingExtra="4dp"
+                    tools:ignore="HardcodedText,VisualLintLongText" />
+
+                <TextView
+                    android:id="@+id/helpText5"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Научно-исследовательская работа студентов:\n"
+                    android:textColor="@android:color/black"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    android:lineSpacingExtra="4dp"
+                    tools:ignore="HardcodedText" />
+
+                <TextView
+                    android:id="@+id/helpText6"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="1. Участие в научно-практических конференций студентов УрТИСИ СибГУТИ.
+\n2. Участие в Межвузовских Олимпиадах по теории вероятности и математической статистике (организатор СибГУТИ).
+\n3. Организация и проведение Олимпиад по физике, высшей математике, теории вероятности и математической статистике, математике среди студентов УрТИСИ СибГУТИ\n"
+                    android:textColor="@android:color/black"
+                    android:textSize="16sp"
+                    android:lineSpacingExtra="4dp"
+                    tools:ignore="HardcodedText,VisualLintLongText" />
+
+
+            </LinearLayout>
+        </ScrollView>
+
+        <!-- Нижняя панель -->
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/footerLayout"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:background="#FFFFFF"
+            app:layout_constraintBottom_toBottomOf="parent">
+
+            <ImageView
+                android:id="@+id/icon1"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:src="@drawable/ic_home"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toStartOf="@+id/icon2"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintHorizontal_chainStyle="spread"
+                app:layout_constraintHorizontal_weight="1"
+                tools:ignore="ContentDescription" />
+
+            <ImageView
+                android:id="@+id/icon2"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:src="@drawable/ic_calendar"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toStartOf="@id/icon3"
+                app:layout_constraintStart_toEndOf="@+id/icon1"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintHorizontal_weight="1"
+                tools:ignore="ContentDescription" />
+
+            <ImageView
+                android:id="@+id/icon3"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:src="@drawable/ic_map"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toStartOf="@id/icon4"
+                app:layout_constraintStart_toEndOf="@+id/icon2"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintHorizontal_weight="1"
+                tools:ignore="ContentDescription" />
+
+            <ImageView
+                android:id="@+id/icon4"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:src="@drawable/ic_settings"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/icon3"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintHorizontal_weight="1"
+                tools:ignore="ContentDescription" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.drawerlayout.widget.DrawerLayout>

@@ -53,23 +53,287 @@
             app:layout_constraintTop_toBottomOf="@id/headerLayout"
             app:layout_constraintBottom_toTopOf="@id/footerLayout">
 
+            <!-- Контейнер всех карточек -->
             <LinearLayout
+                android:id="@+id/questionsContainer"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:orientation="vertical"
                 android:padding="16dp">
 
-                <!-- Текстовое поле для справки -->
-                <TextView
-                    android:id="@+id/callText"
+                <!-- 1 карточка -->
+                <LinearLayout
+                    android:id="@+id/questionCard1"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="Понедельник - Пятница:"
-                    android:textColor="@android:color/black"
-                    android:textSize="16sp"
-                    android:lineSpacingExtra="4dp"
-                    android:gravity="center"
-                    tools:ignore="HardcodedText,VisualLintLongText" />
+                    android:orientation="vertical"
+                    android:padding="12dp"
+                    android:layout_marginBottom="8dp">
+
+                    <TextView
+                        android:id="@+id/questionText1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Учимся ли мы по субботам?"
+                        android:textStyle="bold"
+                        android:textSize="16sp"
+                        android:textColor="@android:color/black"
+                        tools:ignore="HardcodedText" />
+
+                    <TextView
+                        android:id="@+id/answerText1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Да, суббота является учебным днём, следи за рассписанием занятий и узнаешь в какую субботу ты учишься."
+                        android:visibility="gone"
+                        android:paddingTop="8dp"
+                        android:textColor="@android:color/black"
+                        tools:ignore="HardcodedText" />
+                </LinearLayout>
+
+                <!-- 2 карточка -->
+                <LinearLayout
+                    android:id="@+id/questionCard2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="12dp"
+                    android:layout_marginBottom="8dp">
+
+                    <TextView
+                        android:id="@+id/questionText2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Где можно посмотреть расписание занятий?"
+                        android:textStyle="bold"
+                        android:textSize="16sp"
+                        android:textColor="@android:color/black"
+                        tools:ignore="HardcodedText" />
+
+                    <TextView
+                        android:id="@+id/answerText2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Расписание доступно в приложении в разделе 'Расписание' (иконка календаря), а также об мелких изменениях ты узнаешь в группе в телеграмме."
+                        android:visibility="gone"
+                        android:paddingTop="8dp"
+                        android:textColor="@android:color/black"
+                        tools:ignore="HardcodedText" />
+                </LinearLayout>
+
+                <!-- 3 карточка -->
+                <LinearLayout
+                    android:id="@+id/questionCard3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="12dp"
+                    android:layout_marginBottom="8dp">
+
+                    <TextView
+                        android:id="@+id/questionText3"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Как можно сдать задолжность?"
+                        android:textStyle="bold"
+                        android:textSize="16sp"
+                        android:textColor="@android:color/black"
+                        tools:ignore="HardcodedText" />
+
+                    <TextView
+                        android:id="@+id/answerText3"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Задолжность можно сдать следующим образом - нужно получить хвостовку в деканате, её выдаст твой методист, если попросишь, далее договориться с преподователем о пересдаче. После успешной пересдаче предмета преподаватель отнесет твою хвостовку в деканат и тебя запишут в ведомость."
+                        android:visibility="gone"
+                        android:paddingTop="8dp"
+                        android:textColor="@android:color/black"
+                        tools:ignore="HardcodedText" />
+                </LinearLayout>
+
+                <!-- 4 карточка -->
+                <LinearLayout
+                    android:id="@+id/questionCard4"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="12dp"
+                    android:layout_marginBottom="8dp">
+
+                    <TextView
+                        android:id="@+id/questionText4"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Как восстановить студенческий билет или пропуск при потере?"
+                        android:textStyle="bold"
+                        android:textSize="16sp"
+                        android:textColor="@android:color/black"
+                        tools:ignore="HardcodedText" />
+
+                    <TextView
+                        android:id="@+id/answerText4"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Тебе нужно обратиться в деканат и написать заявление, через время тебе выдадут новый студак или пропус."
+                        android:visibility="gone"
+                        android:paddingTop="8dp"
+                        android:textColor="@android:color/black"
+                        tools:ignore="HardcodedText" />
+                </LinearLayout>
+
+                <!-- 5 карточка -->
+                <LinearLayout
+                    android:id="@+id/questionCard5"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="12dp"
+                    android:layout_marginBottom="8dp">
+
+                    <TextView
+                        android:id="@+id/questionText5"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Как получить справки?"
+                        android:textStyle="bold"
+                        android:textSize="16sp"
+                        android:textColor="@android:color/black"
+                        tools:ignore="HardcodedText" />
+
+                    <TextView
+                        android:id="@+id/answerText5"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="В деканате есть формы для заполнения определённой справки, нужно придти и заполнить поля, через время готовая справка будет лежать в общей коробочке справок."
+                        android:visibility="gone"
+                        android:paddingTop="8dp"
+                        android:textColor="@android:color/black"
+                        tools:ignore="HardcodedText" />
+                </LinearLayout>
+
+                <!-- 6 карточка -->
+                <LinearLayout
+                    android:id="@+id/questionCard6"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="12dp"
+                    android:layout_marginBottom="8dp">
+
+                    <TextView
+                        android:id="@+id/questionText6"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Как подать документы для дальнейшего обучения?"
+                        android:textStyle="bold"
+                        android:textSize="16sp"
+                        android:textColor="@android:color/black"
+                        tools:ignore="HardcodedText" />
+
+                    <TextView
+                        android:id="@+id/answerText6"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Подача документов происходит также как при первом поступлении, более подробно:
+https://uisi.ru/uisi/abiturient/"
+                        android:visibility="gone"
+                        android:autoLink="web"
+                        android:paddingTop="8dp"
+                        android:textColor="@android:color/black"
+                        tools:ignore="HardcodedText" />
+                </LinearLayout>
+
+                <!-- 7 карточка -->
+                <LinearLayout
+                    android:id="@+id/questionCard7"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="12dp"
+                    android:layout_marginBottom="8dp">
+
+                    <TextView
+                        android:id="@+id/questionText7"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Есть ли общежитие?"
+                        android:textStyle="bold"
+                        android:textSize="16sp"
+                        android:textColor="@android:color/black"
+                        tools:ignore="HardcodedText" />
+
+                    <TextView
+                        android:id="@+id/answerText7"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Да, в институте есть общежитие, это то самое высокое красное здание. Места предоставляются иногородним студентам, чей город в 60+ км от Екатеринбурга."
+                        android:visibility="gone"
+                        android:paddingTop="8dp"
+                        android:textColor="@android:color/black"
+                        tools:ignore="HardcodedText" />
+                </LinearLayout>
+
+                <!-- 8 карточка -->
+                <LinearLayout
+                    android:id="@+id/questionCard8"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="12dp"
+                    android:layout_marginBottom="8dp">
+
+                    <TextView
+                        android:id="@+id/questionText8"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Когда начинается учебный год?"
+                        android:textStyle="bold"
+                        android:textSize="16sp"
+                        android:textColor="@android:color/black"
+                        tools:ignore="HardcodedText" />
+
+                    <TextView
+                        android:id="@+id/answerText8"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Учебный год начинается с 1 сентября. У первокурсников в этот день торжественная линейка, старшие курсы начинают учиться чуть позже, это можно узнать из рассписания."
+                        android:visibility="gone"
+                        android:paddingTop="8dp"
+                        android:textColor="@android:color/black"
+                        tools:ignore="HardcodedText" />
+                </LinearLayout>
+
+                <!-- 9 карточка -->
+                <LinearLayout
+                    android:id="@+id/questionCard9"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="12dp"
+                    android:layout_marginBottom="8dp">
+
+                    <TextView
+                        android:id="@+id/questionText9"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Как оформить академический отпуск?"
+                        android:textStyle="bold"
+                        android:textSize="16sp"
+                        android:textColor="@android:color/black"
+                        tools:ignore="HardcodedText" />
+
+                    <TextView
+                        android:id="@+id/answerText9"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Для оформления академа нужно в деканате подать заявление и получить приказ."
+                        android:visibility="gone"
+                        android:paddingTop="8dp"
+                        android:textColor="@android:color/black"
+                        tools:ignore="HardcodedText" />
+                </LinearLayout>
+
+
             </LinearLayout>
         </ScrollView>
 

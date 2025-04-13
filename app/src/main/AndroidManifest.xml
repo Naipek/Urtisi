@@ -74,6 +74,18 @@
         <activity android:name=".Menu.Cafedrs.CafedraMeActivity"
             android:exported="false"/>
 
+        <activity android:name=".Menu.Cafedrs.CafedraItimsActivity"
+            android:exported="false"/>
+
+        <activity android:name=".Menu.Cafedrs.CafedraVmifActivity"
+            android:exported="false"/>
+
+        <activity android:name=".Menu.Cafedrs.CafedraIstActivity"
+            android:exported="false"/>
+
+        <activity android:name=".Menu.Cafedrs.CafedraEsActivity"
+            android:exported="false"/>
+
         <activity
             android:name=".MainActivity"
             android:exported="true"

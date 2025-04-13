@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.drawerlayout.widget.DrawerLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SettingsActivity">
+
+    <!-- Основной контейнер -->
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <!-- Верхняя шапка -->
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/headerLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#FFFFFF"
+            android:padding="16dp"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <ImageView
+                android:id="@+id/logoImageView"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:src="@drawable/logo"
+                android:contentDescription="@string/logo"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent" />
+
+            <TextView
+                android:id="@+id/headerTitle"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="Информационные системы и технологий"
+                android:textColor="@android:color/black"
+                android:textSize="20sp"
+                android:maxLines="2"
+                android:ellipsize="end"
+                android:textAlignment="center"
+                app:layout_constraintStart_toEndOf="@id/logoImageView"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent"
+                android:layout_marginStart="8dp"
+                android:layout_marginEnd="8dp"
+                tools:ignore="HardcodedText" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <!-- Прокручиваемая область -->
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:descendantFocusability="blocksDescendants"
+            app:layout_constraintTop_toBottomOf="@id/headerLayout"
+            app:layout_constraintBottom_toTopOf="@id/footerLayout">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="16dp">
+
+                <!-- Текстовые поля -->
+                <TextView
+                    android:id="@+id/helpText1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Заведующий кафедрой – к.п.н., доцент Зацепин Владимир Александрович.
+\nДобро пожаловать на кафедру Информационных систем и технологий (ИСТ) нашего университета! Мы гордимся тем, что являемся лидерами в области подготовки высококвалифицированных специалистов, способных решать сложные задачи современной цифровой экономики.
+\nНаши направления обучения и исследования:
+\n– Разработка программного обеспечения: изучение современных языков программирования, архитектуры приложений и методологий разработки ПО;
+\n– Системный анализ и проектирование: основы анализа требований, моделирование бизнес-процессов и проектирование информационных систем;
+\n– Информационная безопасность: современные методы защиты информации, криптография и управление безопасностью данных;
+\n– Сетевые технологии: строительство и администрирование компьютерных сетей, сетевые протоколы и технологии передачи данных;
+\n– Большие данные и искусственный интеллект: анализ и обработка больших данных, машинное обучение и применение ИИ в различных областях.
+\nПреимущества обучения на нашей кафедре:
+\n– Профессиональный преподавательский состав: наши преподаватели – это признанные эксперты и практики в области информационных технологий, обладающие многолетним опытом и уникальными знаниями;
+\n– Современная материально-техническая база: лаборатории, оснащенные передовым оборудованием и программным обеспечением, позволяют студентам работать с реальными проектами и задачами;
+\n– Сотрудничество с индустрией: мы активно взаимодействуем с ведущими ИТ-компаниями, что позволяет нашим студентам проходить стажировки, участвовать в совместных проектах и получать предложения о работе еще до окончания обучения;
+\n– Научные исследования и инновации: студенты и преподаватели кафедры ведут активную исследовательскую деятельность, участвуют в международных конференциях и публикуют свои работы в престижных научных журналах.
+\nНаши выпускники:
+\nВыпускники кафедры ИСТ востребованы на рынке труда и успешно работают в крупных ИТ-компаниях, банках, государственных учреждениях и стартапах. Их знания и навыки позволяют им уверенно строить карьеру в различных областях информационных технологий, таких как разработка ПО, системный анализ, информационная безопасность, и многие другие.
+\nПриглашаем вас присоединиться к нашей дружной и амбициозной команде! На кафедре ИСТ вы получите не только глубокие теоретические знания, но и ценный практический опыт, который станет прочной основой для вашего профессионального роста и успешной карьеры в мире информационных технологий.
+\nМы ждем вас и готовы помочь вам раскрыть ваш потенциал в увлекательном и постоянно развивающемся мире ИТ!
+\nПодробная информация о кафедре ИСТ представлена на сайте https://ist.uisi.ru/	\n"
+                    android:textColor="@android:color/black"
+                    android:textSize="16sp"
+                    android:autoLink="web"
+                    android:lineSpacingExtra="4dp"
+                    tools:ignore="HardcodedText" />
+
+
+            </LinearLayout>
+        </ScrollView>
+
+        <!-- Нижняя панель -->
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/footerLayout"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:background="#FFFFFF"
+            app:layout_constraintBottom_toBottomOf="parent">
+
+            <ImageView
+                android:id="@+id/icon1"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:src="@drawable/ic_home"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toStartOf="@+id/icon2"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintHorizontal_chainStyle="spread"
+                app:layout_constraintHorizontal_weight="1"
+                tools:ignore="ContentDescription" />
+
+            <ImageView
+                android:id="@+id/icon2"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:src="@drawable/ic_calendar"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toStartOf="@id/icon3"
+                app:layout_constraintStart_toEndOf="@+id/icon1"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintHorizontal_weight="1"
+                tools:ignore="ContentDescription" />
+
+            <ImageView
+                android:id="@+id/icon3"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:src="@drawable/ic_map"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toStartOf="@id/icon4"
+                app:layout_constraintStart_toEndOf="@+id/icon2"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintHorizontal_weight="1"
+                tools:ignore="ContentDescription" />
+
+            <ImageView
+                android:id="@+id/icon4"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:src="@drawable/ic_settings"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/icon3"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintHorizontal_weight="1"
+                tools:ignore="ContentDescription" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.drawerlayout.widget.DrawerLayout>

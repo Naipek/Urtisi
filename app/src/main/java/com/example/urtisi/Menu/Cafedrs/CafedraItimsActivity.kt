@@ -4,16 +4,14 @@ import android.content.Intent
 import android.os.Bundle
 import android.widget.ImageView
 import androidx.appcompat.app.AppCompatActivity
-import androidx.cardview.widget.CardView
 import com.example.urtisi.MainActivity
-import com.example.urtisi.Menu.Education.EducationSpo2Activity
 import com.example.urtisi.R
 import com.example.urtisi.SettingsActivity
 
-class CafedraMeActivity : AppCompatActivity() {
+class CafedraItimsActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.cafedra_me)
+        setContentView(R.layout.cafedra_itims)
 
         // Обработчики для нижней панели
         val icon1 = findViewById<ImageView>(R.id.icon1)

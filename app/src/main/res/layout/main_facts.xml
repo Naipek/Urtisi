@@ -59,17 +59,358 @@
                 android:orientation="vertical"
                 android:padding="16dp">
 
-                <!-- Текстовое поле для справки -->
-                <TextView
-                    android:id="@+id/callText"
+                <!--1 факт -->
+                <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="Понедельник - Пятница:"
-                    android:textColor="@android:color/black"
-                    android:textSize="16sp"
-                    android:lineSpacingExtra="4dp"
-                    android:gravity="center"
-                    tools:ignore="HardcodedText,VisualLintLongText" />
+                    android:orientation="vertical"
+                    android:padding="12dp"
+                    android:layout_marginBottom="8dp"
+                    android:elevation="4dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Факт 1"
+                        android:textStyle="bold"
+                        android:textSize="16sp"
+                        android:textColor="@android:color/black"
+                        tools:ignore="HardcodedText" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="УрТИСИ снован в 1930 году.
+\nИзначально учреждение было открыто как техникум связи в Свердловске. В 1998 году на его базе был создан филиал СибГУТИ в Екатеринбурге — УрТИСИ."
+                        android:textSize="14sp"
+                        android:textColor="@android:color/black"
+                        android:paddingTop="4dp"
+                        tools:ignore="HardcodedText,VisualLintLongText" />
+                </LinearLayout>
+
+
+                <!--2 факт -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="12dp"
+                    android:layout_marginBottom="8dp"
+                    android:elevation="4dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Факт 2"
+                        android:textStyle="bold"
+                        android:textSize="16sp"
+                        android:textColor="@android:color/black"
+                        tools:ignore="HardcodedText" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Подведомственен Минцифры России.
+\nУрТИСИ СибГУТИ является филиалом Сибирского государственного университета телекоммуникаций и информатики и находится под управлением Министерства цифрового развития, связи и массовых коммуникаций РФ."
+                        android:textSize="14sp"
+                        android:textColor="@android:color/black"
+                        android:paddingTop="4dp"
+                        tools:ignore="HardcodedText,VisualLintLongText" />
+                </LinearLayout>
+
+                <!--3 факт -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="12dp"
+                    android:layout_marginBottom="8dp"
+                    android:elevation="4dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Факт 3"
+                        android:textStyle="bold"
+                        android:textSize="16sp"
+                        android:textColor="@android:color/black"
+                        tools:ignore="HardcodedText" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Более 34 000 выпускников со средним профессиональным образованием.
+\nЗа 90 лет своей истории институт подготовил 34 084 выпускника со средним профессиональным образованием."
+                        android:textSize="14sp"
+                        android:textColor="@android:color/black"
+                        android:paddingTop="4dp"
+                        tools:ignore="HardcodedText,VisualLintLongText" />
+                </LinearLayout>
+
+
+                <!--4 факт -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="12dp"
+                    android:layout_marginBottom="8dp"
+                    android:elevation="4dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Факт 4"
+                        android:textStyle="bold"
+                        android:textSize="16sp"
+                        android:textColor="@android:color/black"
+                        tools:ignore="HardcodedText" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Современная электронная образовательная среда.
+\nВ УрТИСИ создана и развивается единая научно-образовательная электронная среда на базе широкополосной мультисервисной сети связи."
+                        android:textSize="14sp"
+                        android:textColor="@android:color/black"
+                        android:paddingTop="4dp"
+                        tools:ignore="HardcodedText,VisualLintLongText" />
+                </LinearLayout>
+
+
+                <!--5 факт -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="12dp"
+                    android:layout_marginBottom="8dp"
+                    android:elevation="4dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Факт 5"
+                        android:textStyle="bold"
+                        android:textSize="16sp"
+                        android:textColor="@android:color/black"
+                        tools:ignore="HardcodedText" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Активное сотрудничество с ИТ-компаниями.
+\nИнститут активно сотрудничает с ИТ-компаниями, такими как «НАГ», «D-Link», для подготовки высококвалифицированных ИТ-кадров."
+                        android:textSize="14sp"
+                        android:textColor="@android:color/black"
+                        android:paddingTop="4dp"
+                        tools:ignore="HardcodedText,VisualLintLongText" />
+                </LinearLayout>
+
+                <!--6 факт -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="12dp"
+                    android:layout_marginBottom="8dp"
+                    android:elevation="4dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Факт 6"
+                        android:textStyle="bold"
+                        android:textSize="16sp"
+                        android:textColor="@android:color/black"
+                        tools:ignore="HardcodedText" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="УрТИСИ участвует в проекте «Цифровая кафедра».
+\nИнститут является участником федеральной программы «Цифровые кафедры», где студенты могут пройти бесплатное обучение по цифровым компетенциям."
+                        android:textSize="14sp"
+                        android:textColor="@android:color/black"
+                        android:paddingTop="4dp"
+                        tools:ignore="HardcodedText,VisualLintLongText" />
+                </LinearLayout>
+
+                <!--7 факт -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="12dp"
+                    android:layout_marginBottom="8dp"
+                    android:elevation="4dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Факт 7"
+                        android:textStyle="bold"
+                        android:textSize="16sp"
+                        android:textColor="@android:color/black"
+                        tools:ignore="HardcodedText" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Проводятся хакатоны, олимпиады и профориентационные мероприятия.
+\nВ УрТИСИ регулярно проходят мероприятия по программированию, информационной безопасности и цифровым технологиям."
+                        android:textSize="14sp"
+                        android:textColor="@android:color/black"
+                        android:paddingTop="4dp"
+                        tools:ignore="HardcodedText,VisualLintLongText" />
+                </LinearLayout>
+
+                <!--8 факт -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="12dp"
+                    android:layout_marginBottom="8dp"
+                    android:elevation="4dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Факт 8"
+                        android:textStyle="bold"
+                        android:textSize="16sp"
+                        android:textColor="@android:color/black"
+                        tools:ignore="HardcodedText" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Активная студенческая жизнь.
+\nВолонтёрские движения, клубы, мероприятия, КВН, спортивные секции."
+                        android:textSize="14sp"
+                        android:textColor="@android:color/black"
+                        android:paddingTop="4dp"
+                        tools:ignore="HardcodedText,VisualLintLongText" />
+                </LinearLayout>
+
+                <!--9 факт -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="12dp"
+                    android:layout_marginBottom="8dp"
+                    android:elevation="4dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Факт 9"
+                        android:textStyle="bold"
+                        android:textSize="16sp"
+                        android:textColor="@android:color/black"
+                        tools:ignore="HardcodedText" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="90+ квалифицированных преподавателей.
+\nСреди них — кандидаты и доктора наук, а также преподаватели с опытом работы в отрасли."
+                        android:textSize="14sp"
+                        android:textColor="@android:color/black"
+                        android:paddingTop="4dp"
+                        tools:ignore="HardcodedText,VisualLintLongText" />
+                </LinearLayout>
+
+                <!--10 факт -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="12dp"
+                    android:layout_marginBottom="8dp"
+                    android:elevation="4dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Факт 10"
+                        android:textStyle="bold"
+                        android:textSize="16sp"
+                        android:textColor="@android:color/black"
+                        tools:ignore="HardcodedText" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Свыше 20 образовательных программ.
+\nПрограммы по направлениям СПО и ВО, охватывающие ИТ, телеком, экономику и управление."
+                        android:textSize="14sp"
+                        android:textColor="@android:color/black"
+                        android:paddingTop="4dp"
+                        tools:ignore="HardcodedText,VisualLintLongText" />
+                </LinearLayout>
+
+                <!--11 факт -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="12dp"
+                    android:layout_marginBottom="8dp"
+                    android:elevation="4dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Факт 11"
+                        android:textStyle="bold"
+                        android:textSize="16sp"
+                        android:textColor="@android:color/black"
+                        tools:ignore="HardcodedText" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Более 1000 студентов.
+\nУчеба ведётся в очной, заочной и дистанционной формах."
+                        android:textSize="14sp"
+                        android:textColor="@android:color/black"
+                        android:paddingTop="4dp"
+                        tools:ignore="HardcodedText,VisualLintLongText" />
+                </LinearLayout>
+
+                <!--12 факт -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="12dp"
+                    android:layout_marginBottom="8dp"
+                    android:elevation="4dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Факт 12"
+                        android:textStyle="bold"
+                        android:textSize="16sp"
+                        android:textColor="@android:color/black"
+                        tools:ignore="HardcodedText" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Высокий процент трудоустройства выпускников.
+\nБолее 85% выпускников устраиваются по специальности в течение первого года после окончания."
+                        android:textSize="14sp"
+                        android:textColor="@android:color/black"
+                        android:paddingTop="4dp"
+                        tools:ignore="HardcodedText,VisualLintLongText" />
+                </LinearLayout>
+
+
             </LinearLayout>
         </ScrollView>
 

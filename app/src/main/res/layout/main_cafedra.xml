@@ -173,13 +173,13 @@
                             android:id="@+id/cardVmif"
                             android:layout_width="match_parent"
                             android:layout_height="0dp"
+                            android:layout_marginBottom="16dp"
                             android:layout_weight="1"
-                            android:scaleType="centerCrop"
                             android:adjustViewBounds="true"
-                            android:src="@drawable/ic_me"
                             android:contentDescription="Описание изображения"
                             android:minHeight="180dp"
-                            android:layout_marginBottom="16dp"
+                            android:scaleType="centerCrop"
+                            android:src="@drawable/ic_me"
                             tools:ignore="HardcodedText" />
 
                         <!-- Текст под изображением -->
@@ -188,10 +188,10 @@
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:gravity="center"
+                            android:padding="16dp"
                             android:text="Высшей математики и физики"
                             android:textColor="@android:color/black"
                             android:textSize="16sp"
-                            android:padding="16dp"
                             tools:ignore="HardcodedText" />
                     </LinearLayout>
                 </androidx.cardview.widget.CardView>
@@ -233,7 +233,7 @@
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:gravity="center"
-                            android:text="Высшей математики и физики"
+                            android:text="Информационных систем и технологий"
                             android:textColor="@android:color/black"
                             android:textSize="16sp"
                             android:padding="16dp"
