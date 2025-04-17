@@ -17,7 +17,7 @@
             android:id="@+id/headerLayout"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:background="#FFFFFF"
+            android:background="@color/header_footer_light"
             android:padding="16dp"
             app:layout_constraintTop_toTopOf="parent">
 
@@ -36,7 +36,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="@string/education"
-                android:textColor="@android:color/black"
+                android:textColor="@color/text_light"
                 android:textSize="20sp"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
@@ -50,12 +50,14 @@
             android:layout_width="match_parent"
             android:layout_height="0dp"
             app:layout_constraintTop_toBottomOf="@id/headerLayout"
+            android:background="@color/background_light"
             app:layout_constraintBottom_toTopOf="@id/footerLayout">
 
         <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:orientation="vertical"
+                android:background="@color/background_light"
                 android:padding="16dp"
                 android:paddingBottom="80dp">
 
@@ -65,7 +67,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:text="СПО (Очная форма)"
-                    android:textColor="@android:color/black"
+                    android:textColor="@color/text_light"
                     android:textSize="17sp"
                     android:textStyle="bold"
                     android:gravity="center"
@@ -77,6 +79,7 @@
                     android:id="@+id/Cardspo1"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
+                    app:cardBackgroundColor="@color/card_light"
                     android:layout_marginBottom="12dp">
 
                     <LinearLayout
@@ -91,7 +94,7 @@
                             android:text="11.02.15"
                             android:textSize="16sp"
                             android:textStyle="bold"
-                            android:textColor="@android:color/black"
+                            android:textColor="@color/text_light"
                             tools:ignore="HardcodedText" />
 
                         <TextView
@@ -99,7 +102,7 @@
                             android:layout_height="wrap_content"
                             android:text="Инфокоммуникационные сети и системы связи"
                             android:textSize="14sp"
-                            android:textColor="@android:color/black"
+                            android:textColor="@color/text_light"
                             android:paddingTop="4dp"
                             tools:ignore="HardcodedText" />
 
@@ -110,7 +113,7 @@
                             android:text="Срок обучения: \n
 На базе 9 классов - 3 года 10 мес.\n
 На базе 11 классов - 2 года 10 мес."
-                            android:textColor="@android:color/darker_gray"
+                            android:textColor="@color/text_light"
                             android:textSize="14sp"
                             tools:ignore="HardcodedText,TextContrastCheck" />
                     </LinearLayout>
@@ -121,6 +124,7 @@
                 android:id="@+id/Cardspo2"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                app:cardBackgroundColor="@color/card_light"
                 android:layout_marginBottom="50dp">
 
                 <LinearLayout
@@ -135,7 +139,7 @@
                         android:text="09.02.07"
                         android:textSize="16sp"
                         android:textStyle="bold"
-                        android:textColor="@android:color/black"
+                        android:textColor="@color/text_light"
                         tools:ignore="HardcodedText" />
 
                     <TextView
@@ -143,7 +147,7 @@
                         android:layout_height="wrap_content"
                         android:text="Информационные системы и программирование"
                         android:textSize="14sp"
-                        android:textColor="@android:color/black"
+                        android:textColor="@color/text_light"
                         android:paddingTop="4dp"
                         tools:ignore="HardcodedText" />
 
@@ -154,7 +158,7 @@
                         android:text="Срок обучения: \n
 На базе 9 классов - 3 года 10 мес.\n
 На базе 11 классов - 2 года 10 мес."
-                        android:textColor="@android:color/darker_gray"
+                        android:textColor="@color/text_light"
                         android:textSize="14sp"
                         tools:ignore="HardcodedText,TextContrastCheck" />
                 </LinearLayout>
@@ -166,7 +170,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="ВО - бакалавриат (Очная, заочная форма)"
-                android:textColor="@android:color/black"
+                android:textColor="@color/text_light"
                 android:textSize="17sp"
                 android:textStyle="bold"
                 android:gravity="center"
@@ -178,6 +182,7 @@
                 android:id="@+id/Cardbac1"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                app:cardBackgroundColor="@color/card_light"
                 android:layout_marginBottom="12dp">
 
                 <LinearLayout
@@ -191,7 +196,7 @@
                         android:layout_height="wrap_content"
                         android:text="01. Электроника, радиотехника и системы связи"
                         android:textSize="14sp"
-                        android:textColor="@android:color/black"
+                        android:textColor="@color/text_light"
                         android:paddingTop="4dp"
                         tools:ignore="HardcodedText" />
 
@@ -200,7 +205,7 @@
                         android:layout_height="wrap_content"
                         android:text="Инфокоммуникационные технологии и системы связи"
                         android:textSize="14sp"
-                        android:textColor="@android:color/black"
+                        android:textColor="@color/text_light"
                         android:paddingTop="4dp"
                         tools:ignore="HardcodedText" />
 
@@ -210,7 +215,7 @@
                         android:text="11.03.02"
                         android:textSize="16sp"
                         android:textStyle="bold"
-                        android:textColor="@android:color/black"
+                        android:textColor="@color/text_light"
                         tools:ignore="HardcodedText" />
 
                     <TextView
@@ -218,7 +223,7 @@
                         android:layout_height="wrap_content"
                         android:text="Транспортные сети и системы связи"
                         android:textSize="14sp"
-                        android:textColor="@android:color/black"
+                        android:textColor="@color/text_light"
                         android:paddingTop="4dp"
                         tools:ignore="HardcodedText" />
 
@@ -229,7 +234,7 @@
                         android:text="Срок обучения:\n
 Очная форма - 4 года\n
 Заочная форма - 4 года 9 мес."
-                        android:textColor="@android:color/darker_gray"
+                        android:textColor="@color/text_light"
                         android:textSize="14sp"
                         tools:ignore="HardcodedText,TextContrastCheck" />
                 </LinearLayout>
@@ -240,6 +245,7 @@
                 android:id="@+id/Cardbac2"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                app:cardBackgroundColor="@color/card_light"
                 android:layout_marginBottom="12dp">
 
                 <LinearLayout
@@ -253,7 +259,7 @@
                         android:layout_height="wrap_content"
                         android:text="01. Электроника, радиотехника и системы связи"
                         android:textSize="14sp"
-                        android:textColor="@android:color/black"
+                        android:textColor="@color/text_light"
                         android:paddingTop="4dp"
                         tools:ignore="HardcodedText" />
 
@@ -262,7 +268,7 @@
                         android:layout_height="wrap_content"
                         android:text="Инфокоммуникационные технологии и системы связи"
                         android:textSize="14sp"
-                        android:textColor="@android:color/black"
+                        android:textColor="@color/text_light"
                         android:paddingTop="4dp"
                         tools:ignore="HardcodedText" />
                     <TextView
@@ -271,7 +277,7 @@
                         android:text="11.03.02"
                         android:textSize="16sp"
                         android:textStyle="bold"
-                        android:textColor="@android:color/black"
+                        android:textColor="@color/text_light"
                         tools:ignore="HardcodedText" />
 
                     <TextView
@@ -279,7 +285,7 @@
                         android:layout_height="wrap_content"
                         android:text="Инфокоммуникационные технологии в услугах связи"
                         android:textSize="14sp"
-                        android:textColor="@android:color/black"
+                        android:textColor="@color/text_light"
                         android:paddingTop="4dp"
                         tools:ignore="HardcodedText" />
 
@@ -289,7 +295,7 @@
                         android:paddingTop="4dp"
                         android:text="Срок обучения:\n
 Очная форма - 4 года"
-                        android:textColor="@android:color/darker_gray"
+                        android:textColor="@color/text_light"
                         android:textSize="14sp"
                         tools:ignore="HardcodedText,TextContrastCheck" />
                 </LinearLayout>
@@ -300,6 +306,7 @@
                 android:id="@+id/Cardbac3"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                app:cardBackgroundColor="@color/card_light"
                 android:layout_marginBottom="50dp">
 
                 <LinearLayout
@@ -313,7 +320,7 @@
                         android:layout_height="wrap_content"
                         android:text="02. Информатика и вычислительная техника"
                         android:textSize="14sp"
-                        android:textColor="@android:color/black"
+                        android:textColor="@color/text_light"
                         android:paddingTop="4dp"
                         tools:ignore="HardcodedText" />
 
@@ -322,7 +329,7 @@
                         android:layout_height="wrap_content"
                         android:text="Информатика и вычислительная техника"
                         android:textSize="14sp"
-                        android:textColor="@android:color/black"
+                        android:textColor="@color/text_light"
                         android:paddingTop="4dp"
                         tools:ignore="HardcodedText" />
                     <TextView
@@ -331,7 +338,7 @@
                         android:text="09.03.01"
                         android:textSize="16sp"
                         android:textStyle="bold"
-                        android:textColor="@android:color/black"
+                        android:textColor="@color/text_light"
                         tools:ignore="HardcodedText" />
 
                     <TextView
@@ -339,7 +346,7 @@
                         android:layout_height="wrap_content"
                         android:text="Программирование в информационных системах"
                         android:textSize="14sp"
-                        android:textColor="@android:color/black"
+                        android:textColor="@color/text_light"
                         android:paddingTop="4dp"
                         tools:ignore="HardcodedText" />
 
@@ -350,7 +357,7 @@
                         android:text="Срок обучения:\n
 Очная форма - 4 года\n
 Заочная форма - 4 года 9 мес."
-                        android:textColor="@android:color/darker_gray"
+                        android:textColor="@color/text_light"
                         android:textSize="14sp"
                         tools:ignore="HardcodedText,TextContrastCheck" />
                 </LinearLayout>
@@ -362,7 +369,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="ВО - магистратура (Очная, заочная форма)"
-                android:textColor="@android:color/black"
+                android:textColor="@color/text_light"
                 android:textSize="17sp"
                 android:textStyle="bold"
                 android:gravity="center"
@@ -373,6 +380,7 @@
             <androidx.cardview.widget.CardView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                app:cardBackgroundColor="@color/card_light"
                 android:layout_marginBottom="12dp">
 
                 <LinearLayout
@@ -386,7 +394,7 @@
                         android:layout_height="wrap_content"
                         android:text="01. Электроника, радиотехника и системы связи"
                         android:textSize="14sp"
-                        android:textColor="@android:color/black"
+                        android:textColor="@color/text_light"
                         android:paddingTop="4dp"
                         tools:ignore="HardcodedText" />
 
@@ -396,7 +404,7 @@
                         android:text="11.04.02"
                         android:textSize="16sp"
                         android:textStyle="bold"
-                        android:textColor="@android:color/black"
+                        android:textColor="@color/text_light"
                         tools:ignore="HardcodedText" />
 
                     <TextView
@@ -404,7 +412,7 @@
                         android:layout_height="wrap_content"
                         android:text="Сети, системы и устройства телекоммуникаций"
                         android:textSize="14sp"
-                        android:textColor="@android:color/black"
+                        android:textColor="@color/text_light"
                         android:paddingTop="4dp"
                         tools:ignore="HardcodedText" />
 
@@ -415,7 +423,7 @@
                         android:text="Срок обучения:\n
 Очная форма - 2 года\n
 Заочная форма - 2 года 5 мес."
-                        android:textColor="@android:color/darker_gray"
+                        android:textColor="@color/text_light"
                         android:textSize="14sp"
                         tools:ignore="HardcodedText,TextContrastCheck" />
                 </LinearLayout>
@@ -425,6 +433,7 @@
             <androidx.cardview.widget.CardView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                app:cardBackgroundColor="@color/card_light"
                 android:layout_marginBottom="50dp">
 
                 <LinearLayout
@@ -438,7 +447,7 @@
                         android:layout_height="wrap_content"
                         android:text="02. Информатика и вычислительная техника"
                         android:textSize="14sp"
-                        android:textColor="@android:color/black"
+                        android:textColor="@color/text_light"
                         android:paddingTop="4dp"
                         tools:ignore="HardcodedText" />
 
@@ -448,7 +457,7 @@
                         android:text="09.04.01"
                         android:textSize="16sp"
                         android:textStyle="bold"
-                        android:textColor="@android:color/black"
+                        android:textColor="@color/text_light"
                         tools:ignore="HardcodedText" />
 
                     <TextView
@@ -456,7 +465,7 @@
                         android:layout_height="wrap_content"
                         android:text="Инженерия программного обеспечения и информационных систем"
                         android:textSize="14sp"
-                        android:textColor="@android:color/black"
+                        android:textColor="@color/text_light"
                         android:paddingTop="4dp"
                         tools:ignore="HardcodedText" />
 
@@ -467,7 +476,7 @@
                         android:text="Срок обучения:\n
 Очная форма - 2 года\n
 Заочная форма - 2 года 5 мес."
-                        android:textColor="@android:color/darker_gray"
+                        android:textColor="@color/text_light"
                         android:textSize="14sp"
                         tools:ignore="HardcodedText,TextContrastCheck" />
                 </LinearLayout>
@@ -479,7 +488,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="ВО - аспирантура (Очная форма)"
-                android:textColor="@android:color/black"
+                android:textColor="@color/text_light"
                 android:textSize="17sp"
                 android:textStyle="bold"
                 android:gravity="center"
@@ -490,6 +499,7 @@
             <androidx.cardview.widget.CardView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                app:cardBackgroundColor="@color/card_light"
                 android:layout_marginBottom="12dp">
 
                 <LinearLayout
@@ -504,7 +514,7 @@
                         android:text="2.3.8"
                         android:textSize="16sp"
                         android:textStyle="bold"
-                        android:textColor="@android:color/black"
+                        android:textColor="@color/text_light"
                         tools:ignore="HardcodedText" />
 
                     <TextView
@@ -512,7 +522,7 @@
                         android:layout_height="wrap_content"
                         android:text="Информатика и информационные процессы"
                         android:textSize="14sp"
-                        android:textColor="@android:color/black"
+                        android:textColor="@color/text_light"
                         android:paddingTop="4dp"
                         tools:ignore="HardcodedText" />
 
@@ -522,7 +532,7 @@
                         android:paddingTop="4dp"
                         android:text="Срок обучения:\n
 Очная форма - 3 года"
-                        android:textColor="@android:color/darker_gray"
+                        android:textColor="@color/text_light"
                         android:textSize="14sp"
                         tools:ignore="HardcodedText,TextContrastCheck" />
                 </LinearLayout>
@@ -532,6 +542,7 @@
             <androidx.cardview.widget.CardView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                app:cardBackgroundColor="@color/card_light"
                 android:layout_marginBottom="12dp">
 
                 <LinearLayout
@@ -546,7 +557,7 @@
                         android:text="2.3.8"
                         android:textSize="16sp"
                         android:textStyle="bold"
-                        android:textColor="@android:color/black"
+                        android:textColor="@color/text_light"
                         tools:ignore="HardcodedText" />
 
                     <TextView
@@ -554,7 +565,7 @@
                         android:layout_height="wrap_content"
                         android:text="Системы, сети и устройства телекоммуникаций"
                         android:textSize="14sp"
-                        android:textColor="@android:color/black"
+                        android:textColor="@color/text_light"
                         android:paddingTop="4dp"
                         tools:ignore="HardcodedText" />
 
@@ -564,7 +575,7 @@
                         android:paddingTop="4dp"
                         android:text="Срок обучения:\n
 Очная форма - 4 года"
-                        android:textColor="@android:color/darker_gray"
+                        android:textColor="@color/text_light"
                         android:textSize="14sp"
                         tools:ignore="HardcodedText,TextContrastCheck" />
                 </LinearLayout>
@@ -578,14 +589,15 @@
             android:id="@+id/footerLayout"
             android:layout_width="match_parent"
             android:layout_height="60dp"
-            android:background="#FFFFFF"
+            android:background="@color/header_footer_light"
             app:layout_constraintBottom_toBottomOf="parent">
 
             <ImageView
                 android:id="@+id/icon1"
                 android:layout_width="30dp"
                 android:layout_height="30dp"
-                android:src="@drawable/ic_home"
+                android:src="@drawable/ic_home1"
+                app:tint="@color/text_light"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toStartOf="@+id/icon2"
                 app:layout_constraintStart_toStartOf="parent"
@@ -598,7 +610,8 @@
                 android:id="@+id/icon2"
                 android:layout_width="30dp"
                 android:layout_height="30dp"
-                android:src="@drawable/ic_calendar"
+                android:src="@drawable/ic_calendar1"
+                app:tint="@color/text_light"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toStartOf="@id/icon3"
                 app:layout_constraintStart_toEndOf="@+id/icon1"
@@ -610,7 +623,8 @@
                 android:id="@+id/icon3"
                 android:layout_width="30dp"
                 android:layout_height="30dp"
-                android:src="@drawable/ic_map"
+                android:src="@drawable/ic_map1"
+                app:tint="@color/text_light"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toStartOf="@id/icon4"
                 app:layout_constraintStart_toEndOf="@+id/icon2"
@@ -622,7 +636,8 @@
                 android:id="@+id/icon4"
                 android:layout_width="30dp"
                 android:layout_height="30dp"
-                android:src="@drawable/ic_settings"
+                android:src="@drawable/ic_settings1"
+                app:tint="@color/text_light"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toEndOf="@+id/icon3"

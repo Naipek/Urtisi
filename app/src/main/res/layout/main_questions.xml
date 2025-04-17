@@ -17,7 +17,7 @@
             android:id="@+id/headerLayout"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:background="#FFFFFF"
+            android:background="@color/header_footer_light"
             android:padding="16dp"
             app:layout_constraintTop_toTopOf="parent">
 
@@ -36,7 +36,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="@string/Questions"
-                android:textColor="@android:color/black"
+                android:textColor="@color/text_light"
                 android:textSize="20sp"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
@@ -51,6 +51,7 @@
             android:layout_height="0dp"
             android:descendantFocusability="blocksDescendants"
             app:layout_constraintTop_toBottomOf="@id/headerLayout"
+            android:background="@color/background_light"
             app:layout_constraintBottom_toTopOf="@id/footerLayout">
 
             <!-- Контейнер всех карточек -->
@@ -58,6 +59,7 @@
                 android:id="@+id/questionsContainer"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:background="@color/background_light"
                 android:orientation="vertical"
                 android:padding="16dp">
 
@@ -77,7 +79,7 @@
                         android:text="Учимся ли мы по субботам?"
                         android:textStyle="bold"
                         android:textSize="16sp"
-                        android:textColor="@android:color/black"
+                        android:textColor="@color/text_light"
                         tools:ignore="HardcodedText" />
 
                     <TextView
@@ -87,7 +89,7 @@
                         android:text="Да, суббота является учебным днём, следи за рассписанием занятий и узнаешь в какую субботу ты учишься."
                         android:visibility="gone"
                         android:paddingTop="8dp"
-                        android:textColor="@android:color/black"
+                        android:textColor="@color/text_light"
                         tools:ignore="HardcodedText" />
                 </LinearLayout>
 
@@ -107,7 +109,7 @@
                         android:text="Где можно посмотреть расписание занятий?"
                         android:textStyle="bold"
                         android:textSize="16sp"
-                        android:textColor="@android:color/black"
+                        android:textColor="@color/text_light"
                         tools:ignore="HardcodedText" />
 
                     <TextView
@@ -117,7 +119,7 @@
                         android:text="Расписание доступно в приложении в разделе 'Расписание' (иконка календаря), а также об мелких изменениях ты узнаешь в группе в телеграмме."
                         android:visibility="gone"
                         android:paddingTop="8dp"
-                        android:textColor="@android:color/black"
+                        android:textColor="@color/text_light"
                         tools:ignore="HardcodedText" />
                 </LinearLayout>
 
@@ -137,7 +139,7 @@
                         android:text="Как можно сдать задолжность?"
                         android:textStyle="bold"
                         android:textSize="16sp"
-                        android:textColor="@android:color/black"
+                        android:textColor="@color/text_light"
                         tools:ignore="HardcodedText" />
 
                     <TextView
@@ -147,7 +149,7 @@
                         android:text="Задолжность можно сдать следующим образом - нужно получить хвостовку в деканате, её выдаст твой методист, если попросишь, далее договориться с преподователем о пересдаче. После успешной пересдаче предмета преподаватель отнесет твою хвостовку в деканат и тебя запишут в ведомость."
                         android:visibility="gone"
                         android:paddingTop="8dp"
-                        android:textColor="@android:color/black"
+                        android:textColor="@color/text_light"
                         tools:ignore="HardcodedText" />
                 </LinearLayout>
 
@@ -167,7 +169,7 @@
                         android:text="Как восстановить студенческий билет или пропуск при потере?"
                         android:textStyle="bold"
                         android:textSize="16sp"
-                        android:textColor="@android:color/black"
+                        android:textColor="@color/text_light"
                         tools:ignore="HardcodedText" />
 
                     <TextView
@@ -177,7 +179,7 @@
                         android:text="Тебе нужно обратиться в деканат и написать заявление, через время тебе выдадут новый студак или пропус."
                         android:visibility="gone"
                         android:paddingTop="8dp"
-                        android:textColor="@android:color/black"
+                        android:textColor="@color/text_light"
                         tools:ignore="HardcodedText" />
                 </LinearLayout>
 
@@ -197,7 +199,7 @@
                         android:text="Как получить справки?"
                         android:textStyle="bold"
                         android:textSize="16sp"
-                        android:textColor="@android:color/black"
+                        android:textColor="@color/text_light"
                         tools:ignore="HardcodedText" />
 
                     <TextView
@@ -207,7 +209,7 @@
                         android:text="В деканате есть формы для заполнения определённой справки, нужно придти и заполнить поля, через время готовая справка будет лежать в общей коробочке справок."
                         android:visibility="gone"
                         android:paddingTop="8dp"
-                        android:textColor="@android:color/black"
+                        android:textColor="@color/text_light"
                         tools:ignore="HardcodedText" />
                 </LinearLayout>
 
@@ -227,7 +229,7 @@
                         android:text="Как подать документы для дальнейшего обучения?"
                         android:textStyle="bold"
                         android:textSize="16sp"
-                        android:textColor="@android:color/black"
+                        android:textColor="@color/text_light"
                         tools:ignore="HardcodedText" />
 
                     <TextView
@@ -239,7 +241,7 @@ https://uisi.ru/uisi/abiturient/"
                         android:visibility="gone"
                         android:autoLink="web"
                         android:paddingTop="8dp"
-                        android:textColor="@android:color/black"
+                        android:textColor="@color/text_light"
                         tools:ignore="HardcodedText" />
                 </LinearLayout>
 
@@ -259,7 +261,7 @@ https://uisi.ru/uisi/abiturient/"
                         android:text="Есть ли общежитие?"
                         android:textStyle="bold"
                         android:textSize="16sp"
-                        android:textColor="@android:color/black"
+                        android:textColor="@color/text_light"
                         tools:ignore="HardcodedText" />
 
                     <TextView
@@ -269,7 +271,7 @@ https://uisi.ru/uisi/abiturient/"
                         android:text="Да, в институте есть общежитие, это то самое высокое красное здание. Места предоставляются иногородним студентам, чей город в 60+ км от Екатеринбурга."
                         android:visibility="gone"
                         android:paddingTop="8dp"
-                        android:textColor="@android:color/black"
+                        android:textColor="@color/text_light"
                         tools:ignore="HardcodedText" />
                 </LinearLayout>
 
@@ -289,7 +291,7 @@ https://uisi.ru/uisi/abiturient/"
                         android:text="Когда начинается учебный год?"
                         android:textStyle="bold"
                         android:textSize="16sp"
-                        android:textColor="@android:color/black"
+                        android:textColor="@color/text_light"
                         tools:ignore="HardcodedText" />
 
                     <TextView
@@ -299,7 +301,7 @@ https://uisi.ru/uisi/abiturient/"
                         android:text="Учебный год начинается с 1 сентября. У первокурсников в этот день торжественная линейка, старшие курсы начинают учиться чуть позже, это можно узнать из рассписания."
                         android:visibility="gone"
                         android:paddingTop="8dp"
-                        android:textColor="@android:color/black"
+                        android:textColor="@color/text_light"
                         tools:ignore="HardcodedText" />
                 </LinearLayout>
 
@@ -319,7 +321,7 @@ https://uisi.ru/uisi/abiturient/"
                         android:text="Как оформить академический отпуск?"
                         android:textStyle="bold"
                         android:textSize="16sp"
-                        android:textColor="@android:color/black"
+                        android:textColor="@color/text_light"
                         tools:ignore="HardcodedText" />
 
                     <TextView
@@ -329,7 +331,7 @@ https://uisi.ru/uisi/abiturient/"
                         android:text="Для оформления академа нужно в деканате подать заявление и получить приказ."
                         android:visibility="gone"
                         android:paddingTop="8dp"
-                        android:textColor="@android:color/black"
+                        android:textColor="@color/text_light"
                         tools:ignore="HardcodedText" />
                 </LinearLayout>
 
@@ -342,14 +344,15 @@ https://uisi.ru/uisi/abiturient/"
             android:id="@+id/footerLayout"
             android:layout_width="match_parent"
             android:layout_height="60dp"
-            android:background="#FFFFFF"
+            android:background="@color/header_footer_light"
             app:layout_constraintBottom_toBottomOf="parent">
 
             <ImageView
                 android:id="@+id/icon1"
                 android:layout_width="30dp"
                 android:layout_height="30dp"
-                android:src="@drawable/ic_home"
+                android:src="@drawable/ic_home1"
+                app:tint="@color/text_light"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toStartOf="@+id/icon2"
                 app:layout_constraintStart_toStartOf="parent"
@@ -362,7 +365,8 @@ https://uisi.ru/uisi/abiturient/"
                 android:id="@+id/icon2"
                 android:layout_width="30dp"
                 android:layout_height="30dp"
-                android:src="@drawable/ic_calendar"
+                android:src="@drawable/ic_calendar1"
+                app:tint="@color/text_light"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toStartOf="@id/icon3"
                 app:layout_constraintStart_toEndOf="@+id/icon1"
@@ -374,7 +378,8 @@ https://uisi.ru/uisi/abiturient/"
                 android:id="@+id/icon3"
                 android:layout_width="30dp"
                 android:layout_height="30dp"
-                android:src="@drawable/ic_map"
+                android:src="@drawable/ic_map1"
+                app:tint="@color/text_light"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toStartOf="@id/icon4"
                 app:layout_constraintStart_toEndOf="@+id/icon2"
@@ -386,7 +391,8 @@ https://uisi.ru/uisi/abiturient/"
                 android:id="@+id/icon4"
                 android:layout_width="30dp"
                 android:layout_height="30dp"
-                android:src="@drawable/ic_settings"
+                android:src="@drawable/ic_settings1"
+                app:tint="@color/text_light"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toEndOf="@+id/icon3"

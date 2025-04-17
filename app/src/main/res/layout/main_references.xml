@@ -17,7 +17,7 @@
             android:id="@+id/headerLayout"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:background="#FFFFFF"
+            android:background="@color/header_footer_light"
             android:padding="16dp"
             app:layout_constraintTop_toTopOf="parent">
 
@@ -36,7 +36,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="@string/references"
-                android:textColor="@android:color/black"
+                android:textColor="@color/text_light"
                 android:textSize="20sp"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
@@ -51,25 +51,175 @@
             android:layout_height="0dp"
             android:descendantFocusability="blocksDescendants"
             app:layout_constraintTop_toBottomOf="@id/headerLayout"
+            android:background="@color/background_light"
             app:layout_constraintBottom_toTopOf="@id/footerLayout">
 
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:orientation="vertical"
+                android:background="@color/background_light"
                 android:padding="16dp">
 
-                <!-- Текстовое поле для справки -->
-                <TextView
-                    android:id="@+id/callText"
+                <LinearLayout
+                    android:id="@+id/referencesCard0"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="Понедельник - Пятница:"
-                    android:textColor="@android:color/black"
-                    android:textSize="16sp"
-                    android:lineSpacingExtra="4dp"
-                    android:gravity="center"
-                    tools:ignore="HardcodedText,VisualLintLongText" />
+                    android:orientation="vertical"
+                    android:padding="12dp"
+                    android:layout_marginBottom="8dp"
+                    tools:ignore="UselessParent">
+
+                    <TextView
+                        android:id="@+id/referencesText0"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Все справки заказываются в деканате!"
+                        android:textStyle="bold"
+                        android:textSize="18sp"
+                        android:textColor="@color/text_light"
+                        tools:ignore="HardcodedText" />
+
+                </LinearLayout>
+
+
+                <!-- 1 карточка -->
+                <LinearLayout
+                    android:id="@+id/referencesCard1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="12dp"
+                    android:layout_marginBottom="8dp"
+                    tools:ignore="UselessParent">
+
+                    <TextView
+                        android:id="@+id/referencesText1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Справки №5"
+                        android:textStyle="bold"
+                        android:textSize="16sp"
+                        android:textColor="@color/text_light"
+                        tools:ignore="HardcodedText" />
+
+                    <TextView
+                        android:id="@+id/answerText1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Только для студентов ВО и СПО.
+\nСрок изготовления - 10 рабочих дней после подачи заявления!
+\nВ военкомат справки получать в кабинете №114 учебного корпуса №5.
+\nВ пенсионный фонд и управление социальной защиты населения получать в кабинете №109 учебного корпуса №5."
+                        android:visibility="gone"
+                        android:paddingTop="8dp"
+                        android:textColor="@color/text_light"
+                        tools:ignore="HardcodedText" />
+                </LinearLayout>
+
+                <!-- 2 карточка -->
+                <LinearLayout
+                    android:id="@+id/referencesCard2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="12dp"
+                    android:layout_marginBottom="8dp"
+                    tools:ignore="UselessParent">
+
+                    <TextView
+                        android:id="@+id/referencesText2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Справки №4"
+                        android:textStyle="bold"
+                        android:textSize="16sp"
+                        android:textColor="@color/text_light"
+                        tools:ignore="HardcodedText" />
+
+                    <TextView
+                        android:id="@+id/answerText2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Только для студентов ВО и СПО.
+\nСправки из бухгалтерии о размере стипендии
+\nСрок изготовления - 10 рабочих дней после подачи заявления!"
+                        android:visibility="gone"
+                        android:paddingTop="8dp"
+                        android:textColor="@color/text_light"
+                        tools:ignore="HardcodedText" />
+                </LinearLayout>
+
+                <!-- 3 карточка -->
+                <LinearLayout
+                    android:id="@+id/referencesCard3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="12dp"
+                    android:layout_marginBottom="8dp"
+                    tools:ignore="UselessParent">
+
+                    <TextView
+                        android:id="@+id/referencesText3"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Остальные справки"
+                        android:textStyle="bold"
+                        android:textSize="16sp"
+                        android:textColor="@color/text_light"
+                        tools:ignore="HardcodedText" />
+
+                    <TextView
+                        android:id="@+id/answerText3"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Справки:
+\n- по месту работы родителей.
+\n- в ЖКХ
+\n- для оформления E-карты
+\n- для оформления загранпаспорта
+\n- в УФМС
+\n- в отдел субсидий
+\nСрок изготовления - 3 рабочих дней после подачи заявления!"
+                        android:visibility="gone"
+                        android:paddingTop="8dp"
+                        android:textColor="@color/text_light"
+                        tools:ignore="HardcodedText" />
+                </LinearLayout>
+
+                <!-- 2 карточка -->
+                <LinearLayout
+                    android:id="@+id/referencesCard4"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="12dp"
+                    android:layout_marginBottom="8dp"
+                    tools:ignore="UselessParent">
+
+                    <TextView
+                        android:id="@+id/referencesText4"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Справки для налоговой"
+                        android:textStyle="bold"
+                        android:textSize="16sp"
+                        android:textColor="@color/text_light"
+                        tools:ignore="HardcodedText" />
+
+                    <TextView
+                        android:id="@+id/answerText4"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Нужно получить в деканате лист для заполнения, после успешного заполнения сдать его методисту.
+\nСрок изготовления - 10 рабочих дней после подачи заявления!"
+                        android:visibility="gone"
+                        android:paddingTop="8dp"
+                        android:textColor="@color/text_light"
+                        tools:ignore="HardcodedText" />
+                </LinearLayout>
+
             </LinearLayout>
         </ScrollView>
 
@@ -78,14 +228,15 @@
             android:id="@+id/footerLayout"
             android:layout_width="match_parent"
             android:layout_height="60dp"
-            android:background="#FFFFFF"
+            android:background="@color/header_footer_light"
             app:layout_constraintBottom_toBottomOf="parent">
 
             <ImageView
                 android:id="@+id/icon1"
                 android:layout_width="30dp"
                 android:layout_height="30dp"
-                android:src="@drawable/ic_home"
+                android:src="@drawable/ic_home1"
+                app:tint="@color/text_light"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toStartOf="@+id/icon2"
                 app:layout_constraintStart_toStartOf="parent"
@@ -98,7 +249,8 @@
                 android:id="@+id/icon2"
                 android:layout_width="30dp"
                 android:layout_height="30dp"
-                android:src="@drawable/ic_calendar"
+                android:src="@drawable/ic_calendar1"
+                app:tint="@color/text_light"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toStartOf="@id/icon3"
                 app:layout_constraintStart_toEndOf="@+id/icon1"
@@ -110,7 +262,8 @@
                 android:id="@+id/icon3"
                 android:layout_width="30dp"
                 android:layout_height="30dp"
-                android:src="@drawable/ic_map"
+                android:src="@drawable/ic_map1"
+                app:tint="@color/text_light"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toStartOf="@id/icon4"
                 app:layout_constraintStart_toEndOf="@+id/icon2"
@@ -122,7 +275,8 @@
                 android:id="@+id/icon4"
                 android:layout_width="30dp"
                 android:layout_height="30dp"
-                android:src="@drawable/ic_settings"
+                android:src="@drawable/ic_settings1"
+                app:tint="@color/text_light"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toEndOf="@+id/icon3"

@@ -5,7 +5,9 @@ import android.os.Bundle
 import android.util.Log
 import android.widget.ImageView
 import androidx.appcompat.app.AppCompatActivity
+import androidx.appcompat.app.AppCompatDelegate
 import androidx.cardview.widget.CardView
+import androidx.core.content.edit
 import com.example.urtisi.Settings.HelpActivity
 import com.example.urtisi.Settings.LinkActivity
 import com.example.urtisi.Settings.ThemeSelectionActivity
@@ -20,12 +22,11 @@ class SettingsActivity : AppCompatActivity() {
         val settingsIcon = findViewById<ImageView>(R.id.icon1)
         // Установить обработчик нажатия
         settingsIcon.setOnClickListener {
-            Log.d("SettingsActivity", "Иконка настроек нажата") // Лог для отладки
+            Log.d("SettingsActivity", "Иконка настроек нажата")
             // Создать Intent для перехода на MainActivity
             val intent = Intent(this, MainActivity::class.java)
             startActivity(intent)
         }
-
 
         // Найти карточку выбора темы
         val cardThemeSelection = findViewById<CardView>(R.id.CardThemeSelection)
@@ -50,8 +51,6 @@ class SettingsActivity : AppCompatActivity() {
             val intent = Intent(this, LinkActivity::class.java)
             startActivity(intent)
         }
-
-
 
     }
 }

@@ -17,7 +17,7 @@
             android:id="@+id/headerLayout"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:background="#FFFFFF"
+            android:background="@color/header_footer_light"
             android:padding="16dp"
             app:layout_constraintTop_toTopOf="parent">
 
@@ -36,7 +36,7 @@
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:text="Высшая математика и физика"
-                android:textColor="@android:color/black"
+                android:textColor="@color/text_light"
                 android:textSize="20sp"
                 android:maxLines="2"
                 android:ellipsize="end"
@@ -55,12 +55,14 @@
             android:layout_width="match_parent"
             android:layout_height="0dp"
             android:descendantFocusability="blocksDescendants"
+            android:background="@color/background_light"
             app:layout_constraintTop_toBottomOf="@id/headerLayout"
             app:layout_constraintBottom_toTopOf="@id/footerLayout">
 
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:background="@color/background_light"
                 android:orientation="vertical"
                 android:padding="16dp">
 
@@ -70,7 +72,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:text="Состав кафедры:\n"
-                    android:textColor="@android:color/black"
+                    android:textColor="@color/text_light"
                     android:textSize="16sp"
                     android:textStyle="bold"
                     android:lineSpacingExtra="4dp"
@@ -99,7 +101,7 @@
 \nБелятова Валерия Алексеевна - Преподаватель
 \nЛатыпова Анна Шамильевна - Преподаватель
 \nТорбенко Светлана Григорьевна - Преподаватель	\n"
-                    android:textColor="@android:color/black"
+                    android:textColor="@color/text_light"
                     android:textSize="16sp"
                     android:lineSpacingExtra="4dp"
                     tools:ignore="HardcodedText" />
@@ -109,7 +111,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:text="Основные направления научно-исследовательской деятельности:\n"
-                    android:textColor="@android:color/black"
+                    android:textColor="@color/text_light"
                     android:textSize="16sp"
                     android:textStyle="bold"
                     android:lineSpacingExtra="4dp"
@@ -124,7 +126,7 @@
 \n3. Подготовка научных и учебно-методических статей для публикации в российских и зарубежных изданиях (ППС кафедры).
 \n4. Участие в работе российских и международных научно-исследовательских и учебно-методических конференций, семинаров, форумов, школ (ППС кафедры).
 \n5. Выполнение работ в рамках Госзадания № 071-03-2024-008 от 19.01.2024 «Стабильность углеродных наночастиц» (научные сотрудники НИЛ).\n"
-                    android:textColor="@android:color/black"
+                    android:textColor="@color/text_light"
                     android:textSize="16sp"
                     android:lineSpacingExtra="4dp"
                     tools:ignore="HardcodedText,VisualLintLongText" />
@@ -134,7 +136,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:text="Научно-исследовательская работа студентов:\n"
-                    android:textColor="@android:color/black"
+                    android:textColor="@color/text_light"
                     android:textSize="16sp"
                     android:textStyle="bold"
                     android:lineSpacingExtra="4dp"
@@ -147,7 +149,7 @@
                     android:text="1. Участие в научно-практических конференций студентов УрТИСИ СибГУТИ.
 \n2. Участие в Межвузовских Олимпиадах по теории вероятности и математической статистике (организатор СибГУТИ).
 \n3. Организация и проведение Олимпиад по физике, высшей математике, теории вероятности и математической статистике, математике среди студентов УрТИСИ СибГУТИ\n"
-                    android:textColor="@android:color/black"
+                    android:textColor="@color/text_light"
                     android:textSize="16sp"
                     android:lineSpacingExtra="4dp"
                     tools:ignore="HardcodedText,VisualLintLongText" />
@@ -161,14 +163,15 @@
             android:id="@+id/footerLayout"
             android:layout_width="match_parent"
             android:layout_height="60dp"
-            android:background="#FFFFFF"
+            android:background="@color/header_footer_light"
             app:layout_constraintBottom_toBottomOf="parent">
 
             <ImageView
                 android:id="@+id/icon1"
                 android:layout_width="30dp"
                 android:layout_height="30dp"
-                android:src="@drawable/ic_home"
+                android:src="@drawable/ic_home1"
+                app:tint="@color/text_light"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toStartOf="@+id/icon2"
                 app:layout_constraintStart_toStartOf="parent"
@@ -181,7 +184,8 @@
                 android:id="@+id/icon2"
                 android:layout_width="30dp"
                 android:layout_height="30dp"
-                android:src="@drawable/ic_calendar"
+                android:src="@drawable/ic_calendar1"
+                app:tint="@color/text_light"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toStartOf="@id/icon3"
                 app:layout_constraintStart_toEndOf="@+id/icon1"
@@ -193,7 +197,8 @@
                 android:id="@+id/icon3"
                 android:layout_width="30dp"
                 android:layout_height="30dp"
-                android:src="@drawable/ic_map"
+                android:src="@drawable/ic_map1"
+                app:tint="@color/text_light"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toStartOf="@id/icon4"
                 app:layout_constraintStart_toEndOf="@+id/icon2"
@@ -205,7 +210,8 @@
                 android:id="@+id/icon4"
                 android:layout_width="30dp"
                 android:layout_height="30dp"
-                android:src="@drawable/ic_settings"
+                android:src="@drawable/ic_settings1"
+                app:tint="@color/text_light"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toEndOf="@+id/icon3"

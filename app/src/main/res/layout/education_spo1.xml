@@ -17,7 +17,7 @@
             android:id="@+id/headerLayout"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:background="#FFFFFF"
+            android:background="@color/header_footer_light"
             android:padding="16dp"
             app:layout_constraintTop_toTopOf="parent">
 
@@ -36,7 +36,7 @@
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:text="Инфокоммуникационные сети и системы связи"
-                android:textColor="@android:color/black"
+                android:textColor="@color/text_light"
                 android:textSize="20sp"
                 android:maxLines="2"
                 android:ellipsize="end"
@@ -56,12 +56,14 @@
             android:layout_height="0dp"
             android:descendantFocusability="blocksDescendants"
             app:layout_constraintTop_toBottomOf="@id/headerLayout"
+            android:background="@color/background_light"
             app:layout_constraintBottom_toTopOf="@id/footerLayout">
 
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:orientation="vertical"
+                android:background="@color/background_light"
                 android:padding="16dp">
 
                 <!-- Текстовые поля -->
@@ -70,18 +72,19 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:text="Нормативный срок обучения по специальности:"
-                    android:textColor="@android:color/black"
+                    android:textColor="@color/text_light"
                     android:textSize="16sp"
                     android:textStyle="bold"
                     android:lineSpacingExtra="4dp"
                     tools:ignore="HardcodedText" />
+
                 <TextView
                     android:id="@+id/helpText2"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:text="-на базе основного общего образования (9 классов) – 4 года 10 месяцев.
 \n-на базе среднего общего образования (11 классов) – 3 года 10 месяцев.\n"
-                    android:textColor="@android:color/black"
+                    android:textColor="@color/text_light"
                     android:textSize="16sp"
                     android:lineSpacingExtra="4dp"
                     tools:ignore="HardcodedText,VisualLintLongText" />
@@ -91,7 +94,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:text="Квалификация выпускника – техник\n"
-                    android:textColor="@android:color/black"
+                    android:textColor="@color/text_light"
                     android:textSize="16sp"
                     android:textStyle="bold"
                     android:lineSpacingExtra="4dp"
@@ -105,7 +108,7 @@
 Объём информации, передаваемой через информационно-телекоммуникационную инфраструктуру мира, удваивается каждые 2-3 года. Вся информация, которая создаётся в электронном виде, не может «добраться» до пункта назначения и обратно без обеспечения этого процесса специалистами Инфокоммуникационные сети и системы связи.\n
 Связь местная, между регионами нашей страны и международная связь осуществляются с комплексов, состоящих из линий связи и оборудования. Используются аналоговые и цифровые системы передачи, волоконно-оптические линии связи. По ним передаются все виды информации – аудио, видео, мультимедиа (т.е. телефонная связь, передача данных, телевидение, радиовещание, сигналы межсетевого взаимодействия Интернет и т.д.). Когда вы, например, работаете используя сети Интернет, вы даже не знаете, где находится тот информационный ресурс, к которому вы обращаетесь – в России, Европе или Америке, поскольку все соединяющие вас каналы являются «прозрачными» для всех видов информации.\n
 Методы построения компьютерных сетей и междугородных и международных сетей связи аналогичны, при изучении таких предметов как «Волоконно-оптические линии и системы передачи», «Цифровые системы передачи», «Транспортные сети», будущие выпускники этой специальности на достаточно высоком уровне узнают и принципы работы компьютерных сетей, цифровых коммутационных устройств, маршрутизаторов и другого оборудования сетевых технологий.\n"
-                    android:textColor="@android:color/black"
+                    android:textColor="@color/text_light"
                     android:textSize="16sp"
                     android:lineSpacingExtra="4dp"
                     tools:ignore="HardcodedText,VisualLintLongText" />
@@ -115,7 +118,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:text="Выпускники специальности могут выполнять следующую работу:"
-                    android:textColor="@android:color/black"
+                    android:textColor="@color/text_light"
                     android:textSize="16sp"
                     android:textStyle="bold"
                     android:lineSpacingExtra="4dp"
@@ -129,7 +132,7 @@
 \n- Техническое обслуживание, настроечные и ремонтные работы на волоконно-оптических системах передачи;
 \n- Техническое обслуживание и настроечные работы транспортных сетей любого назначения;
 \n- Техническое обслуживание и настроечные работы линейных сооружений связи – как медных, так и оптических;\n"
-                    android:textColor="@android:color/black"
+                    android:textColor="@color/text_light"
                     android:textSize="16sp"
                     android:lineSpacingExtra="4dp"
                     tools:ignore="HardcodedText" />
@@ -139,7 +142,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:text="Выпускники специальности могут работать:"
-                    android:textColor="@android:color/black"
+                    android:textColor="@color/text_light"
                     android:textSize="16sp"
                     android:textStyle="bold"
                     android:lineSpacingExtra="4dp"
@@ -152,7 +155,7 @@
                     android:text="- На любых узлах связи, принадлежащих как государственным структурам (Минсвязи, Минобороны и т.д.), так и коммерческим организациям (Операторам связи, Интернет-провайдерам и т.д.);
 \n- На обслуживании транспортных сетей;
 \n- В центрах спутниковой связи и т.д.\n"
-                    android:textColor="@android:color/black"
+                    android:textColor="@color/text_light"
                     android:textSize="16sp"
                     android:lineSpacingExtra="4dp"
                     tools:ignore="HardcodedText" />
@@ -162,7 +165,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:text="Возможности продолжения образования выпускника:"
-                    android:textColor="@android:color/black"
+                    android:textColor="@color/text_light"
                     android:textSize="16sp"
                     android:textStyle="bold"
                     android:lineSpacingExtra="4dp"
@@ -173,7 +176,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:text="- Выпускник, освоивший основную профессиональную образовательную программу среднего профессионального образования по специальности Инфокоммуникационные сети и системы связи, подготовлен к освоению основной профессиональной образовательной программы высшего профессионального образования и может продолжить обучение в институте связи для получения высшего образования (бакалавриат) по любому профилю направления 11.03.02 'Инфокоммуникационные технологии и системы связи.'"
-                    android:textColor="@android:color/black"
+                    android:textColor="@color/text_light"
                     android:textSize="16sp"
                     android:lineSpacingExtra="4dp"
                     tools:ignore="HardcodedText" />
@@ -188,14 +191,15 @@
             android:id="@+id/footerLayout"
             android:layout_width="match_parent"
             android:layout_height="60dp"
-            android:background="#FFFFFF"
+            android:background="@color/header_footer_light"
             app:layout_constraintBottom_toBottomOf="parent">
 
             <ImageView
                 android:id="@+id/icon1"
                 android:layout_width="30dp"
                 android:layout_height="30dp"
-                android:src="@drawable/ic_home"
+                android:src="@drawable/ic_home1"
+                app:tint="@color/text_light"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toStartOf="@+id/icon2"
                 app:layout_constraintStart_toStartOf="parent"
@@ -208,7 +212,8 @@
                 android:id="@+id/icon2"
                 android:layout_width="30dp"
                 android:layout_height="30dp"
-                android:src="@drawable/ic_calendar"
+                android:src="@drawable/ic_calendar1"
+                app:tint="@color/text_light"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toStartOf="@id/icon3"
                 app:layout_constraintStart_toEndOf="@+id/icon1"
@@ -220,7 +225,8 @@
                 android:id="@+id/icon3"
                 android:layout_width="30dp"
                 android:layout_height="30dp"
-                android:src="@drawable/ic_map"
+                android:src="@drawable/ic_map1"
+                app:tint="@color/text_light"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toStartOf="@id/icon4"
                 app:layout_constraintStart_toEndOf="@+id/icon2"
@@ -232,7 +238,8 @@
                 android:id="@+id/icon4"
                 android:layout_width="30dp"
                 android:layout_height="30dp"
-                android:src="@drawable/ic_settings"
+                android:src="@drawable/ic_settings1"
+                app:tint="@color/text_light"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toEndOf="@+id/icon3"

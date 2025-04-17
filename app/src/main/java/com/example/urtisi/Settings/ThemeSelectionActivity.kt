@@ -10,34 +10,26 @@ import androidx.cardview.widget.CardView
 import com.example.urtisi.MainActivity
 import com.example.urtisi.R
 import com.example.urtisi.SettingsActivity
+import androidx.core.content.edit
 
 class ThemeSelectionActivity : AppCompatActivity() {
-
     private lateinit var sharedPreferences: SharedPreferences
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.settings_theme_selection)
 
-        // Инициализируем SharedPreferences
         sharedPreferences = getSharedPreferences("AppSettings", MODE_PRIVATE)
 
-        // Устанавливаем сохранённую тему при запуске
-        val savedTheme = sharedPreferences.getInt("theme_mode", AppCompatDelegate.MODE_NIGHT_FOLLOW_SYSTEM)
-        AppCompatDelegate.setDefaultNightMode(savedTheme)
-
         // Обработчики для карточек выбора темы
-        val cardLight = findViewById<CardView>(R.id.cardLight)
-        cardLight.setOnClickListener {
-            saveTheme(AppCompatDelegate.MODE_NIGHT_NO) // Светлая тема
+        findViewById<CardView>(R.id.cardLight).setOnClickListener {
+            saveTheme(AppCompatDelegate.MODE_NIGHT_NO)
         }
-        val cardDark = findViewById<CardView>(R.id.cardDark)
-        cardDark.setOnClickListener {
-            saveTheme(AppCompatDelegate.MODE_NIGHT_YES) // Тёмная тема
+        findViewById<CardView>(R.id.cardDark).setOnClickListener {
+            saveTheme(AppCompatDelegate.MODE_NIGHT_YES)
         }
-        val cardSystem = findViewById<CardView>(R.id.cardSystem)
-        cardSystem.setOnClickListener {
-            saveTheme(AppCompatDelegate.MODE_NIGHT_FOLLOW_SYSTEM) // Системная тема
+        findViewById<CardView>(R.id.cardSystem).setOnClickListener {
+            saveTheme(AppCompatDelegate.MODE_NIGHT_FOLLOW_SYSTEM)
         }
 
         // Обработчики для нижней панели
@@ -49,10 +41,14 @@ class ThemeSelectionActivity : AppCompatActivity() {
         }
     }
 
-    private fun saveTheme(themeMode: Int) {
-        // Сохраняем выбранную тему
-        sharedPreferences.edit().putInt("theme_mode", themeMode).apply()
-        AppCompatDelegate.setDefaultNightMode(themeMode)
-        recreate() // Перезагрузка активности для применения темы
-    }
+            private fun saveTheme(themeMode: Int) {
+                sharedPreferences.edit {
+                    putInt("theme_mode", themeMode)
+                    apply()
+                }
+                AppCompatDelegate.setDefaultNightMode(themeMode)
+                recreate()
+            }
 }
+
+

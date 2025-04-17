@@ -17,7 +17,7 @@
             android:id="@+id/headerLayout"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:background="#FFFFFF"
+            android:background="@color/header_footer_light"
             android:padding="16dp"
             app:layout_constraintTop_toTopOf="parent">
 
@@ -36,7 +36,7 @@
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:text="Информационные системы и технологий"
-                android:textColor="@android:color/black"
+                android:textColor="@color/text_light"
                 android:textSize="20sp"
                 android:maxLines="2"
                 android:ellipsize="end"
@@ -55,12 +55,14 @@
             android:layout_width="match_parent"
             android:layout_height="0dp"
             android:descendantFocusability="blocksDescendants"
+            android:background="@color/background_light"
             app:layout_constraintTop_toBottomOf="@id/headerLayout"
             app:layout_constraintBottom_toTopOf="@id/footerLayout">
 
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:background="@color/background_light"
                 android:orientation="vertical"
                 android:padding="16dp">
 
@@ -87,7 +89,7 @@
 \nПриглашаем вас присоединиться к нашей дружной и амбициозной команде! На кафедре ИСТ вы получите не только глубокие теоретические знания, но и ценный практический опыт, который станет прочной основой для вашего профессионального роста и успешной карьеры в мире информационных технологий.
 \nМы ждем вас и готовы помочь вам раскрыть ваш потенциал в увлекательном и постоянно развивающемся мире ИТ!
 \nПодробная информация о кафедре ИСТ представлена на сайте https://ist.uisi.ru/	\n"
-                    android:textColor="@android:color/black"
+                    android:textColor="@color/text_light"
                     android:textSize="16sp"
                     android:autoLink="web"
                     android:lineSpacingExtra="4dp"
@@ -102,14 +104,15 @@
             android:id="@+id/footerLayout"
             android:layout_width="match_parent"
             android:layout_height="60dp"
-            android:background="#FFFFFF"
+            android:background="@color/header_footer_light"
             app:layout_constraintBottom_toBottomOf="parent">
 
             <ImageView
                 android:id="@+id/icon1"
                 android:layout_width="30dp"
                 android:layout_height="30dp"
-                android:src="@drawable/ic_home"
+                android:src="@drawable/ic_home1"
+                app:tint="@color/text_light"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toStartOf="@+id/icon2"
                 app:layout_constraintStart_toStartOf="parent"
@@ -122,7 +125,8 @@
                 android:id="@+id/icon2"
                 android:layout_width="30dp"
                 android:layout_height="30dp"
-                android:src="@drawable/ic_calendar"
+                android:src="@drawable/ic_calendar1"
+                app:tint="@color/text_light"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toStartOf="@id/icon3"
                 app:layout_constraintStart_toEndOf="@+id/icon1"
@@ -134,7 +138,8 @@
                 android:id="@+id/icon3"
                 android:layout_width="30dp"
                 android:layout_height="30dp"
-                android:src="@drawable/ic_map"
+                android:src="@drawable/ic_map1"
+                app:tint="@color/text_light"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toStartOf="@id/icon4"
                 app:layout_constraintStart_toEndOf="@+id/icon2"
@@ -146,7 +151,8 @@
                 android:id="@+id/icon4"
                 android:layout_width="30dp"
                 android:layout_height="30dp"
-                android:src="@drawable/ic_settings"
+                android:src="@drawable/ic_settings1"
+                app:tint="@color/text_light"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toEndOf="@+id/icon3"

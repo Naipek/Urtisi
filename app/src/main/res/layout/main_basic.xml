@@ -17,7 +17,7 @@
             android:id="@+id/headerLayout"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:background="#FFFFFF"
+            android:background="@color/header_footer_light"
             android:padding="16dp"
             app:layout_constraintTop_toTopOf="parent">
 
@@ -36,7 +36,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="@string/basic"
-                android:textColor="@android:color/black"
+                android:textColor="@color/text_light"
                 android:textSize="20sp"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
@@ -51,12 +51,14 @@
             android:layout_height="0dp"
             android:descendantFocusability="blocksDescendants"
             app:layout_constraintTop_toBottomOf="@id/headerLayout"
+            android:background="@color/background_light"
             app:layout_constraintBottom_toTopOf="@id/footerLayout">
 
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:orientation="vertical"
+                android:background="@color/background_light"
                 android:padding="16dp">
 
                 <!-- Текстовое поле для справки -->
@@ -65,7 +67,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:text="С началом обучения в институте у тебя появиться несколько новых вещей, постарайся таскать их с собой! \n"
-                    android:textColor="@android:color/black"
+                    android:textColor="@color/text_light"
                     android:textSize="16sp"
                     android:lineSpacingExtra="4dp"
                     tools:ignore="HardcodedText,VisualLintLongText" />
@@ -75,7 +77,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:text="Студенческий билет\n"
-                    android:textColor="@android:color/black"
+                    android:textColor="@color/text_light"
                     android:textStyle="bold"
                     android:textSize="16sp"
                     android:lineSpacingExtra="4dp"
@@ -89,7 +91,7 @@
 \nСтудик тебе выдадут уже после торжественной линейки, если ты успел сдать фотографию на него.
 \nНе забывай ежегодно продлять его в деканате, чтобы получать скидки!
 \n*При потере или случайной почре обратись в деканат.\n"
-                    android:textColor="@android:color/black"
+                    android:textColor="@color/text_light"
                     android:textSize="16sp"
                     android:lineSpacingExtra="4dp"
                     tools:ignore="HardcodedText,VisualLintLongText" />
@@ -99,7 +101,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:text="Электронный пропуск\n"
-                    android:textColor="@android:color/black"
+                    android:textColor="@color/text_light"
                     android:textStyle="bold"
                     android:textSize="16sp"
                     android:lineSpacingExtra="4dp"
@@ -112,7 +114,7 @@
                     android:text="Является пластиковой карточкой с чипом внутри, которая позволит тебе пройти через турникет в институт или общежитие. У студентов проживающих в общежитии отдельный пропус, действующий на турникеты в общежитии.
 \nВыдают пропус в течении месяца после начала учёбы.
 \n*При неисправной работе пропуска обратись в деканат.\n"
-                    android:textColor="@android:color/black"
+                    android:textColor="@color/text_light"
                     android:textSize="16sp"
                     android:lineSpacingExtra="4dp"
                     tools:ignore="HardcodedText,VisualLintLongText" />
@@ -122,7 +124,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:text="Стипендиальная карта\n"
-                    android:textColor="@android:color/black"
+                    android:textColor="@color/text_light"
                     android:textStyle="bold"
                     android:textSize="16sp"
                     android:lineSpacingExtra="4dp"
@@ -134,7 +136,7 @@
                     android:layout_height="wrap_content"
                     android:text="Банковская на которую падают твои кровные гроши, если ты являешься студентом бюджетной формы обучения.
 \nО получении карты тебе сообщит деканат."
-                    android:textColor="@android:color/black"
+                    android:textColor="@color/text_light"
                     android:textSize="16sp"
                     android:lineSpacingExtra="4dp"
                     tools:ignore="HardcodedText,VisualLintLongText" />
@@ -146,14 +148,15 @@
             android:id="@+id/footerLayout"
             android:layout_width="match_parent"
             android:layout_height="60dp"
-            android:background="#FFFFFF"
+            android:background="@color/header_footer_light"
             app:layout_constraintBottom_toBottomOf="parent">
 
             <ImageView
                 android:id="@+id/icon1"
                 android:layout_width="30dp"
                 android:layout_height="30dp"
-                android:src="@drawable/ic_home"
+                android:src="@drawable/ic_home1"
+                app:tint="@color/text_light"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toStartOf="@+id/icon2"
                 app:layout_constraintStart_toStartOf="parent"
@@ -166,7 +169,8 @@
                 android:id="@+id/icon2"
                 android:layout_width="30dp"
                 android:layout_height="30dp"
-                android:src="@drawable/ic_calendar"
+                android:src="@drawable/ic_calendar1"
+                app:tint="@color/text_light"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toStartOf="@id/icon3"
                 app:layout_constraintStart_toEndOf="@+id/icon1"
@@ -178,7 +182,8 @@
                 android:id="@+id/icon3"
                 android:layout_width="30dp"
                 android:layout_height="30dp"
-                android:src="@drawable/ic_map"
+                android:src="@drawable/ic_map1"
+                app:tint="@color/text_light"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toStartOf="@id/icon4"
                 app:layout_constraintStart_toEndOf="@+id/icon2"
@@ -190,7 +195,8 @@
                 android:id="@+id/icon4"
                 android:layout_width="30dp"
                 android:layout_height="30dp"
-                android:src="@drawable/ic_settings"
+                android:src="@drawable/ic_settings1"
+                app:tint="@color/text_light"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toEndOf="@+id/icon3"

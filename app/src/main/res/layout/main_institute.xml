@@ -17,7 +17,7 @@
             android:id="@+id/headerLayout"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:background="#FFFFFF"
+            android:background="@color/header_footer_light"
             android:padding="16dp"
             app:layout_constraintTop_toTopOf="parent">
 
@@ -36,7 +36,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="@string/building"
-                android:textColor="@android:color/black"
+                android:textColor="@color/text_light"
                 android:textSize="20sp"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
@@ -51,12 +51,14 @@
             android:layout_height="0dp"
             android:descendantFocusability="blocksDescendants"
             app:layout_constraintTop_toBottomOf="@id/headerLayout"
+            android:background="@color/background_light"
             app:layout_constraintBottom_toTopOf="@id/footerLayout">
 
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:orientation="vertical"
+                android:background="@color/background_light"
                 android:padding="16dp">
 
                 <!-- Текстовые поля -->
@@ -65,7 +67,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:text="Полное наименование образовательной организации"
-                    android:textColor="@android:color/black"
+                    android:textColor="@color/text_light"
                     android:textSize="16sp"
                     android:textStyle="bold"
                     android:lineSpacingExtra="4dp"
@@ -76,7 +78,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:text="Уральский технический институт связи и информатики (филиал) федерального государственного бюджетного образовательного учреждения высшего образования «Сибирский государственный университет телекоммуникаций и информатики» в г. Екатеринбурге\n"
-                    android:textColor="@android:color/black"
+                    android:textColor="@color/text_light"
                     android:textSize="16sp"
                     android:lineSpacingExtra="4dp"
                     tools:ignore="HardcodedText,VisualLintLongText" />
@@ -86,7 +88,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:text="Сокращенное наименование образовательной организации"
-                    android:textColor="@android:color/black"
+                    android:textColor="@color/text_light"
                     android:textSize="16sp"
                     android:textStyle="bold"
                     android:lineSpacingExtra="4dp"
@@ -97,7 +99,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:text="УрТИСИ СибГУТИ\n"
-                    android:textColor="@android:color/black"
+                    android:textColor="@color/text_light"
                     android:textSize="16sp"
                     android:lineSpacingExtra="4dp"
                     tools:ignore="HardcodedText" />
@@ -107,7 +109,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:text="Дата создания"
-                    android:textColor="@android:color/black"
+                    android:textColor="@color/text_light"
                     android:textSize="16sp"
                     android:textStyle="bold"
                     android:lineSpacingExtra="4dp"
@@ -118,7 +120,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:text="02.07.1998 г.\n"
-                    android:textColor="@android:color/black"
+                    android:textColor="@color/text_light"
                     android:textSize="16sp"
                     android:lineSpacingExtra="4dp"
                     tools:ignore="HardcodedText" />
@@ -128,7 +130,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:text="Сведения об учредителях и вышестоящих организациях"
-                    android:textColor="@android:color/black"
+                    android:textColor="@color/text_light"
                     android:textSize="16sp"
                     android:textStyle="bold"
                     android:lineSpacingExtra="4dp"
@@ -153,7 +155,7 @@
 \nТелефон: +7 383 269-82-02
 \nАдрес сайта: https://www.sibsutis.ru
 \nЭлектронный адрес: rectorat@sibsutis.ru\n"
-                    android:textColor="@android:color/black"
+                    android:textColor="@color/text_light"
                     android:textSize="16sp"
                     android:lineSpacingExtra="4dp"
                     android:autoLink="web|email"
@@ -164,7 +166,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:text="Информация о месте нахождения организации"
-                    android:textColor="@android:color/black"
+                    android:textColor="@color/text_light"
                     android:textSize="16sp"
                     android:textStyle="bold"
                     android:lineSpacingExtra="4dp"
@@ -175,7 +177,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:text="620109. Свердловская область, г. Екатеринбург, ул. Репина, д. 15.\n"
-                    android:textColor="@android:color/black"
+                    android:textColor="@color/text_light"
                     android:textSize="16sp"
                     android:lineSpacingExtra="4dp"
                     tools:ignore="HardcodedText" />
@@ -185,7 +187,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:text="Информация о режиме и графике работы образовательной организации"
-                    android:textColor="@android:color/black"
+                    android:textColor="@color/text_light"
                     android:textSize="16sp"
                     android:textStyle="bold"
                     android:lineSpacingExtra="4dp"
@@ -199,7 +201,7 @@
 для профессорско-преподавательского состава: шестидневная рабочая неделя с проведением занятий по расписанию и одним выходным днем в воскресенье.
 \nНачало учебных занятий - 8:30
 \nОкончание учебных занятий - 20:50\n"
-                    android:textColor="@android:color/black"
+                    android:textColor="@color/text_light"
                     android:textSize="16sp"
                     android:lineSpacingExtra="4dp"
                     tools:ignore="HardcodedText,VisualLintLongText" />
@@ -209,7 +211,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:text="Контактная информация"
-                    android:textColor="@android:color/black"
+                    android:textColor="@color/text_light"
                     android:textSize="16sp"
                     android:textStyle="bold"
                     android:lineSpacingExtra="4dp"
@@ -223,7 +225,7 @@
 \nАдрес электронной почты: adm@uisi.ru, urtisi@sibguti.ru
 \nПриемная комиссия: (343) 305-30-66, доб. 92-19; +7(919) 370-06-89
 \nАдрес электронной почты: priem@urtisi.ru\n"
-                    android:textColor="@android:color/black"
+                    android:textColor="@color/text_light"
                     android:textSize="16sp"
                     android:lineSpacingExtra="4dp"
                     android:autoLink="email"
@@ -238,14 +240,15 @@
             android:id="@+id/footerLayout"
             android:layout_width="match_parent"
             android:layout_height="60dp"
-            android:background="#FFFFFF"
+            android:background="@color/header_footer_light"
             app:layout_constraintBottom_toBottomOf="parent">
 
             <ImageView
                 android:id="@+id/icon1"
                 android:layout_width="30dp"
                 android:layout_height="30dp"
-                android:src="@drawable/ic_home"
+                android:src="@drawable/ic_home1"
+                app:tint="@color/text_light"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toStartOf="@+id/icon2"
                 app:layout_constraintStart_toStartOf="parent"
@@ -258,7 +261,8 @@
                 android:id="@+id/icon2"
                 android:layout_width="30dp"
                 android:layout_height="30dp"
-                android:src="@drawable/ic_calendar"
+                android:src="@drawable/ic_calendar1"
+                app:tint="@color/text_light"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toStartOf="@id/icon3"
                 app:layout_constraintStart_toEndOf="@+id/icon1"
@@ -270,7 +274,8 @@
                 android:id="@+id/icon3"
                 android:layout_width="30dp"
                 android:layout_height="30dp"
-                android:src="@drawable/ic_map"
+                android:src="@drawable/ic_map1"
+                app:tint="@color/text_light"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toStartOf="@id/icon4"
                 app:layout_constraintStart_toEndOf="@+id/icon2"
@@ -282,7 +287,8 @@
                 android:id="@+id/icon4"
                 android:layout_width="30dp"
                 android:layout_height="30dp"
-                android:src="@drawable/ic_settings"
+                android:src="@drawable/ic_settings1"
+                app:tint="@color/text_light"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toEndOf="@+id/icon3"

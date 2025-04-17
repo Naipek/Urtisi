@@ -15,100 +15,55 @@ import com.example.urtisi.Menu.InstituteActivity
 import com.example.urtisi.Menu.QuestionsActivity
 import com.example.urtisi.Menu.ReferencesActivity
 import com.example.urtisi.Menu.StatementActivity
+import android.content.SharedPreferences
+import androidx.appcompat.app.AppCompatDelegate
+import com.example.urtisi.Menu.*
 
 class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
+        // ⬇️ Устанавливаем сохранённую тему до super.onCreate и setContentView
+        val sharedPreferences: SharedPreferences = getSharedPreferences("AppSettings", MODE_PRIVATE)
+        val savedTheme = sharedPreferences.getInt("theme_mode", AppCompatDelegate.MODE_NIGHT_FOLLOW_SYSTEM)
+        AppCompatDelegate.setDefaultNightMode(savedTheme)
+
         super.onCreate(savedInstanceState)
         setContentView(R.layout.main_activity)
 
-        // Поиск виджета шестерёнки
-        val settingsIcon = findViewById<ImageView>(R.id.icon4)
-
-        // Установка обработчика нажатия
-        settingsIcon.setOnClickListener {
-            // Создать Intent для перехода на SettingsActivity
-            val intent = Intent(this, SettingsActivity::class.java)
-            startActivity(intent)
+        // Нижняя панель — переход в настройки
+        findViewById<ImageView>(R.id.icon4).setOnClickListener {
+            startActivity(Intent(this, SettingsActivity::class.java))
         }
 
-        // Найти карточку Расписание звонков
-        val CardCall = findViewById<CardView>(R.id.CardCall)
-        // Установить обработчик нажатия
-        CardCall.setOnClickListener {
-            val intent = Intent(this, CallActivity::class.java)
-            startActivity(intent)
+        // Карточки и переходы
+        findViewById<CardView>(R.id.CardCall).setOnClickListener {
+            startActivity(Intent(this, CallActivity::class.java))
         }
-
-        // Найти карточку Сотрудников
-        val cardEmployees = findViewById<CardView>(R.id.CardEmployees)
-        // Установить обработчик нажатия
-        cardEmployees.setOnClickListener {
-            val intent = Intent(this, EmployeesActivity::class.java)
-            startActivity(intent)
+        findViewById<CardView>(R.id.CardEmployees).setOnClickListener {
+            startActivity(Intent(this, EmployeesActivity::class.java))
         }
-
-        // Найти карточку Об институте
-        val cardInstiute = findViewById<CardView>(R.id.CardInstitute)
-        // Установить обработчик нажатия
-        cardInstiute.setOnClickListener {
-            val intent = Intent(this, InstituteActivity::class.java)
-            startActivity(intent)
+        findViewById<CardView>(R.id.CardInstitute).setOnClickListener {
+            startActivity(Intent(this, InstituteActivity::class.java))
         }
-
-        // Найти карточку Образование
-        val cardEducation = findViewById<CardView>(R.id.CardEducation)
-        // Установить обработчик нажатия
-        cardEducation.setOnClickListener {
-            val intent = Intent(this, EducationActivity::class.java)
-            startActivity(intent)
+        findViewById<CardView>(R.id.CardEducation).setOnClickListener {
+            startActivity(Intent(this, EducationActivity::class.java))
         }
-
-        // Найти карточку Основное
-        val cardBasic = findViewById<CardView>(R.id.CardBasic)
-        // Установить обработчик нажатия
-        cardBasic.setOnClickListener {
-            val intent = Intent(this, BasicActivity::class.java)
-            startActivity(intent)
+        findViewById<CardView>(R.id.CardBasic).setOnClickListener {
+            startActivity(Intent(this, BasicActivity::class.java))
         }
-
-        // Найти карточку Кафедры
-        val cardCafedra = findViewById<CardView>(R.id.CardCafedra)
-        // Установить обработчик нажатия
-        cardCafedra.setOnClickListener {
-            val intent = Intent(this, CafedraActivity::class.java)
-            startActivity(intent)
+        findViewById<CardView>(R.id.CardCafedra).setOnClickListener {
+            startActivity(Intent(this, CafedraActivity::class.java))
         }
-
-        // Найти карточку Факты
-        val cardFacts = findViewById<CardView>(R.id.CardFacts)
-        // Установить обработчик нажатия
-        cardFacts.setOnClickListener {
-            val intent = Intent(this, FactsActivity::class.java)
-            startActivity(intent)
+        findViewById<CardView>(R.id.CardFacts).setOnClickListener {
+            startActivity(Intent(this, FactsActivity::class.java))
         }
-
-        // Найти карточку Вопросы
-        val cardQuestions = findViewById<CardView>(R.id.CardQuestions)
-        // Установить обработчик нажатия
-        cardQuestions.setOnClickListener {
-            val intent = Intent(this, QuestionsActivity::class.java)
-            startActivity(intent)
+        findViewById<CardView>(R.id.CardQuestions).setOnClickListener {
+            startActivity(Intent(this, QuestionsActivity::class.java))
         }
-
-        // Найти карточку Справки
-        val cardReferences = findViewById<CardView>(R.id.CardReferences)
-        // Установить обработчик нажатия
-        cardReferences.setOnClickListener {
-            val intent = Intent(this, ReferencesActivity::class.java)
-            startActivity(intent)
+        findViewById<CardView>(R.id.CardReferences).setOnClickListener {
+            startActivity(Intent(this, ReferencesActivity::class.java))
         }
-
-        // Найти карточку Ведомость
-        val cardStatement = findViewById<CardView>(R.id.CardStatement)
-        // Установить обработчик нажатия
-        cardStatement.setOnClickListener {
-            val intent = Intent(this, StatementActivity::class.java)
-            startActivity(intent)
+        findViewById<CardView>(R.id.CardStatement).setOnClickListener {
+            startActivity(Intent(this, StatementActivity::class.java))
         }
     }
 }

@@ -17,7 +17,7 @@
             android:id="@+id/headerLayout"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:background="#FFFFFF"
+            android:background="@color/header_footer_light"
             android:padding="16dp"
             app:layout_constraintTop_toTopOf="parent">
 
@@ -36,7 +36,7 @@
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:text="Транспортные сети системы связи"
-                android:textColor="@android:color/black"
+                android:textColor="@color/text_light"
                 android:textSize="20sp"
                 android:maxLines="2"
                 android:ellipsize="end"
@@ -55,6 +55,7 @@
             android:layout_width="match_parent"
             android:layout_height="0dp"
             android:descendantFocusability="blocksDescendants"
+            android:background="@color/background_light"
             app:layout_constraintTop_toBottomOf="@id/headerLayout"
             app:layout_constraintBottom_toTopOf="@id/footerLayout">
 
@@ -62,6 +63,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:orientation="vertical"
+                android:background="@color/background_light"
                 android:padding="16dp">
 
                 <!-- Текстовые поля -->
@@ -80,7 +82,7 @@
 \n Все выпускники востребованы на рынке труда ведущими операторами связи: ПАО 'Ростелеком', ПАО 'МТС', ООО 'ТТК', ПАО 'Вымпелком' (Билайн), ООО 'Мобифон-2000' (Мотив), ПАО «Мегафон». Кроме этого выпускники работают в многочисленных телекоммуникационных компаниях - интернет провайдерах, а также в составе государственных структур - ФСБ, ФСО, Министерство обороны, МЧС, в организациях, где есть подразделения связи, обеспечивающих функционирование корпоративных и технологических сетей: ПАО «Сбербанк», ПАО «Газпром», ПАО «НК «Роснефть», ООО 'Газпром Связь', ПАО «РЖД» и т.д.
 \n
 \n Все выпускники могут продолжить обучение в институте связи для получения последующих ступеней высшего образования (магистратура) по направлению 11.04.02 «Инфокоммуникационные технологии и системы связи», и в аспирантуре по направлению 11.06.01 «Электроника, радиотехника и системы связи."
-                    android:textColor="@android:color/black"
+                    android:textColor="@color/text_light"
                     android:textSize="16sp"
                     android:lineSpacingExtra="4dp"
                     tools:ignore="HardcodedText,VisualLintLongText" />
@@ -95,14 +97,15 @@
             android:id="@+id/footerLayout"
             android:layout_width="match_parent"
             android:layout_height="60dp"
-            android:background="#FFFFFF"
+            android:background="@color/header_footer_light"
             app:layout_constraintBottom_toBottomOf="parent">
 
             <ImageView
                 android:id="@+id/icon1"
                 android:layout_width="30dp"
                 android:layout_height="30dp"
-                android:src="@drawable/ic_home"
+                android:src="@drawable/ic_home1"
+                app:tint="@color/text_light"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toStartOf="@+id/icon2"
                 app:layout_constraintStart_toStartOf="parent"
@@ -115,7 +118,8 @@
                 android:id="@+id/icon2"
                 android:layout_width="30dp"
                 android:layout_height="30dp"
-                android:src="@drawable/ic_calendar"
+                android:src="@drawable/ic_calendar1"
+                app:tint="@color/text_light"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toStartOf="@id/icon3"
                 app:layout_constraintStart_toEndOf="@+id/icon1"
@@ -127,7 +131,8 @@
                 android:id="@+id/icon3"
                 android:layout_width="30dp"
                 android:layout_height="30dp"
-                android:src="@drawable/ic_map"
+                android:src="@drawable/ic_map1"
+                app:tint="@color/text_light"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toStartOf="@id/icon4"
                 app:layout_constraintStart_toEndOf="@+id/icon2"
@@ -139,7 +144,8 @@
                 android:id="@+id/icon4"
                 android:layout_width="30dp"
                 android:layout_height="30dp"
-                android:src="@drawable/ic_settings"
+                android:src="@drawable/ic_settings1"
+                app:tint="@color/text_light"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toEndOf="@+id/icon3"

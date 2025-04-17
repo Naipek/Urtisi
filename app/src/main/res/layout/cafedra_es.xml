@@ -17,7 +17,7 @@
             android:id="@+id/headerLayout"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:background="#FFFFFF"
+            android:background="@color/header_footer_light"
             android:padding="16dp"
             app:layout_constraintTop_toTopOf="parent">
 
@@ -36,7 +36,7 @@
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:text="Экономика связи"
-                android:textColor="@android:color/black"
+                android:textColor="@color/text_light"
                 android:textSize="20sp"
                 android:maxLines="2"
                 android:ellipsize="end"
@@ -54,6 +54,7 @@
         <ScrollView
             android:layout_width="match_parent"
             android:layout_height="0dp"
+            android:background="@color/background_light"
             android:descendantFocusability="blocksDescendants"
             app:layout_constraintTop_toBottomOf="@id/headerLayout"
             app:layout_constraintBottom_toTopOf="@id/footerLayout">
@@ -61,6 +62,7 @@
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:background="@color/background_light"
                 android:orientation="vertical"
                 android:padding="16dp">
 
@@ -70,17 +72,17 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:text="Основное направление работы кафедры – осуществление качественной подготовки бакалавров, магистрантов и аспирантов по соответствующим направлениям, определяемым учебными планами УрТИСИ, приобщение их к исследовательской деятельности и выполнение научных исследований в области цифрового развития российского общества. Формирование конкурентоспособных, эрудированных, инновационно мыслящих специалистов в области связи и массовых коммуникаций, умеющих реализовать свои знания и навыки в профессиональной деятельности\n"
-                    android:textColor="@android:color/black"
+                    android:textColor="@color/text_light"
                     android:textSize="16sp"
                     android:lineSpacingExtra="4dp"
-                    tools:ignore="HardcodedText" />
+                    tools:ignore="HardcodedText,VisualLintLongText" />
 
                 <TextView
                     android:id="@+id/helpText2"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:text="Состав кафедры:\n"
-                    android:textColor="@android:color/black"
+                    android:textColor="@color/text_light"
                     android:textSize="16sp"
                     android:textStyle="bold"
                     android:lineSpacingExtra="4dp"
@@ -101,17 +103,17 @@
 \nБелов Евгений Михайлович – старший преподаватель
 \nСкрябина Татьяна Леонидовна – старший преподаватель
 \nПерсональный состав профессорско-преподавательского состава кафедры ГиСЭД включает высококвалифицированных специалистов, имеющих практический и научный опыт работы в преподавании экономических и социально-гуманитарных дисциплин.\n"
-                    android:textColor="@android:color/black"
+                    android:textColor="@color/text_light"
                     android:textSize="16sp"
                     android:lineSpacingExtra="4dp"
-                    tools:ignore="HardcodedText" />
+                    tools:ignore="HardcodedText,VisualLintLongText" />
 
                 <TextView
                     android:id="@+id/helpText4"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:text="Основные цель и задачи деятельности кафедры:\n"
-                    android:textColor="@android:color/black"
+                    android:textColor="@color/text_light"
                     android:textSize="16sp"
                     android:textStyle="bold"
                     android:lineSpacingExtra="4dp"
@@ -131,17 +133,17 @@
 \n6. Совершенствование воспитательной работы со студентами.
 \n7. Продолжать работу по реализации электронного дистанционного образования и разработки электронных образовательных ресурсов.
 \n8. Публикация статьи в научной периодике, индексируемой в системе цитирования Web of Science, Scopus.\n"
-                    android:textColor="@android:color/black"
+                    android:textColor="@color/text_light"
                     android:textSize="16sp"
                     android:lineSpacingExtra="4dp"
-                    tools:ignore="HardcodedText" />
+                    tools:ignore="HardcodedText,VisualLintLongText" />
 
                 <TextView
                     android:id="@+id/helpText6"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:text="Образовательная деятельность кафедры: \n"
-                    android:textColor="@android:color/black"
+                    android:textColor="@color/text_light"
                     android:textSize="16sp"
                     android:textStyle="bold"
                     android:lineSpacingExtra="4dp"
@@ -153,17 +155,17 @@
                     android:layout_height="wrap_content"
                     android:text="На кафедре осуществляется преподавание общегуманитарных и социально-экономических дисциплин. На сегодняшний день процессы активной трансформации высшего образования направлены на адаптацию выпускников к новым экономическим и социокультурных реалиям и обеспечение готовности к принципиально другим формам деятельности, которые отличают XXI век.
 \nНаиболее важными и необходимыми для общества становятся универсальные работники, обладающие определённым «портфелем компетенций» и имеющие разносторонние способности, развитые на основе практического опыта.\n"
-                    android:textColor="@android:color/black"
+                    android:textColor="@color/text_light"
                     android:textSize="16sp"
                     android:lineSpacingExtra="4dp"
-                    tools:ignore="HardcodedText" />
+                    tools:ignore="HardcodedText,VisualLintLongText" />
 
                 <TextView
                     android:id="@+id/helpText8"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:text="Для реализации данной цели необходимо: \n"
-                    android:textColor="@android:color/black"
+                    android:textColor="@color/text_light"
                     android:textSize="16sp"
                     android:textStyle="bold"
                     android:lineSpacingExtra="4dp"
@@ -177,17 +179,17 @@
 \n2) Гуманитарные и социально-экономические дисциплины в значительной степени способствуют формированию профессиональной культуры специалистов технического профиля. Из этого следует, что каждый будущий профессионал в процессе обучения должен усвоить культурную составляющую и даже культурный смысл своей непосредственной деятельности.
 \n3) Именно гуманитарные и социально-экономические науки способны значительно расширить пределы узко-специализированных знаний и навыков будущих профессионалов, являясь краеугольной основой для инновационного и мобильного специалиста.
 \n4) Дисциплины социально-гуманитарного цикла способствуют формировании личности студента. Студента – критически анализирующего прошлое и современность, сознательно ориентирующегося на основе приобретённых знаний в современном социокультурном пространстве и способного к самореализации в условиях многомерных отношений и взаимодействия с другими людьми.\n"
-                    android:textColor="@android:color/black"
+                    android:textColor="@color/text_light"
                     android:textSize="16sp"
                     android:lineSpacingExtra="4dp"
-                    tools:ignore="HardcodedText" />
+                    tools:ignore="HardcodedText,VisualLintLongText" />
 
                 <TextView
                     android:id="@+id/helpText10"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:text="Научная деятельность кафедры: \n"
-                    android:textColor="@android:color/black"
+                    android:textColor="@color/text_light"
                     android:textSize="16sp"
                     android:textStyle="bold"
                     android:lineSpacingExtra="4dp"
@@ -201,17 +203,17 @@
 \nПри кафедре организована цикловая комиссия Гуманитарных и социально-экономических дисциплин, где производится подготовка специалистов среднего профессионального образования.
 \nНа кафедре организована студенческая научная работа. Ежегодно организуется и проводится работа секции кафедры в рамках студенческой научно-практической конференции УрТИСИ. Студенты кафедры принимают участие в работе городских, областных и общероссийских олимпиадах и конференциях по профилю кафедры.
 \nПерсональный состав профессорско-преподавательского состава кафедры экономики включает высококвалифицированных специалистов, имеющих практический и научный опыт работы в преподавании экономических и социально-гуманитарных дисциплин.\n"
-                    android:textColor="@android:color/black"
+                    android:textColor="@color/text_light"
                     android:textSize="16sp"
                     android:lineSpacingExtra="4dp"
-                    tools:ignore="HardcodedText" />
+                    tools:ignore="HardcodedText,VisualLintLongText" />
 
                 <TextView
                     android:id="@+id/helpText12"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:text="Материально-техническая база \n"
-                    android:textColor="@android:color/black"
+                    android:textColor="@color/text_light"
                     android:textSize="16sp"
                     android:textStyle="bold"
                     android:lineSpacingExtra="4dp"
@@ -224,10 +226,10 @@
                     android:text="Для организации учебного процесса кафедра экономики связи располагает лабораторной базой, оснащенной современным мультимедийным оборудованием, компьютерными классами.
 \nИмеющееся оборудование используется не только в учебном процессе, но и при проведении научных исследований магистрантами и аспирантами.
 \nС целью реализации компетентностного подхода в рамках требований ФГОС при проведении учебных занятий ППС кафедры используют следующие интерактивные формы: кейс-стадии, мозговой штурм, мини-тренинги, деловые игры, дискуссии.\n"
-                    android:textColor="@android:color/black"
+                    android:textColor="@color/text_light"
                     android:textSize="16sp"
                     android:lineSpacingExtra="4dp"
-                    tools:ignore="HardcodedText" />
+                    tools:ignore="HardcodedText,VisualLintLongText" />
 
 
             </LinearLayout>
@@ -238,14 +240,15 @@
             android:id="@+id/footerLayout"
             android:layout_width="match_parent"
             android:layout_height="60dp"
-            android:background="#FFFFFF"
+            android:background="@color/header_footer_light"
             app:layout_constraintBottom_toBottomOf="parent">
 
             <ImageView
                 android:id="@+id/icon1"
                 android:layout_width="30dp"
                 android:layout_height="30dp"
-                android:src="@drawable/ic_home"
+                android:src="@drawable/ic_home1"
+                app:tint="@color/text_light"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toStartOf="@+id/icon2"
                 app:layout_constraintStart_toStartOf="parent"
@@ -258,7 +261,8 @@
                 android:id="@+id/icon2"
                 android:layout_width="30dp"
                 android:layout_height="30dp"
-                android:src="@drawable/ic_calendar"
+                android:src="@drawable/ic_calendar1"
+                app:tint="@color/text_light"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toStartOf="@id/icon3"
                 app:layout_constraintStart_toEndOf="@+id/icon1"
@@ -270,7 +274,8 @@
                 android:id="@+id/icon3"
                 android:layout_width="30dp"
                 android:layout_height="30dp"
-                android:src="@drawable/ic_map"
+                android:src="@drawable/ic_map1"
+                app:tint="@color/text_light"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toStartOf="@id/icon4"
                 app:layout_constraintStart_toEndOf="@+id/icon2"
@@ -282,7 +287,8 @@
                 android:id="@+id/icon4"
                 android:layout_width="30dp"
                 android:layout_height="30dp"
-                android:src="@drawable/ic_settings"
+                android:src="@drawable/ic_settings1"
+                app:tint="@color/text_light"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toEndOf="@+id/icon3"

@@ -16,7 +16,7 @@
             android:id="@+id/headerLayout"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:background="#FFFFFF"
+            android:background="@color/header_footer_light"
             android:padding="16dp"
             app:layout_constraintTop_toTopOf="parent">
 
@@ -35,7 +35,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="@string/menu"
-                android:textColor="@android:color/black"
+                android:textColor="@color/text_light"
                 android:textSize="20sp"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
@@ -51,6 +51,7 @@
             android:clipToPadding="false"
             android:paddingBottom="24dp"
             android:descendantFocusability="blocksDescendants"
+            android:background="@color/background_light"
             app:layout_constraintTop_toBottomOf="@id/headerLayout"
             app:layout_constraintBottom_toTopOf="@id/footerLayout">
 
@@ -58,6 +59,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:orientation="vertical"
+                android:background="@color/background_light"
                 android:padding="16dp">
 
                 <!-- Карточка Личная ведомость -->
@@ -68,6 +70,7 @@
                     android:layout_margin="16dp"
                     app:cardCornerRadius="8dp"
                     app:cardElevation="4dp"
+                    app:cardBackgroundColor="@color/card_light"
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintEnd_toEndOf="parent">
 
@@ -83,7 +86,8 @@
                             android:layout_width="40dp"
                             android:layout_height="40dp"
                             android:contentDescription="Иконка карточки"
-                            android:src="@drawable/ic_checklist"
+                            android:src="@drawable/ic_checklist1"
+                            android:fillColor="?attr/colorControlNormal"
                             app:layout_constraintBottom_toBottomOf="parent"
                             app:layout_constraintStart_toStartOf="parent"
                             app:layout_constraintTop_toTopOf="parent"
@@ -96,7 +100,7 @@
                             android:layout_height="wrap_content"
                             android:gravity="center"
                             android:text="@string/statement"
-                            android:textColor="@android:color/black"
+                            android:textColor="@color/text_light"
                             android:textSize="16sp"
                             app:layout_constraintBottom_toBottomOf="parent"
                             app:layout_constraintEnd_toEndOf="parent"
@@ -115,6 +119,7 @@
                     android:layout_margin="16dp"
                     app:cardCornerRadius="8dp"
                     app:cardElevation="4dp"
+                    app:cardBackgroundColor="@color/card_light"
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintEnd_toEndOf="parent">
 
@@ -142,7 +147,7 @@
                             android:layout_width="0dp"
                             android:layout_height="wrap_content"
                             android:text="Расписание звонков"
-                            android:textColor="@android:color/black"
+                            android:textColor="@color/text_light"
                             android:textSize="16sp"
                             android:gravity="center"
                             app:layout_constraintStart_toEndOf="@id/cardIconClock"
@@ -162,6 +167,7 @@
                     android:layout_margin="16dp"
                     app:cardCornerRadius="8dp"
                     app:cardElevation="4dp"
+                    app:cardBackgroundColor="@color/card_light"
                     app:layout_constraintTop_toBottomOf="@id/CardCall"
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintEnd_toEndOf="parent">
@@ -177,7 +183,7 @@
                             android:id="@+id/cardIconPeople"
                             android:layout_width="40dp"
                             android:layout_height="40dp"
-                            android:src="@drawable/ic_people"
+                            android:src="@drawable/ic_people1"
                             android:contentDescription="Иконка карточки 2"
                             app:layout_constraintStart_toStartOf="parent"
                             app:layout_constraintTop_toTopOf="parent"
@@ -190,7 +196,7 @@
                             android:layout_width="0dp"
                             android:layout_height="wrap_content"
                             android:text="Сотрудники"
-                            android:textColor="@android:color/black"
+                            android:textColor="@color/text_light"
                             android:textSize="16sp"
                             android:gravity="center"
                             app:layout_constraintStart_toEndOf="@id/cardIconPeople"
@@ -210,6 +216,7 @@
                     android:layout_margin="16dp"
                     app:cardCornerRadius="8dp"
                     app:cardElevation="4dp"
+                    app:cardBackgroundColor="@color/card_light"
                     app:layout_constraintTop_toBottomOf="@id/CardEmployees"
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintEnd_toEndOf="parent">
@@ -224,7 +231,7 @@
                             android:id="@+id/cardIconCafedra"
                             android:layout_width="40dp"
                             android:layout_height="40dp"
-                            android:src="@drawable/ic_cafedra"
+                            android:src="@drawable/ic_cafedra1"
                             android:contentDescription="Иконка карточки 2"
                             app:layout_constraintStart_toStartOf="parent"
                             app:layout_constraintTop_toTopOf="parent"
@@ -237,7 +244,7 @@
                             android:layout_width="0dp"
                             android:layout_height="wrap_content"
                             android:text="Кафедры"
-                            android:textColor="@android:color/black"
+                            android:textColor="@color/text_light"
                             android:textSize="16sp"
                             android:gravity="center"
                             app:layout_constraintStart_toEndOf="@id/cardIconCafedra"
@@ -278,6 +285,7 @@
                         app:cardCornerRadius="8dp"
                         app:cardElevation="8dp"
                         app:layout_constraintStart_toStartOf="parent"
+                        app:cardBackgroundColor="@color/card_light"
                         app:layout_constraintEnd_toStartOf="@id/guide"
                         app:layout_constraintTop_toTopOf="parent">
 
@@ -304,6 +312,7 @@
                                 android:textSize="14sp"
                                 android:textStyle="bold"
                                 android:gravity="center"
+                                android:textColor="@color/text_light"
                                 android:layout_marginTop="8dp"
                                 tools:ignore="HardcodedText" />
                         </LinearLayout>
@@ -319,6 +328,7 @@
                         android:layout_marginBottom="24dp"
                         app:cardCornerRadius="8dp"
                         app:cardElevation="8dp"
+                        app:cardBackgroundColor="@color/card_light"
                         app:layout_constraintStart_toEndOf="@id/guide"
                         app:layout_constraintEnd_toEndOf="parent"
                         app:layout_constraintTop_toTopOf="parent">
@@ -346,6 +356,7 @@
                                 android:textSize="16sp"
                                 android:textStyle="bold"
                                 android:gravity="center"
+                                android:textColor="@color/text_light"
                                 android:layout_marginTop="8dp"
                                 tools:ignore="HardcodedText" />
                         </LinearLayout>
@@ -359,6 +370,7 @@
                     android:layout_marginTop="1dp"
                     android:paddingBottom="24dp"
                     android:clipChildren="false"
+                    app:cardBackgroundColor="@color/card_light"
                     android:clipToPadding="false">
 
                     <!-- Разделительная линия по центру -->
@@ -380,6 +392,7 @@
                         android:layout_marginBottom="24dp"
                         app:cardCornerRadius="8dp"
                         app:cardElevation="8dp"
+                        app:cardBackgroundColor="@color/card_light"
                         app:layout_constraintStart_toStartOf="parent"
                         app:layout_constraintEnd_toStartOf="@id/guide2"
                         app:layout_constraintTop_toTopOf="parent">
@@ -407,6 +420,7 @@
                                 android:textSize="16sp"
                                 android:textStyle="bold"
                                 android:gravity="center"
+                                android:textColor="@color/text_light"
                                 android:layout_marginTop="8dp"
                                 tools:ignore="HardcodedText" />
                         </LinearLayout>
@@ -422,6 +436,7 @@
                         android:layout_marginBottom="24dp"
                         app:cardCornerRadius="8dp"
                         app:cardElevation="8dp"
+                        app:cardBackgroundColor="@color/card_light"
                         app:layout_constraintStart_toEndOf="@id/guide2"
                         app:layout_constraintEnd_toEndOf="parent"
                         app:layout_constraintTop_toTopOf="parent">
@@ -449,6 +464,7 @@
                                 android:textSize="16sp"
                                 android:textStyle="bold"
                                 android:gravity="center"
+                                android:textColor="@color/text_light"
                                 android:layout_marginTop="8dp"
                                 tools:ignore="HardcodedText" />
                         </LinearLayout>
@@ -461,6 +477,7 @@
                     android:layout_height="wrap_content"
                     android:layout_marginTop="1dp"
                     android:clipChildren="false"
+                    app:cardBackgroundColor="@color/card_light"
                     android:clipToPadding="false"
                     android:paddingBottom="24dp">
 
@@ -483,6 +500,7 @@
                         android:layout_marginBottom="24dp"
                         app:cardCornerRadius="8dp"
                         app:cardElevation="8dp"
+                        app:cardBackgroundColor="@color/card_light"
                         app:layout_constraintEnd_toStartOf="@id/guide3"
                         app:layout_constraintStart_toStartOf="parent"
                         app:layout_constraintTop_toTopOf="parent">
@@ -511,6 +529,7 @@
                                 android:text="Факты"
                                 android:textSize="16sp"
                                 android:textStyle="bold"
+                                android:textColor="@color/text_light"
                                 tools:ignore="HardcodedText" />
                         </LinearLayout>
                     </androidx.cardview.widget.CardView>
@@ -525,6 +544,7 @@
                         android:layout_marginBottom="24dp"
                         app:cardCornerRadius="8dp"
                         app:cardElevation="8dp"
+                        app:cardBackgroundColor="@color/card_light"
                         app:layout_constraintEnd_toEndOf="parent"
                         app:layout_constraintStart_toEndOf="@id/guide3"
                         app:layout_constraintTop_toTopOf="parent">
@@ -553,6 +573,7 @@
                                 android:text="@string/basic"
                                 android:textSize="16sp"
                                 android:textStyle="bold"
+                                android:textColor="@color/text_light"
                                 tools:ignore="HardcodedText" />
                         </LinearLayout>
                     </androidx.cardview.widget.CardView>
@@ -569,14 +590,15 @@
             android:id="@+id/footerLayout"
             android:layout_width="match_parent"
             android:layout_height="60dp"
-            android:background="#FFFFFF"
+            android:background="@color/header_footer_light"
             app:layout_constraintBottom_toBottomOf="parent">
 
             <ImageView
                 android:id="@+id/icon1"
                 android:layout_width="30dp"
                 android:layout_height="30dp"
-                android:src="@drawable/ic_home"
+                android:src="@drawable/ic_home1"
+                app:tint="@color/text_light"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toStartOf="@+id/icon2"
                 app:layout_constraintStart_toStartOf="parent"
@@ -589,7 +611,8 @@
                 android:id="@+id/icon2"
                 android:layout_width="30dp"
                 android:layout_height="30dp"
-                android:src="@drawable/ic_calendar"
+                android:src="@drawable/ic_calendar1"
+                app:tint="@color/text_light"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toStartOf="@id/icon3"
                 app:layout_constraintStart_toEndOf="@+id/icon1"
@@ -601,7 +624,8 @@
                 android:id="@+id/icon3"
                 android:layout_width="30dp"
                 android:layout_height="30dp"
-                android:src="@drawable/ic_map"
+                android:src="@drawable/ic_map1"
+                app:tint="@color/text_light"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toStartOf="@id/icon4"
                 app:layout_constraintStart_toEndOf="@+id/icon2"
@@ -613,7 +637,8 @@
                 android:id="@+id/icon4"
                 android:layout_width="30dp"
                 android:layout_height="30dp"
-                android:src="@drawable/ic_settings"
+                android:src="@drawable/ic_settings1"
+                app:tint="@color/text_light"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toEndOf="@+id/icon3"

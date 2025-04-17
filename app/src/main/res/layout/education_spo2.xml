@@ -17,7 +17,7 @@
             android:id="@+id/headerLayout"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:background="#FFFFFF"
+            android:background="@color/header_footer_light"
             android:padding="16dp"
             app:layout_constraintTop_toTopOf="parent">
 
@@ -36,7 +36,7 @@
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:text="Информационные системы и программирование"
-                android:textColor="@android:color/black"
+                android:textColor="@color/text_light"
                 android:textSize="20sp"
                 android:maxLines="2"
                 android:ellipsize="end"
@@ -56,12 +56,14 @@
             android:layout_height="0dp"
             android:descendantFocusability="blocksDescendants"
             app:layout_constraintTop_toBottomOf="@id/headerLayout"
+            android:background="@color/background_light"
             app:layout_constraintBottom_toTopOf="@id/footerLayout">
 
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:orientation="vertical"
+                android:background="@color/background_light"
                 android:padding="16dp">
 
                 <!-- Текстовые поля -->
@@ -70,18 +72,19 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:text="Нормативный срок обучения по специальности:"
-                    android:textColor="@android:color/black"
+                    android:textColor="@color/text_light"
                     android:textSize="16sp"
                     android:textStyle="bold"
                     android:lineSpacingExtra="4dp"
                     tools:ignore="HardcodedText" />
+
                 <TextView
                     android:id="@+id/helpText2"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:text="-на базе основного общего образования (9 классов) – 3 года 10 месяцев.
 \n-на базе среднего общего образования (11 классов) – 2 года 10 месяцев.\n"
-                    android:textColor="@android:color/black"
+                    android:textColor="@color/text_light"
                     android:textSize="16sp"
                     android:lineSpacingExtra="4dp"
                     tools:ignore="HardcodedText,VisualLintLongText" />
@@ -91,7 +94,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:text="Квалификация выпускника – программист\n"
-                    android:textColor="@android:color/black"
+                    android:textColor="@color/text_light"
                     android:textSize="16sp"
                     android:textStyle="bold"
                     android:lineSpacingExtra="4dp"
@@ -104,7 +107,7 @@
                     android:text=" Перед большинством предприятий и организаций рано или поздно встает вопрос автоматизации, и многие управленцы стремятся использовать достижения современных информационных технологий, поэтому программист является своего рода консультантом, выполняющим посредническую функцию между тем, чего желает получить руководитель, и тем, что предлагает на данный момент мир высоких технологий. В тех разработках, где нужен, прежде всего, поиск творческих решений, российские профессионалы считаются наиболее сильными во всем мире.\n
 Диапазон знаний выпускника специальности широк: архитектура и технические характеристики персональных компьютеров; возможности языков и сред программирования; технология проектирования и организация структур баз данных; особенности эксплуатации локальных вычислительных сетей различных типов; методы работы в глобальной вычислительной сети и способы программной защиты информации.\n
 Выпускник знает основные положения действующей нормативной документации, владеет основами организации деятельности предприятия. Он готов к профессиональной деятельности по разработке, модификации, адаптации, настройке и сопровождению программного обеспечения в качестве программиста  в организациях (на предприятиях) различной отраслевой направленности независимо от их организационно-правовых форм.\n"
-                    android:textColor="@android:color/black"
+                    android:textColor="@color/text_light"
                     android:textSize="16sp"
                     android:lineSpacingExtra="4dp"
                     tools:ignore="HardcodedText,VisualLintLongText" />
@@ -114,7 +117,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:text="Выпускник готов к выполнению основных видов деятельности:"
-                    android:textColor="@android:color/black"
+                    android:textColor="@color/text_light"
                     android:textSize="16sp"
                     android:textStyle="bold"
                     android:lineSpacingExtra="4dp"
@@ -128,7 +131,7 @@
 \n- осуществление интеграции программных модулей;
 \n- сопровождение и обслуживание программного обеспечения компьютерных систем;
 \n- разработка, администрирование и защита баз данных.\n"
-                    android:textColor="@android:color/black"
+                    android:textColor="@color/text_light"
                     android:textSize="16sp"
                     android:lineSpacingExtra="4dp"
                     tools:ignore="HardcodedText" />
@@ -138,7 +141,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:text="Выпускник может работать:"
-                    android:textColor="@android:color/black"
+                    android:textColor="@color/text_light"
                     android:textSize="16sp"
                     android:textStyle="bold"
                     android:lineSpacingExtra="4dp"
@@ -154,7 +157,7 @@
 \n- в фирмах, реализующих услуги информационного и компьютерного рынка;
 \n- на заводах и предприятиях малого и среднего бизнеса.
 \nВыпускники работают программистами и разработчиками различных приложений, программного обеспечения, а также тестировщиками. Свою деятельность они осуществляют, работая в IT-компаниях. Для выпускников доступны вакансии системного администратора в любых организациях, а также они могут заниматься администрированием баз данных.\n"
-                    android:textColor="@android:color/black"
+                    android:textColor="@color/text_light"
                     android:textSize="16sp"
                     android:lineSpacingExtra="4dp"
                     tools:ignore="HardcodedText" />
@@ -164,7 +167,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:text="Возможности продолжения образования выпускника:"
-                    android:textColor="@android:color/black"
+                    android:textColor="@color/text_light"
                     android:textSize="16sp"
                     android:textStyle="bold"
                     android:lineSpacingExtra="4dp"
@@ -175,7 +178,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:text="Выпускник, освоивший основную образовательную программу среднего профессионального образования по специальности «Информационные системы и программирование», подготовлен к освоению основной профессиональной образовательной программы высшего профессионального образования и может продолжить обучение в институте связи для получения высшего образования (бакалавриат) по направления 09.03.01 «Информатика и вычислительная техника»."
-                    android:textColor="@android:color/black"
+                    android:textColor="@color/text_light"
                     android:textSize="16sp"
                     android:lineSpacingExtra="4dp"
                     tools:ignore="HardcodedText" />
@@ -190,14 +193,15 @@
             android:id="@+id/footerLayout"
             android:layout_width="match_parent"
             android:layout_height="60dp"
-            android:background="#FFFFFF"
+            android:background="@color/header_footer_light"
             app:layout_constraintBottom_toBottomOf="parent">
 
             <ImageView
                 android:id="@+id/icon1"
                 android:layout_width="30dp"
                 android:layout_height="30dp"
-                android:src="@drawable/ic_home"
+                android:src="@drawable/ic_home1"
+                app:tint="@color/text_light"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toStartOf="@+id/icon2"
                 app:layout_constraintStart_toStartOf="parent"
@@ -210,7 +214,8 @@
                 android:id="@+id/icon2"
                 android:layout_width="30dp"
                 android:layout_height="30dp"
-                android:src="@drawable/ic_calendar"
+                android:src="@drawable/ic_calendar1"
+                app:tint="@color/text_light"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toStartOf="@id/icon3"
                 app:layout_constraintStart_toEndOf="@+id/icon1"
@@ -222,7 +227,8 @@
                 android:id="@+id/icon3"
                 android:layout_width="30dp"
                 android:layout_height="30dp"
-                android:src="@drawable/ic_map"
+                android:src="@drawable/ic_map1"
+                app:tint="@color/text_light"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toStartOf="@id/icon4"
                 app:layout_constraintStart_toEndOf="@+id/icon2"
@@ -234,7 +240,8 @@
                 android:id="@+id/icon4"
                 android:layout_width="30dp"
                 android:layout_height="30dp"
-                android:src="@drawable/ic_settings"
+                android:src="@drawable/ic_settings1"
+                app:tint="@color/text_light"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toEndOf="@+id/icon3"
