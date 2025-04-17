@@ -87,11 +87,11 @@
                             android:layout_height="40dp"
                             android:contentDescription="Иконка карточки"
                             android:src="@drawable/ic_checklist1"
-                            android:fillColor="?attr/colorControlNormal"
+                            android:tint="@color/text_light"
                             app:layout_constraintBottom_toBottomOf="parent"
                             app:layout_constraintStart_toStartOf="parent"
                             app:layout_constraintTop_toTopOf="parent"
-                            tools:ignore="HardcodedText" />
+                            tools:ignore="HardcodedText,UseAppTint" />
 
                         <!-- Текст -->
                         <TextView
@@ -134,12 +134,13 @@
                             android:id="@+id/cardIconClock"
                             android:layout_width="40dp"
                             android:layout_height="40dp"
-                            android:src="@drawable/ic_clock"
+                            android:src="@drawable/ic_clock1"
+                            android:tint="@color/text_light"
                             android:contentDescription="Иконка карточки"
                             app:layout_constraintStart_toStartOf="parent"
                             app:layout_constraintTop_toTopOf="parent"
                             app:layout_constraintBottom_toBottomOf="parent"
-                            tools:ignore="HardcodedText" />
+                            tools:ignore="HardcodedText,UseAppTint" />
 
                         <!-- Текст -->
                         <TextView
@@ -184,11 +185,12 @@
                             android:layout_width="40dp"
                             android:layout_height="40dp"
                             android:src="@drawable/ic_people1"
+                            android:tint="@color/text_light"
                             android:contentDescription="Иконка карточки 2"
                             app:layout_constraintStart_toStartOf="parent"
                             app:layout_constraintTop_toTopOf="parent"
                             app:layout_constraintBottom_toBottomOf="parent"
-                            tools:ignore="HardcodedText" />
+                            tools:ignore="HardcodedText,UseAppTint" />
 
                         <!-- Текст -->
                         <TextView
@@ -232,11 +234,12 @@
                             android:layout_width="40dp"
                             android:layout_height="40dp"
                             android:src="@drawable/ic_cafedra1"
+                            android:tint="@color/text_light"
                             android:contentDescription="Иконка карточки 2"
                             app:layout_constraintStart_toStartOf="parent"
                             app:layout_constraintTop_toTopOf="parent"
                             app:layout_constraintBottom_toBottomOf="parent"
-                            tools:ignore="HardcodedText" />
+                            tools:ignore="HardcodedText,UseAppTint" />
 
                         <!-- Текст -->
                         <TextView
@@ -300,10 +303,11 @@
                             <ImageView
                                 android:layout_width="40dp"
                                 android:layout_height="40dp"
-                                android:src="@drawable/ic_question"
+                                android:src="@drawable/ic_question1"
+                                android:tint="@color/text_light"
                                 android:contentDescription="@string/Questions"
                                 android:layout_gravity="center"
-                                tools:ignore="HardcodedText" />
+                                tools:ignore="HardcodedText,UseAppTint" />
 
                             <TextView
                                 android:layout_width="wrap_content"
@@ -344,10 +348,11 @@
                             <ImageView
                                 android:layout_width="40dp"
                                 android:layout_height="40dp"
-                                android:src="@drawable/ic_building"
+                                android:src="@drawable/ic_building1"
+                                android:tint="@color/text_light"
                                 android:contentDescription="@string/building"
                                 android:layout_gravity="center"
-                                tools:ignore="HardcodedText" />
+                                tools:ignore="HardcodedText,UseAppTint" />
 
                             <TextView
                                 android:layout_width="wrap_content"
@@ -408,10 +413,11 @@
                             <ImageView
                                 android:layout_width="40dp"
                                 android:layout_height="40dp"
-                                android:src="@drawable/ic_references"
+                                android:src="@drawable/ic_references1"
+                                android:tint="@color/text_light"
                                 android:contentDescription="Левая иконка"
                                 android:layout_gravity="center"
-                                tools:ignore="HardcodedText" />
+                                tools:ignore="HardcodedText,UseAppTint" />
 
                             <TextView
                                 android:layout_width="wrap_content"
@@ -452,10 +458,11 @@
                             <ImageView
                                 android:layout_width="40dp"
                                 android:layout_height="40dp"
-                                android:src="@drawable/ic_education"
+                                android:src="@drawable/ic_education1"
+                                android:tint="@color/text_light"
                                 android:contentDescription="Правая иконка"
                                 android:layout_gravity="center"
-                                tools:ignore="HardcodedText" />
+                                tools:ignore="HardcodedText,UseAppTint" />
 
                             <TextView
                                 android:layout_width="wrap_content"
@@ -518,8 +525,9 @@
                                 android:layout_height="40dp"
                                 android:layout_gravity="center"
                                 android:contentDescription="Левая иконка"
-                                android:src="@drawable/ic_facts"
-                                tools:ignore="HardcodedText" />
+                                android:src="@drawable/ic_facts1"
+                                android:tint="@color/text_light"
+                                tools:ignore="HardcodedText,UseAppTint" />
 
                             <TextView
                                 android:layout_width="wrap_content"
@@ -562,8 +570,9 @@
                                 android:layout_height="40dp"
                                 android:layout_gravity="center"
                                 android:contentDescription="Правая иконка"
-                                android:src="@drawable/ic_basic"
-                                tools:ignore="HardcodedText" />
+                                android:src="@drawable/ic_basic1"
+                                android:tint="@color/text_light"
+                                tools:ignore="HardcodedText,UseAppTint" />
 
                             <TextView
                                 android:layout_width="wrap_content"
