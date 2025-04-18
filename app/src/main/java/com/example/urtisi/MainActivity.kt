@@ -17,11 +17,11 @@ import com.example.urtisi.Menu.ReferencesActivity
 import com.example.urtisi.Menu.StatementActivity
 import android.content.SharedPreferences
 import androidx.appcompat.app.AppCompatDelegate
-import com.example.urtisi.Menu.*
+
 
 class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
-        // ⬇️ Устанавливаем сохранённую тему до super.onCreate и setContentView
+        // Устанавливаем сохранённую тему до super.onCreate и setContentView
         val sharedPreferences: SharedPreferences = getSharedPreferences("AppSettings", MODE_PRIVATE)
         val savedTheme = sharedPreferences.getInt("theme_mode", AppCompatDelegate.MODE_NIGHT_FOLLOW_SYSTEM)
         AppCompatDelegate.setDefaultNightMode(savedTheme)
