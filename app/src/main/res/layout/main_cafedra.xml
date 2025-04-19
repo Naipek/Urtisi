@@ -135,7 +135,7 @@
                             android:layout_weight="1"
                             android:scaleType="centerCrop"
                             android:adjustViewBounds="true"
-                            android:src="@drawable/ic_me"
+                            android:src="@drawable/ic_itims"
                             android:contentDescription="Описание изображения"
                             android:minHeight="180dp"
                             android:layout_marginBottom="16dp"
@@ -184,7 +184,7 @@
                             android:contentDescription="Описание изображения"
                             android:minHeight="180dp"
                             android:scaleType="centerCrop"
-                            android:src="@drawable/ic_me"
+                            android:src="@drawable/ic_vmif"
                             tools:ignore="HardcodedText" />
 
                         <!-- Текст под изображением -->
@@ -227,7 +227,7 @@
                             android:layout_weight="1"
                             android:scaleType="centerCrop"
                             android:adjustViewBounds="true"
-                            android:src="@drawable/ic_me"
+                            android:src="@drawable/ic_ist"
                             android:contentDescription="Описание изображения"
                             android:minHeight="180dp"
                             android:layout_marginBottom="16dp"
@@ -273,7 +273,7 @@
                             android:layout_weight="1"
                             android:scaleType="centerCrop"
                             android:adjustViewBounds="true"
-                            android:src="@drawable/ic_me"
+                            android:src="@drawable/ic_es"
                             android:contentDescription="Описание изображения"
                             android:minHeight="180dp"
                             android:layout_marginBottom="16dp"

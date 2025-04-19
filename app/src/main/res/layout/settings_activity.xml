@@ -126,12 +126,12 @@
                             android:textSize="16sp"
                             android:gravity="center"
                             app:layout_constraintStart_toStartOf="parent"
-                            app:layout_constraintEnd_toStartOf="@id/arrowIcon"
+                            app:layout_constraintEnd_toStartOf="@id/arrowIcon2"
                             app:layout_constraintTop_toTopOf="parent"
                             app:layout_constraintBottom_toBottomOf="parent" />
 
                         <ImageView
-                            android:id="@+id/arrowIcon"
+                            android:id="@+id/arrowIcon2"
                             android:layout_width="30dp"
                             android:layout_height="30dp"
                             android:src="@drawable/ic_arrow1"
@@ -168,12 +168,12 @@
                             android:textSize="16sp"
                             android:gravity="center"
                             app:layout_constraintStart_toStartOf="parent"
-                            app:layout_constraintEnd_toStartOf="@id/arrowIcon"
+                            app:layout_constraintEnd_toStartOf="@id/arrowIcon3"
                             app:layout_constraintTop_toTopOf="parent"
                             app:layout_constraintBottom_toBottomOf="parent" />
 
                         <ImageView
-                            android:id="@+id/arrowIcon"
+                            android:id="@+id/arrowIcon3"
                             android:layout_width="30dp"
                             android:layout_height="30dp"
                             android:src="@drawable/ic_arrow1"

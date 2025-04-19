@@ -8,13 +8,14 @@ import com.example.urtisi.MainActivity
 import com.example.urtisi.R
 import com.example.urtisi.SettingsActivity
 
+
 class EmployeesActivity : AppCompatActivity() {
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.main_employees)
 
-
-        // Обработчики для нижней панели
+        // Подключение нижней панели
         findViewById<ImageView>(R.id.icon1).setOnClickListener {
             startActivity(Intent(this, MainActivity::class.java))
         }
@@ -22,7 +23,6 @@ class EmployeesActivity : AppCompatActivity() {
             startActivity(Intent(this, SettingsActivity::class.java))
         }
 
+
     }
 }
-
-
