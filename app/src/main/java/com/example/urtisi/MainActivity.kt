@@ -40,7 +40,7 @@ class MainActivity : AppCompatActivity() {
             startActivity(Intent(this, CallActivity::class.java))
         }
         findViewById<CardView>(R.id.CardEmployees).setOnClickListener {
-            startActivity(Intent(this, EmployeesActivity::class.java))
+            startActivity(Intent(this, StaffActivity::class.java))
         }
         findViewById<CardView>(R.id.CardInstitute).setOnClickListener {
             startActivity(Intent(this, InstituteActivity::class.java))

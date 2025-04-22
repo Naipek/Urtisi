@@ -100,6 +100,12 @@
         <activity android:name=".Menu.Cafedrs.CafedraEsActivity"
             android:exported="false"/>
 
+        <activity android:name=".StaffActivity"
+            android:exported="false" />
+
+        <activity android:name=".EmployeeDetailActivity"
+            android:exported="false" />
+
         <activity
             android:name=".MainActivity"
             android:exported="true"

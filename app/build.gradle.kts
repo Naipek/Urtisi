@@ -57,6 +57,8 @@ dependencies {
     implementation("androidx.lifecycle:lifecycle-livedata-ktx:2.6.2")
     implementation ("com.github.bumptech.glide:glide:4.12.0")
     annotationProcessor ("com.github.bumptech.glide:compiler:4.12.0")
+    implementation ("org.jsoup:jsoup:1.15.4")
+
 
     // Room
     implementation ("androidx.room:room-runtime:2.6.1")

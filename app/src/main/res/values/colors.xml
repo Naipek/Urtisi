@@ -40,4 +40,7 @@
     <color name="header_footer_light">#FFFFFF</color>
     <color name="header_footer_dark">#1A1A1A</color>
 
+    <color name="text_title">#FF6200EE</color>
+    <color name="text_value">#FF000000</color>
+
 </resources>

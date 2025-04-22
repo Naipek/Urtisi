@@ -17,4 +17,16 @@
     <string name="facts">Факты</string>
     <string name="basic">Основное</string>
     <string name="news">Новости</string>
+    <string name="employee_details">Сотрудник</string>
+    <string name="full_name">ФИО</string>
+    <string name="degree">Ученая степень</string>
+    <string name="academic_title">Ученое звание</string>
+    <string name="position">Должность</string>
+    <string name="disciplines">Преподаваемые дисциплины</string>
+    <string name="specialization">Специальность</string>
+    <string name="total_experience">Общий стаж</string>
+    <string name="speciality_experience">Стаж по специальности</string>
+    <string name="qualifications">Повышение квалификации</string>
+    <string name="qualification_name">Квалификация</string>
+    <string name="education_level">Уровень образования</string>
 </resources>
