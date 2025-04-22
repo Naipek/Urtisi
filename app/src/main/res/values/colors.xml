@@ -43,4 +43,9 @@
     <color name="text_title">#FF6200EE</color>
     <color name="text_value">#FF000000</color>
 
+    <color name="search_background">#FFFFFF</color>
+    <color name="search_stroke">#E0E0E0</color>
+
+    <color name="hint_color">#808080</color>
+
 </resources>
