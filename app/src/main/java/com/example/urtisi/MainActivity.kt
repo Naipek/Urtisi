@@ -34,6 +34,10 @@ class MainActivity : AppCompatActivity() {
         findViewById<ImageView>(R.id.icon4).setOnClickListener {
             startActivity(Intent(this, SettingsActivity::class.java))
         }
+        // Нижняя панель — переход в карта
+        findViewById<ImageView>(R.id.icon3).setOnClickListener {
+            startActivity(Intent(this, FloorMapActivity::class.java))
+        }
 
         // Карточки и переходы
         findViewById<CardView>(R.id.CardCall).setOnClickListener {
