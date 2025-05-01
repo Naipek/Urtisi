@@ -5,6 +5,7 @@ import android.os.Bundle
 import android.widget.ImageView
 import androidx.appcompat.app.AppCompatActivity
 import androidx.cardview.widget.CardView
+import com.example.urtisi.FloorMapActivity
 import com.example.urtisi.MainActivity
 import com.example.urtisi.Menu.Education.EducationBac1Activity
 import com.example.urtisi.Menu.Education.EducationBac2Activity
@@ -23,6 +24,11 @@ class EducationActivity : AppCompatActivity() {
         val icon1 = findViewById<ImageView>(R.id.icon1)
         icon1.setOnClickListener {
             val intent = Intent(this, MainActivity::class.java)
+            startActivity(intent)
+        }
+        val icon3 = findViewById<ImageView>(R.id.icon3)
+        icon3.setOnClickListener {
+            val intent = Intent(this, FloorMapActivity::class.java)
             startActivity(intent)
         }
         val icon4 = findViewById<ImageView>(R.id.icon4)

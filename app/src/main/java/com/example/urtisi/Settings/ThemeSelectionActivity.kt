@@ -11,6 +11,7 @@ import com.example.urtisi.MainActivity
 import com.example.urtisi.R
 import com.example.urtisi.SettingsActivity
 import androidx.core.content.edit
+import com.example.urtisi.FloorMapActivity
 
 class ThemeSelectionActivity : AppCompatActivity() {
     private lateinit var sharedPreferences: SharedPreferences
@@ -35,6 +36,11 @@ class ThemeSelectionActivity : AppCompatActivity() {
         // Обработчики для нижней панели
         findViewById<ImageView>(R.id.icon1).setOnClickListener {
             startActivity(Intent(this, MainActivity::class.java))
+        }
+        val icon3 = findViewById<ImageView>(R.id.icon3)
+        icon3.setOnClickListener {
+            val intent = Intent(this, FloorMapActivity::class.java)
+            startActivity(intent)
         }
         findViewById<ImageView>(R.id.icon4).setOnClickListener {
             startActivity(Intent(this, SettingsActivity::class.java))

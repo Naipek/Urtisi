@@ -107,7 +107,7 @@
         <activity android:name=".EmployeeDetailActivity"
             android:exported="false" />
 
-        <activity android:name=".ScheduleActivity"
+        <activity android:name=".Menu.PersonalRecordActivity"
             android:exported="false" />
 
         <activity android:name=".FloorMapActivity"

@@ -1,0 +1,108 @@
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="16dp"
+    app:cardCornerRadius="8dp"
+    app:cardElevation="4dp"
+    app:cardBackgroundColor="@android:color/white">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="16dp">
+
+        <!-- Поле для названия предмета -->
+        <EditText
+            android:id="@+id/editSubjectName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#333333"
+            android:hint="Название предмета"
+            android:textColor="#333333"
+            android:textColorHint="#888888"
+            tools:ignore="Autofill,HardcodedText,TextFields,TouchTargetSizeCheck,VisualLintTextFieldSize,TextContrastCheck" />
+
+        <!-- Секция для практик -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:layout_marginTop="16dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Количество практик:"
+                android:textColor="#333333"
+                android:textSize="16sp"
+                tools:ignore="HardcodedText" />
+
+            <EditText
+                android:id="@+id/editPracticesCount"
+                android:layout_width="80dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:backgroundTint="#333333"
+                android:hint="0"
+                android:inputType="number"
+                android:textColor="#333333"
+                android:textColorHint="#888888"
+                tools:ignore="Autofill,DuplicateSpeakableTextCheck,HardcodedText,TouchTargetSizeCheck" />
+        </LinearLayout>
+
+        <!-- Секция для лабораторных работ -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:layout_marginTop="16dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Количество лабораторных:"
+                android:textColor="#333333"
+                android:textSize="16sp"
+                tools:ignore="HardcodedText" />
+
+            <EditText
+                android:id="@+id/editLabsCount"
+                android:layout_width="80dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:backgroundTint="#333333"
+                android:hint="0"
+                android:inputType="number"
+                android:textColor="#333333"
+                android:textColorHint="#888888"
+                tools:ignore="Autofill,HardcodedText,TouchTargetSizeCheck,TextContrastCheck" />
+        </LinearLayout>
+
+        <!-- Поле для других заданий -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Другие задания:"
+            android:textColor="#333333"
+            android:textSize="16sp"
+            android:layout_marginTop="16dp"
+            tools:ignore="HardcodedText" />
+
+        <EditText
+            android:id="@+id/editOtherTasks"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:backgroundTint="#333333"
+            android:hint="Введите через запятую (Курсовая, Тест, Экзамен...)"
+            android:textColor="#333333"
+            android:textColorHint="#888888"
+            tools:ignore="Autofill,HardcodedText,TextFields,VisualLintTextFieldSize,TextContrastCheck" />
+    </LinearLayout>
+</androidx.cardview.widget.CardView>

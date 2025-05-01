@@ -18,6 +18,7 @@ import com.example.urtisi.Menu.StatementActivity
 import android.content.SharedPreferences
 import androidx.appcompat.app.AppCompatDelegate
 import com.example.urtisi.Menu.NewsActivity
+import com.example.urtisi.Menu.PersonalRecordActivity
 
 
 class MainActivity : AppCompatActivity() {
@@ -68,7 +69,7 @@ class MainActivity : AppCompatActivity() {
             startActivity(Intent(this, ReferencesActivity::class.java))
         }
         findViewById<CardView>(R.id.CardStatement).setOnClickListener {
-            startActivity(Intent(this, StatementActivity::class.java))
+            startActivity(Intent(this, PersonalRecordActivity::class.java))
         }
         findViewById<CardView>(R.id.CardNews).setOnClickListener {
             startActivity(Intent(this, NewsActivity::class.java))

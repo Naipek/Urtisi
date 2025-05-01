@@ -105,6 +105,8 @@ class FloorMapActivity : AppCompatActivity() {
         }
     }
 
+
+
     private fun navigateTo(target: Class<*>) {
         val intent = Intent(this, target).apply {
             flags = Intent.FLAG_ACTIVITY_SINGLE_TOP or Intent.FLAG_ACTIVITY_CLEAR_TOP

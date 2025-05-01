@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!-- Верхняя шапка -->
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/headerLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/header_footer_light"
+        android:padding="16dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+
+        <ImageView
+            android:id="@+id/logoImageView"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@drawable/logo"
+            android:contentDescription="@string/logo"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"/>
+
+        <TextView
+            android:id="@+id/headerTitle"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="Ведомость"
+            android:textColor="@color/text_light"
+            android:textSize="20sp"
+            android:maxLines="2"
+            android:ellipsize="end"
+            android:textAlignment="center"
+            app:layout_constraintStart_toEndOf="@id/logoImageView"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="8dp"
+            tools:ignore="HardcodedText" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <!-- Основной контент -->
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/subjectRecyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:padding="16dp"
+        android:background="@color/background_light"
+        app:layout_constraintBottom_toTopOf="@id/footerLayout"
+        app:layout_constraintTop_toBottomOf="@id/headerLayout"
+        tools:ignore="SpeakableTextPresentCheck" />
+
+    <!-- Текстовая подсказка -->
+    <TextView
+        android:id="@+id/subjectsHint"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Для удаления зажмите название предмета"
+        android:textColor="@color/text_light"
+        android:textSize="8sp"
+        android:paddingStart="16dp"
+        android:paddingTop="16dp"
+        android:paddingEnd="16dp"
+        app:layout_constraintTop_toBottomOf="@id/headerLayout"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        tools:ignore="HardcodedText,SmallSp" />
+
+
+    <!-- Кнопка добавления -->
+    <ImageView
+        android:id="@+id/addSubjectButton"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_margin="16dp"
+        android:src="@drawable/ic_add"
+        android:contentDescription="Добавить предмет"
+        app:layout_constraintBottom_toTopOf="@id/footerLayout"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:tint="@color/text_light"
+        android:background="?attr/selectableItemBackgroundBorderless"
+        android:clickable="true"
+        android:focusable="true"
+        tools:ignore="HardcodedText,UseAppTint" />
+
+    <!-- Нижняя панель -->
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/footerLayout"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="@color/header_footer_light"
+        app:layout_constraintBottom_toBottomOf="parent">
+
+        <ImageView
+            android:id="@+id/icon1"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:src="@drawable/ic_home1"
+            app:tint="@color/text_light"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@id/icon2"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:ignore="ContentDescription" />
+
+        <ImageView
+            android:id="@+id/icon2"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:src="@drawable/ic_calendar1"
+            app:tint="@color/text_light"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@id/icon3"
+            app:layout_constraintStart_toEndOf="@id/icon1"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:ignore="ContentDescription" />
+
+        <ImageView
+            android:id="@+id/icon3"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:src="@drawable/ic_map1"
+            app:tint="@color/text_light"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@id/icon4"
+            app:layout_constraintStart_toEndOf="@id/icon2"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:ignore="ContentDescription" />
+
+        <ImageView
+            android:id="@+id/icon4"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:src="@drawable/ic_settings1"
+            app:tint="@color/text_light"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@id/icon3"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:ignore="ContentDescription" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

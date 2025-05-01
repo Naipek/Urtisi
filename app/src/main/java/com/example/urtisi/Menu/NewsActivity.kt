@@ -13,6 +13,7 @@ import kotlinx.coroutines.launch
 import android.util.Log
 import android.widget.ImageView
 import android.widget.Toast
+import com.example.urtisi.FloorMapActivity
 import com.example.urtisi.MainActivity
 import com.example.urtisi.SettingsActivity
 
@@ -29,7 +30,11 @@ class NewsActivity : AppCompatActivity() {
             val intent = Intent(this, MainActivity::class.java)
             startActivity(intent)
         }
-
+        val icon3 = findViewById<ImageView>(R.id.icon3)
+        icon3.setOnClickListener {
+            val intent = Intent(this, FloorMapActivity::class.java)
+            startActivity(intent)
+        }
         val icon4 = findViewById<ImageView>(R.id.icon4)
         icon4.setOnClickListener {
             val intent = Intent(this, SettingsActivity::class.java)

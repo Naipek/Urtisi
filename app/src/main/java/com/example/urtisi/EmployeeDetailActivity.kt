@@ -18,6 +18,11 @@ class EmployeeDetailActivity : AppCompatActivity() {
         findViewById<ImageView>(R.id.icon1).setOnClickListener {
             startActivity(Intent(this, MainActivity::class.java))
         }
+        val icon3 = findViewById<ImageView>(R.id.icon3)
+        icon3.setOnClickListener {
+            val intent = Intent(this, FloorMapActivity::class.java)
+            startActivity(intent)
+        }
         findViewById<ImageView>(R.id.icon4).setOnClickListener {
             startActivity(Intent(this, SettingsActivity::class.java))
         }
