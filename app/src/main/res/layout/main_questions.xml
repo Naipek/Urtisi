@@ -176,7 +176,7 @@
                         android:id="@+id/answerText4"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:text="Тебе нужно обратиться в деканат и написать заявление, через время тебе выдадут новый студак или пропус."
+                        android:text="Тебе нужно обратиться в деканат и написать заявление, через время тебе выдадут новый студак или пропуск."
                         android:visibility="gone"
                         android:paddingTop="8dp"
                         android:textColor="@color/text_light"
