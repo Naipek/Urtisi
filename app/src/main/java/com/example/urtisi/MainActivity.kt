@@ -9,7 +9,6 @@ import com.example.urtisi.Menu.BasicActivity
 import com.example.urtisi.Menu.CafedraActivity
 import com.example.urtisi.Menu.CallActivity
 import com.example.urtisi.Menu.EducationActivity
-import com.example.urtisi.Menu.EmployeesActivity
 import com.example.urtisi.Menu.FactsActivity
 import com.example.urtisi.Menu.InstituteActivity
 import com.example.urtisi.Menu.QuestionsActivity

@@ -3,6 +3,7 @@ package com.example.urtisi
 import android.content.Intent
 import android.os.Bundle
 import android.util.Log
+import android.widget.ImageView
 import android.widget.SearchView
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
@@ -55,8 +56,10 @@ class StaffActivity : AppCompatActivity() {
                 Toast.makeText(this@StaffActivity, "Календарь", Toast.LENGTH_SHORT).show()
             }
 
-            findViewById<android.widget.ImageView>(R.id.icon3)?.setOnClickListener {
-                Toast.makeText(this@StaffActivity, "Карта", Toast.LENGTH_SHORT).show()
+            val icon3 = findViewById<ImageView>(R.id.icon3)
+            icon3.setOnClickListener {
+                val intent = Intent(this, FloorMapActivity::class.java)
+                startActivity(intent)
             }
 
             findViewById<android.widget.ImageView>(R.id.icon4)?.setOnClickListener {
