@@ -82,7 +82,7 @@
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="УрТИСИ снован в 1930 году.
+                        android:text="УрТИСИ основан в 1930 году.
 \nИзначально учреждение было открыто как техникум связи в Свердловске. В 1998 году на его базе был создан филиал СибГУТИ в Екатеринбурге — УрТИСИ."
                         android:textSize="14sp"
                         android:textColor="@color/text_light"

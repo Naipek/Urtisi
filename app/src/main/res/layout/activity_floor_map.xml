@@ -4,90 +4,39 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:background="@color/background">
 
-    <!-- Верхняя шапка с управлением этажами -->
-    <androidx.constraintlayout.widget.ConstraintLayout
+    <!-- Упрощенная верхняя шапка с центрированным заголовком -->
+    <RelativeLayout
         android:id="@+id/headerLayout"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="?attr/actionBarSize"
         android:background="@color/header_footer_light"
-        android:padding="16dp"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent">
+        android:paddingHorizontal="16dp"
+        app:layout_constraintTop_toTopOf="parent">
 
+        <!-- Логотип слева -->
         <ImageView
             android:id="@+id/logoImageView"
             android:layout_width="40dp"
             android:layout_height="40dp"
+            android:layout_centerVertical="true"
             android:src="@drawable/logo"
-            android:contentDescription="@string/logo"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintBottom_toBottomOf="parent" />
+            android:contentDescription="@string/logo" />
 
-        <!-- Кнопка перехода на этаж ниже -->
-        <ImageView
-            android:id="@+id/floorDown"
-            android:layout_width="24dp"
-            android:layout_height="24dp"
-            android:layout_marginStart="16dp"
-            android:clickable="true"
-            android:contentDescription="Этаж ниже"
-            android:focusable="true"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintStart_toEndOf="@id/logoImageView"
-            app:layout_constraintTop_toTopOf="parent"
-            tools:ignore="HardcodedText,TouchTargetSizeCheck" />
-
-        <!-- Индикатор текущего этажа -->
-        <TextView
-            android:id="@+id/floorText"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Этаж 1"
-            android:textColor="@color/text_light"
-            android:textSize="18sp"
-            app:layout_constraintStart_toEndOf="@id/floorDown"
-            app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintBottom_toBottomOf="parent"
-            android:layout_marginStart="8dp"
-            tools:ignore="HardcodedText" />
-
-        <!-- Кнопка перехода на этаж выше -->
-        <ImageView
-            android:id="@+id/floorUp"
-            android:layout_width="24dp"
-            android:layout_height="24dp"
-            android:layout_marginStart="8dp"
-            android:clickable="true"
-            android:contentDescription="Этаж выше"
-            android:focusable="true"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintStart_toEndOf="@id/floorText"
-            app:layout_constraintTop_toTopOf="parent"
-            tools:ignore="HardcodedText,TouchTargetSizeCheck" />
-
-        <!-- Заголовок -->
+        <!-- Заголовок по центру -->
         <TextView
             android:id="@+id/headerTitle"
-            android:layout_width="0dp"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
             android:text="Карта института"
             android:textColor="@color/text_light"
             android:textSize="20sp"
-            android:maxLines="2"
-            android:ellipsize="end"
-            android:textAlignment="center"
-            app:layout_constraintStart_toEndOf="@id/floorUp"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintBottom_toBottomOf="parent"
-            android:layout_marginStart="16dp"
-            android:layout_marginEnd="8dp"
             tools:ignore="HardcodedText" />
-    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </RelativeLayout>
 
     <!-- WebView с картой -->
     <WebView
@@ -99,7 +48,57 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"/>
 
-    <!-- Нижняя панель -->
+    <!-- Блок управления этажами (справа внизу) -->
+    <LinearLayout
+        android:id="@+id/floorControls"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="8dp"
+        android:orientation="vertical"
+        android:gravity="center_horizontal"
+        android:background="@drawable/rounded_controls_background"
+        android:padding="8dp"
+        app:layout_constraintBottom_toTopOf="@id/footerLayout"
+        app:layout_constraintEnd_toEndOf="parent">
+
+        <!-- Кнопка перехода на этаж выше -->
+        <ImageButton
+            android:id="@+id/floorUp"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            android:contentDescription="Этаж выше"
+            android:src="@drawable/ic_arrow_up"
+            android:tint="@color/text_light"
+            tools:ignore="HardcodedText,TouchTargetSizeCheck,UseAppTint,ImageContrastCheck" />
+
+        <!-- Номер текущего этажа -->
+        <TextView
+            android:id="@+id/floorText"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginVertical="4dp"
+            android:gravity="center"
+            android:text="1"
+            android:textColor="@color/text_light"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            tools:ignore="HardcodedText,TextContrastCheck" />
+
+        <!-- Кнопка перехода на этаж ниже -->
+        <ImageButton
+            android:id="@+id/floorDown"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            android:contentDescription="Этаж ниже"
+            android:src="@drawable/ic_arrow_down"
+            android:tint="@color/text_light"
+            tools:ignore="HardcodedText,UseAppTint,TouchTargetSizeCheck,ImageContrastCheck" />
+    </LinearLayout>
+
+    <!-- Нижняя панель навигации -->
     <androidx.constraintlayout.widget.ConstraintLayout
         android:id="@+id/footerLayout"
         android:layout_width="match_parent"
@@ -112,52 +111,52 @@
             android:layout_width="30dp"
             android:layout_height="30dp"
             android:src="@drawable/ic_home1"
-            app:tint="@color/text_light"
+            android:tint="@color/text_light"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toStartOf="@+id/icon2"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintHorizontal_chainStyle="spread"
             app:layout_constraintHorizontal_weight="1"
-            tools:ignore="ContentDescription" />
+            tools:ignore="ContentDescription,UseAppTint" />
 
         <ImageView
             android:id="@+id/icon2"
             android:layout_width="30dp"
             android:layout_height="30dp"
             android:src="@drawable/ic_calendar1"
-            app:tint="@color/text_light"
+            android:tint="@color/text_light"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toStartOf="@id/icon3"
             app:layout_constraintStart_toEndOf="@+id/icon1"
             app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintHorizontal_weight="1"
-            tools:ignore="ContentDescription" />
+            tools:ignore="ContentDescription,UseAppTint" />
 
         <ImageView
             android:id="@+id/icon3"
             android:layout_width="30dp"
             android:layout_height="30dp"
             android:src="@drawable/ic_map1"
-            app:tint="@color/text_light"
+            android:tint="@color/text_light"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toStartOf="@id/icon4"
             app:layout_constraintStart_toEndOf="@+id/icon2"
             app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintHorizontal_weight="1"
-            tools:ignore="ContentDescription" />
+            tools:ignore="ContentDescription,UseAppTint" />
 
         <ImageView
             android:id="@+id/icon4"
             android:layout_width="30dp"
             android:layout_height="30dp"
             android:src="@drawable/ic_settings1"
-            app:tint="@color/text_light"
+            android:tint="@color/text_light"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toEndOf="@+id/icon3"
             app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintHorizontal_weight="1"
-            tools:ignore="ContentDescription" />
+            tools:ignore="ContentDescription,UseAppTint" />
     </androidx.constraintlayout.widget.ConstraintLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>
