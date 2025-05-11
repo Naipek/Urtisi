@@ -77,11 +77,25 @@ class TaskDatabaseHelper(context: Context) : SQLiteOpenHelper(
         val result = mutableListOf<SubjectWithTasks>()
 
         val query = """
-            SELECT s.id as subject_id, s.name, t.id as task_id, t.title, t.is_done
-            FROM $TABLE_SUBJECTS s
-            LEFT JOIN $TABLE_TASKS t ON s.id = t.subject_id
-            ORDER BY s.name, t.title
-        """
+        SELECT s.id as subject_id, s.name, t.id as task_id, t.title, t.is_done
+        FROM $TABLE_SUBJECTS s
+        LEFT JOIN $TABLE_TASKS t ON s.id = t.subject_id
+        ORDER BY s.name, 
+            CASE 
+                WHEN t.title LIKE 'Практика %' THEN 1
+                WHEN t.title LIKE 'Лаб. работа %' THEN 2
+                ELSE 3
+            END,
+            CASE 
+                WHEN t.title LIKE 'Практика %' THEN 
+                    CAST(substr(t.title, 10) AS INTEGER)
+                WHEN t.title LIKE 'Лаб. работа %' THEN 
+                    CAST(substr(t.title, 13) AS INTEGER)
+                ELSE 
+                    999999
+            END,
+            t.title
+    """
 
         db.rawQuery(query, null).use { cursor ->
             var currentSubject: SubjectWithTasks? = null

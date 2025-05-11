@@ -115,14 +115,16 @@ class PersonalRecordActivity : AppCompatActivity() {
 
                 val subjectId = db.addSubject(subjectName)
                 if (subjectId != -1L) {
-                    // Добавляем практики
+                    // Добавляем практики с ведущими нулями для правильной сортировки
                     for (i in 1..practicesCount) {
-                        db.addTask(subjectId, "Практика $i")
+                        val practiceNumber = String.format("%02d", i) // Добавляем ведущий ноль для чисел < 10
+                        db.addTask(subjectId, "Практика $practiceNumber")
                     }
 
-                    // Добавляем лабораторные работы
+                    // Добавляем лабораторные работы с ведущими нулями
                     for (i in 1..labsCount) {
-                        db.addTask(subjectId, "Лаб. работа $i")
+                        val labNumber = String.format("%02d", i) // Добавляем ведущий ноль для чисел < 10
+                        db.addTask(subjectId, "Лаб. работа $labNumber")
                     }
 
                     // Добавляем другие задания
