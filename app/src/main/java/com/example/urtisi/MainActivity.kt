@@ -13,11 +13,11 @@ import com.example.urtisi.Menu.FactsActivity
 import com.example.urtisi.Menu.InstituteActivity
 import com.example.urtisi.Menu.QuestionsActivity
 import com.example.urtisi.Menu.ReferencesActivity
-import com.example.urtisi.Menu.StatementActivity
 import android.content.SharedPreferences
 import androidx.appcompat.app.AppCompatDelegate
 import com.example.urtisi.Menu.NewsActivity
 import com.example.urtisi.Menu.PersonalRecordActivity
+import com.example.urtisi.ScheduleActivity
 
 
 class MainActivity : AppCompatActivity() {
@@ -37,6 +37,10 @@ class MainActivity : AppCompatActivity() {
         // Нижняя панель — переход в карта
         findViewById<ImageView>(R.id.icon3).setOnClickListener {
             startActivity(Intent(this, FloorMapActivity::class.java))
+        }
+        // Нижняя панель — переход в расписание
+        findViewById<ImageView>(R.id.icon2).setOnClickListener {
+            startActivity(Intent(this, ScheduleActivity::class.java))
         }
 
         // Карточки и переходы

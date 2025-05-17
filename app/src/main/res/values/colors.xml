@@ -11,10 +11,10 @@
     <color name="cape_cod">#3c3f41</color>
     <color name="light_grey">#bbbbbb</color>
     <color name="midnight_blue">#103369</color>
-    <color name="colorPrimaryLight">#6200EE</color>
+    <color name="colorPrimaryLight">#FF6200EE</color>
     <color name="colorOnPrimaryLight">#FFFFFF</color>
-    <color name="colorPrimaryDark">#121212</color>
-    <color name="colorOnPrimaryDark">#FFFFFF</color>
+    <color name="colorPrimaryDark">#BB86FC</color>
+    <color name="colorOnPrimaryDark">#000000</color>
     <color name="colorPrimary">#6200EE</color>
     <color name="colorOnPrimary">#FFFFFF</color>
     <color name="background">#FFFFFF</color>
