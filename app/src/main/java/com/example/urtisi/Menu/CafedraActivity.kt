@@ -13,6 +13,7 @@ import com.example.urtisi.Menu.Cafedrs.CafedraItimsActivity
 import com.example.urtisi.Menu.Cafedrs.CafedraMeActivity
 import com.example.urtisi.Menu.Cafedrs.CafedraVmifActivity
 import com.example.urtisi.R
+import com.example.urtisi.ScheduleActivity
 import com.example.urtisi.SettingsActivity
 
 class CafedraActivity : AppCompatActivity() {
@@ -34,6 +35,11 @@ class CafedraActivity : AppCompatActivity() {
         val icon4 = findViewById<ImageView>(R.id.icon4)
         icon4.setOnClickListener {
             val intent = Intent(this, SettingsActivity::class.java)
+            startActivity(intent)
+        }
+        val icon2 = findViewById<ImageView>(R.id.icon2)
+        icon2.setOnClickListener {
+            val intent = Intent(this, ScheduleActivity::class.java)
             startActivity(intent)
         }
 

@@ -12,6 +12,7 @@ import com.example.urtisi.R
 import com.example.urtisi.SettingsActivity
 import androidx.core.content.edit
 import com.example.urtisi.FloorMapActivity
+import com.example.urtisi.ScheduleActivity
 
 class ThemeSelectionActivity : AppCompatActivity() {
     private lateinit var sharedPreferences: SharedPreferences
@@ -44,6 +45,11 @@ class ThemeSelectionActivity : AppCompatActivity() {
         }
         findViewById<ImageView>(R.id.icon4).setOnClickListener {
             startActivity(Intent(this, SettingsActivity::class.java))
+        }
+        val icon2 = findViewById<ImageView>(R.id.icon2)
+        icon2.setOnClickListener {
+            val intent = Intent(this, ScheduleActivity::class.java)
+            startActivity(intent)
         }
     }
 

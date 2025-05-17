@@ -39,6 +39,14 @@ class NewsDetailActivity : AppCompatActivity() {
         findViewById<ImageView>(R.id.icon4).setOnClickListener {
             startActivity(Intent(this, SettingsActivity::class.java))
         }
+        findViewById<ImageView>(R.id.icon3).setOnClickListener {
+            startActivity(Intent(this, FloorMapActivity::class.java))
+        }
+        val icon2 = findViewById<ImageView>(R.id.icon2)
+        icon2.setOnClickListener {
+            val intent = Intent(this, ScheduleActivity::class.java)
+            startActivity(intent)
+        }
 
         val url = intent.getStringExtra("url") ?: run {
             Toast.makeText(this, "Ошибка: нет URL новости", Toast.LENGTH_SHORT).show()

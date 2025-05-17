@@ -16,6 +16,7 @@ import android.widget.RadioGroup
 import android.widget.RadioButton
 import com.google.android.material.floatingactionbutton.FloatingActionButton
 import android.content.Context
+import android.content.Intent
 
 class ScheduleActivity : AppCompatActivity(), EducationFilterDialog.FilterSelectionListener {
     private lateinit var weekRangeText: TextView
@@ -43,6 +44,22 @@ class ScheduleActivity : AppCompatActivity(), EducationFilterDialog.FilterSelect
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_schedule)
+
+        // Подключение нижней панели
+        findViewById<ImageView>(R.id.icon1).setOnClickListener {
+            startActivity(Intent(this, MainActivity::class.java))
+        }
+        findViewById<ImageView>(R.id.icon4).setOnClickListener {
+            startActivity(Intent(this, SettingsActivity::class.java))
+        }
+        findViewById<ImageView>(R.id.icon3).setOnClickListener {
+            startActivity(Intent(this, FloorMapActivity::class.java))
+        }
+        val icon2 = findViewById<ImageView>(R.id.icon2)
+        icon2.setOnClickListener {
+            val intent = Intent(this, ScheduleActivity::class.java)
+            startActivity(intent)
+        }
 
         // Загружаем сохраненную группу
         val prefs = getSharedPreferences(PREFS_NAME, Context.MODE_PRIVATE)

@@ -13,6 +13,7 @@ import com.example.urtisi.Menu.Education.EducationBac3Activity
 import com.example.urtisi.Menu.Education.EducationSpo1Activity
 import com.example.urtisi.Menu.Education.EducationSpo2Activity
 import com.example.urtisi.R
+import com.example.urtisi.ScheduleActivity
 import com.example.urtisi.SettingsActivity
 
 class EducationActivity : AppCompatActivity() {
@@ -34,6 +35,11 @@ class EducationActivity : AppCompatActivity() {
         val icon4 = findViewById<ImageView>(R.id.icon4)
         icon4.setOnClickListener {
             val intent = Intent(this, SettingsActivity::class.java)
+            startActivity(intent)
+        }
+        val icon2 = findViewById<ImageView>(R.id.icon2)
+        icon2.setOnClickListener {
+            val intent = Intent(this, ScheduleActivity::class.java)
             startActivity(intent)
         }
 

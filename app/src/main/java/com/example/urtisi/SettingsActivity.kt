@@ -32,6 +32,11 @@ class SettingsActivity : AppCompatActivity() {
             val intent = Intent(this, FloorMapActivity::class.java)
             startActivity(intent)
         }
+        val icon2 = findViewById<ImageView>(R.id.icon2)
+        icon2.setOnClickListener {
+            val intent = Intent(this, ScheduleActivity::class.java)
+            startActivity(intent)
+        }
 
         // Найти карточку выбора темы
         val cardThemeSelection = findViewById<CardView>(R.id.CardThemeSelection)

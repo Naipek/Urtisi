@@ -26,6 +26,11 @@ class EmployeeDetailActivity : AppCompatActivity() {
         findViewById<ImageView>(R.id.icon4).setOnClickListener {
             startActivity(Intent(this, SettingsActivity::class.java))
         }
+        val icon2 = findViewById<ImageView>(R.id.icon2)
+        icon2.setOnClickListener {
+            val intent = Intent(this, ScheduleActivity::class.java)
+            startActivity(intent)
+        }
 
         // Получаем данные о сотруднике
         val employee = intent.getSerializableExtra("employee") as? Employee ?: run {
