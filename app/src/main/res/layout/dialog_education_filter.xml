@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Выберите уровень образования"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:textColor="@android:color/black"
+        android:layout_marginBottom="16dp"/>
+
+    <RadioGroup
+        android:id="@+id/educationLevelGroup"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginBottom="16dp">
+
+        <RadioButton
+            android:id="@+id/radioSPO"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="СПО"
+            android:textColor="@android:color/black"
+            android:buttonTint="@android:color/black"/>
+
+        <RadioButton
+            android:id="@+id/radioVO"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="ВО"
+            android:textColor="@android:color/black"
+            android:buttonTint="@android:color/black"/>
+    </RadioGroup>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Выберите курс"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:textColor="@android:color/black"
+        android:layout_marginBottom="16dp"/>
+
+    <RadioGroup
+        android:id="@+id/courseGroup"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginBottom="16dp">
+
+        <RadioButton
+            android:id="@+id/radio1Course"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="1 курс"
+            android:textColor="@android:color/black"
+            android:buttonTint="@android:color/black"/>
+
+        <RadioButton
+            android:id="@+id/radio2Course"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="2 курс"
+            android:textColor="@android:color/black"
+            android:buttonTint="@android:color/black"/>
+
+        <RadioButton
+            android:id="@+id/radio3Course"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="3 курс"
+            android:textColor="@android:color/black"
+            android:buttonTint="@android:color/black"/>
+
+        <RadioButton
+            android:id="@+id/radio4Course"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="4 курс"
+            android:textColor="@android:color/black"
+            android:buttonTint="@android:color/black"/>
+    </RadioGroup>
+
+    <TextView
+        android:id="@+id/groupSelectorLabel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Выберите группу"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:textColor="@android:color/black"
+        android:layout_marginBottom="16dp"/>
+
+    <Spinner
+        android:id="@+id/groupSpinner"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:minHeight="48dp"
+        android:background="@android:drawable/btn_dropdown"
+        android:spinnerMode="dropdown"
+        android:popupBackground="@android:color/white"/>
+
+</LinearLayout> 

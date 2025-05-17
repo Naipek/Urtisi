@@ -1,0 +1,210 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/background_light">
+
+        <!-- Верхняя шапка -->
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/headerLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/header_footer_light"
+            android:padding="16dp"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent">
+
+            <ImageView
+                android:id="@+id/logoImageView"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:src="@drawable/logo"
+                android:contentDescription="@string/logo"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent" />
+
+            <TextView
+                android:id="@+id/headerTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Расписание"
+                android:textColor="@color/text_light"
+                android:textSize="20sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <!-- Week Navigation -->
+        <LinearLayout
+            android:id="@+id/navigationLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="@color/card_light"
+            android:elevation="2dp"
+            android:paddingTop="8dp"
+            android:paddingBottom="8dp"
+            app:layout_constraintTop_toBottomOf="@id/headerLayout">
+
+            <!-- Selected Group -->
+            <TextView
+                android:id="@+id/selectedFilterTextView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingBottom="2dp"
+                android:textColor="@color/text_light"
+                android:textSize="16sp"
+                android:gravity="center"
+                android:visibility="gone"/>
+
+            <!-- Week Navigation Controls -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center">
+
+                <ImageButton
+                    android:id="@+id/prevWeekButton"
+                    android:layout_width="48dp"
+                    android:layout_height="48dp"
+                    android:background="?attr/selectableItemBackgroundBorderless"
+                    android:src="@drawable/ic_arrow_left"
+                    app:tint="@color/text_light"
+                    android:contentDescription="Предыдущая неделя"/>
+
+                <TextView
+                    android:id="@+id/weekRangeText"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:textSize="16sp"
+                    android:textColor="@color/text_light"/>
+
+                <ImageButton
+                    android:id="@+id/nextWeekButton"
+                    android:layout_width="48dp"
+                    android:layout_height="48dp"
+                    android:background="?attr/selectableItemBackgroundBorderless"
+                    android:src="@drawable/ic_arrow_right"
+                    app:tint="@color/text_light"
+                    android:contentDescription="Следующая неделя"/>
+
+            </LinearLayout>
+        </LinearLayout>
+
+        <!-- Schedule RecyclerView -->
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/scheduleRecyclerView"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:padding="8dp"
+            android:clipToPadding="false"
+            android:background="@color/background_light"
+            app:layout_constraintTop_toBottomOf="@id/navigationLayout"
+            app:layout_constraintBottom_toTopOf="@id/footerLayout"/>
+
+        <!-- Нижняя панель -->
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/footerLayout"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:background="@color/header_footer_light"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent">
+
+            <ImageView
+                android:id="@+id/icon1"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:src="@drawable/ic_home1"
+                app:tint="@color/text_light"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toStartOf="@+id/icon2"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintHorizontal_chainStyle="spread"
+                app:layout_constraintHorizontal_weight="1"
+                tools:ignore="ContentDescription" />
+
+            <ImageView
+                android:id="@+id/icon2"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:src="@drawable/ic_calendar1"
+                app:tint="@color/text_light"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toStartOf="@id/icon3"
+                app:layout_constraintStart_toEndOf="@+id/icon1"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintHorizontal_weight="1"
+                tools:ignore="ContentDescription" />
+
+            <ImageView
+                android:id="@+id/icon3"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:src="@drawable/ic_map1"
+                app:tint="@color/text_light"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toStartOf="@id/icon4"
+                app:layout_constraintStart_toEndOf="@+id/icon2"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintHorizontal_weight="1"
+                tools:ignore="ContentDescription" />
+
+            <ImageView
+                android:id="@+id/icon4"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:src="@drawable/ic_settings1"
+                app:tint="@color/text_light"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/icon3"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintHorizontal_weight="1"
+                tools:ignore="ContentDescription" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <!-- Filter FAB -->
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/filterFab"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|end"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="76dp"
+        android:src="@drawable/ic_filter"
+        app:backgroundTint="@color/card_light"
+        app:tint="@color/text_light"
+        android:contentDescription="Фильтр"/>
+
+    <TextView
+        android:id="@+id/noScheduleText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:textSize="18sp"
+        android:textColor="@color/text_light"
+        android:padding="16dp"
+        android:visibility="gone"
+        android:text="Выберите группу, используя кнопку фильтра"/>
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout> 

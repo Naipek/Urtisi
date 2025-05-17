@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@android:color/white"
+    android:elevation="4dp"
+    android:orientation="horizontal"
+    android:padding="16dp"
+    android:gravity="center">
+
+    <ImageButton
+        android:id="@+id/prevWeekButton"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:background="?attr/selectableItemBackgroundBorderless"
+        android:contentDescription="Предыдущая неделя"
+        android:src="@drawable/ic_arrow_left"
+        android:tint="@android:color/darker_gray" />
+
+    <TextView
+        android:id="@+id/weekRangeText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="32dp"
+        android:gravity="center"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:textColor="@android:color/black" />
+
+    <ImageButton
+        android:id="@+id/nextWeekButton"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:background="?attr/selectableItemBackgroundBorderless"
+        android:contentDescription="Следующая неделя"
+        android:src="@drawable/ic_arrow_right"
+        android:tint="@android:color/darker_gray" />
+
+</LinearLayout> 
