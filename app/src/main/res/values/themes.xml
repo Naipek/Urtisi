@@ -11,11 +11,15 @@
     <style name="Theme.Urtisi.Light" parent="Theme.MaterialComponents.Light.NoActionBar">
         <item name="colorPrimary">@color/colorPrimaryLight</item>
         <item name="colorOnPrimary">@color/colorOnPrimaryLight</item>
+        <item name="android:textColorLink">@color/link_color_light</item>
     </style>
 
     <style name="Theme.Urtisi.Dark" parent="Theme.MaterialComponents.NoActionBar">
         <item name="colorPrimary">@color/colorPrimaryDark</item>
         <item name="colorOnPrimary">@color/colorOnPrimaryDark</item>
+        <item name="android:textColorLink">@color/link_color_dark</item>
+        <item name="colorAccent">@android:color/white</item>
+        <item name="android:textColor">@android:color/white</item>
     </style>
 
     <!-- Стиль для диалога -->

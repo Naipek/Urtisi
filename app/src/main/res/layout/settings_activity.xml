@@ -121,7 +121,7 @@
                             android:id="@+id/CardText2"
                             android:layout_width="0dp"
                             android:layout_height="wrap_content"
-                            android:text="@string/help"
+                            android:text="О приложении"
                             android:textColor="@color/text_light"
                             android:textSize="16sp"
                             android:gravity="center"

@@ -155,6 +155,7 @@
 \nТелефон: +7 383 269-82-02
 \nАдрес сайта: https://www.sibsutis.ru
 \nЭлектронный адрес: rectorat@sibsutis.ru\n"
+                    android:textColorLink="@color/link_color"
                     android:textColor="@color/text_light"
                     android:textSize="16sp"
                     android:lineSpacingExtra="4dp"
@@ -226,6 +227,7 @@
 \nПриемная комиссия: (343) 305-30-66, доб. 92-19; +7(919) 370-06-89
 \nАдрес электронной почты: priem@urtisi.ru\n"
                     android:textColor="@color/text_light"
+                    android:textColorLink="@color/link_color"
                     android:textSize="16sp"
                     android:lineSpacingExtra="4dp"
                     android:autoLink="email"

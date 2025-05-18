@@ -52,8 +52,10 @@ class StaffActivity : AppCompatActivity() {
                 finish()
             }
 
-            findViewById<android.widget.ImageView>(R.id.icon2)?.setOnClickListener {
-                Toast.makeText(this@StaffActivity, "Календарь", Toast.LENGTH_SHORT).show()
+            val icon2 = findViewById<ImageView>(R.id.icon2)
+            icon2.setOnClickListener {
+                val intent = Intent(this, ScheduleActivity::class.java)
+                startActivity(intent)
             }
 
             val icon3 = findViewById<ImageView>(R.id.icon3)

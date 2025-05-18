@@ -81,6 +81,7 @@
 \n
 \n"
                     android:textColor="@color/text_light"
+                    android:textColorLink="@color/link_color"
                     android:textSize="16sp"
                     android:lineSpacingExtra="4dp"
                     android:autoLink="web"

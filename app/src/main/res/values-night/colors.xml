@@ -11,4 +11,6 @@
 
     <color name="header_footer_light">#1A1A1A</color>
     <color name="header_footer_dark">#FFFFFF</color>
+
+    <color name="link_color">@color/link_color_dark</color>
 </resources>

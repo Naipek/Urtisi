@@ -58,4 +58,9 @@
     <color name="card_text_dark">#FFFFFF</color>
     <color name="icon_tint_dark">#BB86FC</color>
 
+    <!-- Цвета ссылок -->
+    <color name="link_color_light">#2196F3</color>
+    <color name="link_color_dark">#82B1FF</color>
+    <color name="link_color">@color/link_color_light</color>
+
 </resources>

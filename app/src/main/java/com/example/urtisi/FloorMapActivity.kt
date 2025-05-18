@@ -102,6 +102,9 @@ class FloorMapActivity : AppCompatActivity() {
         findViewById<ImageView>(R.id.icon4).setOnClickListener {
             navigateTo(SettingsActivity::class.java)
         }
+        findViewById<ImageView>(R.id.icon2).setOnClickListener {
+            navigateTo(ScheduleActivity::class.java)
+        }
     }
 
     private fun navigateTo(target: Class<*>) {
