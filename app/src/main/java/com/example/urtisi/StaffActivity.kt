@@ -111,10 +111,18 @@ class StaffActivity : AppCompatActivity() {
         if (query.isNullOrEmpty()) {
             filteredList.addAll(staffList)
         } else {
-            val lowerCaseQuery = query.lowercase()
+            // Разбиваем поисковый запрос на отдельные слова
+            val searchWords = query.lowercase().split(" ").filter { it.isNotEmpty() }
+            
             staffList.forEach { employee ->
-                if (employee.name.lowercase().contains(lowerCaseQuery) ||
-                    employee.position.lowercase().contains(lowerCaseQuery)) {
+                val employeeName = employee.name.lowercase()
+                
+                // Проверяем, содержатся ли все слова из запроса в имени сотрудника
+                val allWordsFound = searchWords.all { word ->
+                    employeeName.contains(word)
+                }
+                
+                if (allWordsFound) {
                     filteredList.add(employee)
                 }
             }

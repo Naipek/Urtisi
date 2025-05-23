@@ -39,6 +39,7 @@ class ScheduleActivity : AppCompatActivity(), EducationFilterDialog.FilterSelect
         private const val PREFS_NAME = "SchedulePrefs"
         private const val KEY_SELECTED_GROUP = "selected_group"
         private const val KEY_FIRST_LAUNCH = "first_launch"
+        private const val KEY_SELECTED_WEEK = "selected_week"
     }
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -236,8 +237,10 @@ class ScheduleActivity : AppCompatActivity(), EducationFilterDialog.FilterSelect
             
             Log.d(TAG, "Найденные недели: ${dateRanges.joinToString()}")
             
-            // Отображаем первую неделю
-            currentWeekIndex = 0
+            // Восстанавливаем сохраненную позицию недели
+            val prefs = getSharedPreferences(PREFS_NAME, Context.MODE_PRIVATE)
+            currentWeekIndex = prefs.getInt(KEY_SELECTED_WEEK, 0).coerceIn(0, dateRanges.size - 1)
+            
             updateWeekDisplay()
             showScheduleState()
 
@@ -263,6 +266,12 @@ class ScheduleActivity : AppCompatActivity(), EducationFilterDialog.FilterSelect
         val weekSchedule = allSchedules.filter { it.dateRange == dateRanges[currentWeekIndex] }
         Log.d(TAG, "Отображаем расписание для ${dateRanges[currentWeekIndex]}, найдено ${weekSchedule.size} пар")
         displaySchedule(weekSchedule)
+
+        // Сохраняем текущую позицию недели
+        getSharedPreferences(PREFS_NAME, Context.MODE_PRIVATE)
+            .edit()
+            .putInt(KEY_SELECTED_WEEK, currentWeekIndex)
+            .apply()
     }
 
     private fun displaySchedule(schedules: List<Schedule>) {
