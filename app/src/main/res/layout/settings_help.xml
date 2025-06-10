@@ -98,7 +98,7 @@
                     android:id="@+id/helpText4"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="Являясь студентом 4 курса я задумался как можно помочь первокурсникам в адоптации стенах института.\n
+                    android:text="Являясь студентом 4 курса я задумался как можно помочь первокурсникам в адаптации стенах института.\n
 \nЭто информационное приложение служит своего рода хранилищем информации об институте с разных источников.\n"
                     android:textColor="@color/text_light"
                     android:textSize="16sp"

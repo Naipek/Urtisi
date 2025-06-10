@@ -87,7 +87,37 @@
 \n      2 пара:10:15-11:45
 \n      3 пара:12:00-13:30
 \n      4 пара:13:45-14:45
-\n     5 пара:15:00-16:00"
+\n     5 пара:15:00-16:00
+\n"
+                    android:textColor="@color/text_light"
+                    android:textSize="16sp"
+                    android:lineSpacingExtra="4dp"
+                    android:gravity="center"
+                    tools:ignore="HardcodedText,VisualLintLongText" />
+
+                <TextView
+                    android:id="@+id/callText1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Режим работы деканата:
+\nПерерыв 12:00-13:00"
+                    android:textColor="@color/text_light"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    android:lineSpacingExtra="4dp"
+                    android:gravity="center"
+                    tools:ignore="HardcodedText,VisualLintLongText" />
+
+                <TextView
+                    android:id="@+id/callText2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="
+Понедельник: 8:00-16:12
+\nВторник: 8:00-12:00
+\nСреда: 8:00-16:12
+\nЧетверг: 8:00-12:00
+\nПятница: 8:00-16:12"
                     android:textColor="@color/text_light"
                     android:textSize="16sp"
                     android:lineSpacingExtra="4dp"

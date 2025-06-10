@@ -20,7 +20,7 @@ class EducationFilterDialog : DialogFragment() {
     private lateinit var educationLevelGroup: RadioGroup
     private lateinit var courseGroup: RadioGroup
 
-    // Временное хранилище групп (позже вы предоставите актуальные данные)
+    // Временное хранилище групп
     private val groupsMap = mutableMapOf<String, MutableMap<Int, List<String>>>()
 
     override fun onAttach(context: Context) {
