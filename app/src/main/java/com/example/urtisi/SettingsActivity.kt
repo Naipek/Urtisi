@@ -5,9 +5,7 @@ import android.os.Bundle
 import android.util.Log
 import android.widget.ImageView
 import androidx.appcompat.app.AppCompatActivity
-import androidx.appcompat.app.AppCompatDelegate
 import androidx.cardview.widget.CardView
-import androidx.core.content.edit
 import com.example.urtisi.Settings.HelpActivity
 import com.example.urtisi.Settings.LinkActivity
 import com.example.urtisi.Settings.ThemeSelectionActivity
@@ -16,7 +14,6 @@ class SettingsActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.settings_activity)
-
 
         // Найти виджет шестерёнки
         val settingsIcon = findViewById<ImageView>(R.id.icon1)

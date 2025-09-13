@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     android:background="@android:color/white"
@@ -16,7 +17,8 @@
         android:background="?attr/selectableItemBackgroundBorderless"
         android:contentDescription="Предыдущая неделя"
         android:src="@drawable/ic_arrow_left"
-        android:tint="@android:color/darker_gray" />
+        android:tint="@android:color/darker_gray"
+        tools:ignore="HardcodedText,ImageContrastCheck,UseAppTint" />
 
     <TextView
         android:id="@+id/weekRangeText"
@@ -35,6 +37,7 @@
         android:background="?attr/selectableItemBackgroundBorderless"
         android:contentDescription="Следующая неделя"
         android:src="@drawable/ic_arrow_right"
-        android:tint="@android:color/darker_gray" />
+        android:tint="@android:color/darker_gray"
+        tools:ignore="HardcodedText,ImageContrastCheck,UseAppTint" />
 
 </LinearLayout> 

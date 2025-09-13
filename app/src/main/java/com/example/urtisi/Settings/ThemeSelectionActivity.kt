@@ -21,6 +21,7 @@ class ThemeSelectionActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.settings_theme_selection)
 
+
         sharedPreferences = getSharedPreferences("AppSettings", MODE_PRIVATE)
 
         // Обработчики для карточек выбора темы
@@ -33,6 +34,7 @@ class ThemeSelectionActivity : AppCompatActivity() {
         findViewById<CardView>(R.id.cardSystem).setOnClickListener {
             saveTheme(AppCompatDelegate.MODE_NIGHT_FOLLOW_SYSTEM)
         }
+
 
         // Обработчики для нижней панели
         findViewById<ImageView>(R.id.icon1).setOnClickListener {
